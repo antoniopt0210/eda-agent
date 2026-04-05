@@ -1,6 +1,8 @@
-# EDA Agent
+# [EDA Agent](https://eda-agent-demo.streamlit.app/)
 
 **An autonomous AI agent that ingests any dataset, writes and executes its own analysis code, generates visualizations, and produces a narrative report — all without human intervention.**
+
+**[Try the live demo](https://eda-agent-demo.streamlit.app/)**
 
 Built with [Claude API](https://docs.anthropic.com/en/docs/overview) (tool-use) to showcase agentic AI development.
 
