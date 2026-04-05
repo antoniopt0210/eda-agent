@@ -25,7 +25,7 @@ You upload a dataset
        +---> Compiles everything into a report
        |
        v
-  HTML / Markdown / PDF report with charts + insights
+  HTML / Jupyter Notebook (.ipynb) with charts + insights
 ```
 
 The agent operates in an **autonomous loop**: it inspects results from each analysis step, decides what to explore next, writes new code, executes it in a sandbox, and iterates until it has enough findings to produce a comprehensive report.
