@@ -16,7 +16,6 @@ import pandas as pd
 
 from eda_agent.profiler import load_dataset
 from eda_agent.agent import EDAAgent
-from eda_agent.report import generate_pdf_report
 from eda_agent.providers import MODEL_OPTIONS
 
 # ---------------------------------------------------------------------------
@@ -37,14 +36,10 @@ if "df" not in st.session_state:
     st.session_state.source_name = ""
 
 if "history" not in st.session_state:
-    # List of dicts: {label, source, timestamp, result, figure_data, pdf_bytes}
     st.session_state.history = []
 
 if "selected_run" not in st.session_state:
-    st.session_state.selected_run = 0  # index into history (0 = latest)
-
-if "running" not in st.session_state:
-    st.session_state.running = False
+    st.session_state.selected_run = 0
 
 # ---------------------------------------------------------------------------
 # Custom CSS
@@ -127,9 +122,10 @@ with st.sidebar:
     st.markdown(
         "**How it works**\n"
         "1. Upload a dataset or pick a demo\n"
-        "2. The AI agent profiles your data\n"
-        "3. It writes & executes analysis code\n"
-        "4. Generates charts and a narrative report\n\n"
+        "2. *(Optional)* Tell the agent what to focus on\n"
+        "3. The AI agent profiles your data\n"
+        "4. It writes & executes analysis code\n"
+        "5. Generates charts and a narrative report\n\n"
         "All processing uses *your* API key (BYOK).\n\n"
         "**Supported providers:** Anthropic, OpenAI, Google Gemini"
     )
@@ -189,7 +185,7 @@ with tab_demo:
                 st.caption("Not found")
 
 # ---------------------------------------------------------------------------
-# Data preview
+# Data preview + analysis controls
 # ---------------------------------------------------------------------------
 df = st.session_state.df
 source_name = st.session_state.source_name
@@ -207,13 +203,20 @@ if df is not None:
     st.dataframe(df.head(50), height=300)
 
     # -------------------------------------------------------------------
-    # Run analysis (just the button + progress — results rendered below)
+    # Analysis controls
     # -------------------------------------------------------------------
     st.divider()
 
     if not api_key:
         st.warning("Enter your API key in the sidebar to run the analysis.")
     else:
+        user_focus = st.text_area(
+            "🎯 What should the agent focus on? *(optional)*",
+            placeholder="e.g. \"Focus on survival rates by gender and class\" or \"Look for data quality issues and suggest cleaning steps\"",
+            height=80,
+            key="user_focus",
+        )
+
         if st.button("🚀 Run Analysis", type="primary"):
             with tempfile.TemporaryDirectory() as tmp_dir:
                 output_dir = Path(tmp_dir)
@@ -225,7 +228,7 @@ if df is not None:
                 )
 
                 with st.status("🔬 Analyzing your data…", expanded=True) as status:
-                    for event in agent.analyze(df, output_dir):
+                    for event in agent.analyze(df, output_dir, user_focus=user_focus):
                         if event.stage == "profiling":
                             st.write(f"📊 {event.message}")
                         elif event.stage == "analysis":
@@ -247,7 +250,7 @@ if df is not None:
 
                 result = agent.result
 
-                # -- Snapshot figure bytes before temp dir is cleaned up ----
+                # Snapshot figure bytes before temp dir cleanup
                 figure_data: dict[str, bytes] = {}
                 for finding in result.findings:
                     for chart_path in finding.chart_paths:
@@ -255,33 +258,27 @@ if df is not None:
                         if p.exists():
                             figure_data[chart_path] = p.read_bytes()
 
-                # -- Try PDF generation while temp dir is alive ------------
-                pdf_bytes: bytes | None = None
-                pdf_path = output_dir / "report.pdf"
-                if generate_pdf_report(result.report_html, pdf_path):
-                    pdf_bytes = pdf_path.read_bytes()
-
-                # -- Save to session history --------------------------------
+                # Save to history
                 now = datetime.datetime.now().strftime("%H:%M:%S")
+                focus_tag = f" — \"{user_focus[:30]}…\"" if user_focus.strip() else ""
                 entry = {
-                    "label": f"{source_name} — {now}",
+                    "label": f"{source_name}{focus_tag} — {now}",
                     "source": source_name,
+                    "focus": user_focus,
                     "timestamp": now,
                     "result": result,
                     "figure_data": figure_data,
-                    "pdf_bytes": pdf_bytes,
                 }
-                # Prepend so newest is first
                 st.session_state.history.insert(0, entry)
                 st.session_state.selected_run = 0
-                st.rerun()  # rerun so the results section below renders
+                st.rerun()
 
 elif not uploaded_file:
     st.info("👆 Upload a dataset or select a demo dataset to get started.")
 
 
 # ---------------------------------------------------------------------------
-# Results display — always rendered from session state (survives reruns)
+# Results display — always rendered from session state
 # ---------------------------------------------------------------------------
 
 if st.session_state.history:
@@ -291,16 +288,18 @@ if st.session_state.history:
     entry = st.session_state.history[idx]
     result = entry["result"]
     figure_data: dict[str, bytes] = entry["figure_data"]
-    pdf_bytes: bytes | None = entry["pdf_bytes"]
 
     st.divider()
     st.subheader(f"📄 Analysis Report — {entry['label']}")
 
-    # -- Download buttons (stable across reruns) ----------------------------
-    col_dl1, col_dl2, col_dl3, col_dl4 = st.columns(4)
+    if entry.get("focus"):
+        st.info(f"🎯 **Focus:** {entry['focus']}")
+
+    # -- Download buttons ---------------------------------------------------
+    col_dl1, col_dl2 = st.columns(2)
     with col_dl1:
         st.download_button(
-            "⬇️ HTML",
+            "⬇️ Download HTML Report",
             data=result.report_html,
             file_name="eda_report.html",
             mime="text/html",
@@ -308,31 +307,12 @@ if st.session_state.history:
         )
     with col_dl2:
         st.download_button(
-            "⬇️ Markdown",
-            data=result.report_md,
-            file_name="eda_report.md",
-            mime="text/markdown",
-            key=f"dl_md_{idx}",
-        )
-    with col_dl3:
-        st.download_button(
-            "⬇️ Notebook",
+            "⬇️ Download Notebook (.ipynb)",
             data=result.report_notebook,
             file_name="eda_report.ipynb",
             mime="application/x-ipynb+json",
             key=f"dl_nb_{idx}",
         )
-    with col_dl4:
-        if pdf_bytes:
-            st.download_button(
-                "⬇️ PDF",
-                data=pdf_bytes,
-                file_name="eda_report.pdf",
-                mime="application/pdf",
-                key=f"dl_pdf_{idx}",
-            )
-        else:
-            st.button("PDF unavailable", disabled=True, key=f"dl_pdf_na_{idx}")
 
     # -- Findings ----------------------------------------------------------
     st.divider()

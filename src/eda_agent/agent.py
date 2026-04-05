@@ -49,7 +49,6 @@ class AnalysisResult:
     profile: dict[str, Any]
     code_steps: list[CodeStep] = field(default_factory=list)
     report_html: str = ""
-    report_md: str = ""
     report_notebook: str = ""
     was_sampled: bool = False
     original_rows: int = 0
@@ -90,6 +89,7 @@ class EDAAgent:
         self,
         df: pd.DataFrame,
         output_dir: str | Path,
+        user_focus: str = "",
     ) -> Generator[ProgressEvent, None, AnalysisResult]:
         """Run the full analysis pipeline, yielding ``ProgressEvent`` objects.
 
@@ -123,7 +123,16 @@ class EDAAgent:
         summary = ""
         latest_figures: list[str] = []
 
-        system_prompt = SYSTEM_PROMPT.format(profile=profile_text)
+        if user_focus.strip():
+            focus_block = (
+                "\n## User Focus\n"
+                "The user has specifically asked you to focus on the following. "
+                "Prioritize this in your analysis, but still cover other important aspects:\n"
+                f"> {user_focus.strip()}\n"
+            )
+        else:
+            focus_block = ""
+        system_prompt = SYSTEM_PROMPT.format(profile=profile_text, user_focus=focus_block)
 
         # Seed the conversation
         self.llm.add_user_message(
@@ -246,20 +255,16 @@ class EDAAgent:
             summary = summary or "Basic profile completed; the agent could not generate deeper findings."
 
         # ---- 4. Build result ----------------------------------------------
-        from .report import generate_html_report, generate_markdown_report, generate_notebook
+        from .report import generate_html_report, generate_notebook
 
         yield ProgressEvent("report", "Generating HTML report…")
         report_html = generate_html_report(profile, findings, summary)
-
-        yield ProgressEvent("report", "Generating Markdown report…")
-        report_md = generate_markdown_report(profile, findings, summary)
 
         yield ProgressEvent("report", "Generating Jupyter notebook…")
         report_notebook = generate_notebook(profile, findings, code_steps, summary)
 
         # Write to disk
         (output_dir / "report.html").write_text(report_html, encoding="utf-8")
-        (output_dir / "report.md").write_text(report_md, encoding="utf-8")
         (output_dir / "report.ipynb").write_text(report_notebook, encoding="utf-8")
 
         self.result = AnalysisResult(
@@ -268,7 +273,6 @@ class EDAAgent:
             profile=profile,
             code_steps=code_steps,
             report_html=report_html,
-            report_md=report_md,
             report_notebook=report_notebook,
             was_sampled=was_sampled,
             original_rows=original_rows,

@@ -9,7 +9,7 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from eda_agent.agent import CodeStep, Finding
-from eda_agent.report import generate_html_report, generate_markdown_report, generate_notebook
+from eda_agent.report import generate_html_report, generate_notebook
 
 
 @pytest.fixture
@@ -92,19 +92,6 @@ class TestHTMLReport:
     def test_empty_findings(self, sample_profile: dict) -> None:
         html = generate_html_report(sample_profile, [], "No findings")
         assert "<!DOCTYPE html>" in html
-
-
-class TestMarkdownReport:
-    def test_generates_markdown(self, sample_profile: dict, sample_findings: list[Finding]) -> None:
-        md = generate_markdown_report(sample_profile, sample_findings, "Test summary")
-        assert "# Exploratory Data Analysis Report" in md
-        assert "Test summary" in md
-        assert "Distribution of Values" in md
-
-    def test_column_table(self, sample_profile: dict, sample_findings: list[Finding]) -> None:
-        md = generate_markdown_report(sample_profile, sample_findings, "Summary")
-        assert "| Column |" in md
-        assert "| id |" in md
 
 
 class TestNotebook:

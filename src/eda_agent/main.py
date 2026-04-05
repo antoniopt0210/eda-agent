@@ -30,6 +30,7 @@ def analyze(
     provider: str = typer.Option("anthropic", "--provider", "-p", help="AI provider: anthropic, openai, or gemini."),
     model: str = typer.Option("", "--model", "-m", help="Model name (uses provider default if empty)."),
     max_steps: int = typer.Option(25, "--max-steps", help="Maximum agent iterations."),
+    focus: str = typer.Option("", "--focus", "-f", help="Tell the agent what to focus on (optional)."),
 ) -> None:
     """Analyze a dataset and generate an EDA report."""
 
@@ -70,7 +71,7 @@ def analyze(
     ) as progress:
         task = progress.add_task("Starting analysis…", total=None)
 
-        for event in agent.analyze(df, output):
+        for event in agent.analyze(df, output, user_focus=focus):
             progress.update(task, description=event.message)
 
             if event.detail and event.stage == "finding":
@@ -83,9 +84,8 @@ def analyze(
     result = agent.result
     console.print(f"\n[green bold]Analysis complete![/green bold]")
     console.print(f"  Findings: {len(result.findings)}")
-    console.print(f"  HTML report:     {output / 'report.html'}")
-    console.print(f"  Markdown report: {output / 'report.md'}")
-    console.print(f"  Notebook:        {output / 'report.ipynb'}")
+    console.print(f"  HTML report: {output / 'report.html'}")
+    console.print(f"  Notebook:    {output / 'report.ipynb'}")
     console.print(f"\n[dim]{result.summary}[/dim]\n")
 
 

@@ -87,7 +87,7 @@ You are an expert data scientist performing autonomous exploratory data analysis
 
 You have access to a pandas DataFrame called `df`. A data profile is provided below.
 Your job is to thoroughly explore the dataset, uncover patterns, and generate visual insights.
-
+{user_focus}
 ## Instructions
 1. Start with high-level overview: distributions of key columns, missing-value patterns.
 2. Explore relationships: correlations between numeric columns, group comparisons for categorical columns.
