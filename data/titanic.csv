@@ -1,0 +1,892 @@
+PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+1,1,3,"Wilson, Mrs. Agnes",female,20.0,0,0,829866,14.01,,S
+2,1,2,"Hall, Master Joseph",male,37.0,1,1,420705,10.24,,S
+3,1,3,"White, Mr. Samuel",male,33.0,1,0,RBI708850,8.91,,S
+4,1,3,"Young, Ms. Agnes",female,,1,0,PIN210107,8.52,,C
+5,1,1,"Garcia, Miss Anna",female,42.0,0,0,WPF/228056,94.32,,S
+6,0,3,"King, Mr. John",male,36.0,0,0,Q 320842,0.0,,Q
+7,0,3,"Wright, Rev. William",male,18.0,0,0,F 940105,14.45,,S
+8,0,3,"Martin, Dr. Joseph",male,18.0,0,0,JA408731,6.62,,S
+9,0,1,"Clark, Mr. John",male,46.0,0,0,P56042,128.8,,S
+10,0,3,"Thompson, Master Robert",male,52.0,0,5, 245212,7.61,,S
+11,1,2,"Walker, Master Robert",male,31.0,0,0, 850399,19.51,,S
+12,0,3,"Smith, Mr. Patrick",male,16.0,0,0,XE 5149,19.57,,C
+13,0,3,"Martinez, Master Thomas",male,12.0,0,0,ZQ 251503,8.61,,S
+14,1,3,"Garcia, Ms. Elizabeth",female,23.0,0,0,VU 314587,16.19,,S
+15,1,2,"Wilson, Miss Anna",female,42.0,0,0,/364045,20.39,,S
+16,1,1,"Williams, Mr. Samuel",male,72.0,1,2,YJM523824,96.62,A1,S
+17,1,3,"Robinson, Mr. William",male,21.0,0,0,Q/769071,10.35,,S
+18,0,1,"White, Master Joseph",male,39.0,1,0,D 97422,113.91,C44,S
+19,0,3,"Walker, Dr. Patrick",male,45.0,1,1,SFR 313528,6.57,,C
+20,1,3,"Miller, Ms. Ellen",female,29.0,0,0,OBZ825921,5.08,,S
+21,0,3,"Taylor, Miss Elizabeth",female,28.0,0,1,LBT 115427,6.81,,Q
+22,1,2,"Martinez, Miss Florence",female,50.0,0,0,WCP501045,21.0,C8,S
+23,1,3,"Martinez, Miss Helen",female,26.0,0,0,463646,8.9,,S
+24,1,3,"Martinez, Miss Lucy",female,13.0,0,2,GX529196,13.55,,S
+25,0,3,"Williams, Mrs. Alice",female,40.0,0,1,G800143,16.52,A18,S
+26,0,1,"Jones, Mr. Charles",male,,1,1,7983,40.97,F43,C
+27,1,3,"Wilson, Rev. Michael",male,29.0,2,0,B270167,6.33,,Q
+28,0,1,"Wright, Mr. John",male,18.0,1,1,O 359860,22.55,C74,C
+29,1,1,"Lee, Mr. Charles",male,41.0,0,0,225082,161.21,,S
+30,1,3,"Lee, Mr. Henry",male,3.0,0,0,782222,11.52,,S
+31,0,3,"Walker, Mrs. Mary",female,21.0,4,0,D 958447,12.4,,S
+32,0,3,"Young, Dr. Patrick",male,18.0,0,0,JUD862847,3.3,,S
+33,0,2,"Hall, Master Michael",male,29.0,0,0,T92634,19.99,,S
+34,0,2,"Taylor, Rev. Michael",male,26.0,0,0,CS862880,25.09,,S
+35,1,3,"King, Rev. James",male,26.0,0,0,YXL276968,8.74,C134,C
+36,0,1,"Taylor, Master Michael",male,44.0,0,1,W164386,123.03,,S
+37,1,1,"Allen, Miss Emma",female,38.0,0,2,WZ729551,172.47,A132,S
+38,0,3,"Miller, Dr. David",male,,0,0,Q554781,5.26,,Q
+39,1,1,"Young, Mrs. Florence",female,,0,2,VWE 775543,39.12,,S
+40,0,3,"Brown, Master Charles",male,28.0,0,0,WOA47687,5.61,A13,S
+41,1,2,"Robinson, Dr. Samuel",male,32.0,0,0,YO 933593,36.06,,S
+42,0,3,"Wright, Dr. Samuel",male,33.0,0,1, 187288,15.21,,S
+43,0,3,"Allen, Mrs. Sarah",female,,1,0,VG891551,9.32,,S
+44,0,2,"Thompson, Ms. Florence",female,26.0,0,0,NW98784,20.37,,C
+45,0,3,"Davis, Rev. Henry",male,,0,0,MB922654,5.92,A23,S
+46,0,3,"Smith, Mrs. Dorothy",female,,1,0,YY167213,14.45,,S
+47,1,2,"Garcia, Rev. Joseph",male,39.0,0,1,/119484,16.2,,S
+48,0,2,"Martinez, Miss Anna",female,,1,0,994176,17.4,,C
+49,0,3,"Anderson, Master David",male,35.0,1,0, 47607,13.04,,S
+50,0,1,"Garcia, Rev. John",male,,0,0,G196513,72.48,C136,S
+51,1,1,"Lewis, Ms. Margaret",female,,0,0,/736364,70.6,E1,C
+52,0,1,"Martinez, Rev. Robert",male,,0,0,LI/966990,80.42,D76,S
+53,0,3,"Davis, Master James",male,26.0,4,2,KU41357,13.98,,S
+54,0,3,"Taylor, Mr. John",male,30.0,1,1,EV 519236,18.23,,S
+55,1,3,"Martinez, Master Patrick",male,26.0,2,1,CWV132478,12.93,,S
+56,1,3,"Smith, Miss Florence",female,22.0,1,0,M 627903,14.02,,S
+57,1,3,"Walker, Mrs. Catherine",female,14.0,0,1,800927,9.0,,S
+58,1,3,"Lee, Ms. Sarah",female,25.0,1,0, 171522,6.46,,S
+59,0,1,"Wright, Master Robert",male,20.0,0,0,Y/817032,106.16,D143,S
+60,1,1,"Davis, Mr. Charles",male,14.0,1,0,136220,86.85,,S
+61,0,3,"Williams, Rev. William",male,12.0,0,0,BH 464839,2.89,,S
+62,1,3,"Anderson, Rev. Edward",male,33.0,0,2,J 533958,8.36,,S
+63,1,3,"Davis, Master Edward",male,28.0,1,0,D 452131,9.59,,S
+64,0,3,"Smith, Ms. Ellen",female,33.0,1,3,T337571,7.45,,S
+65,1,3,"Wilson, Mrs. Dorothy",female,17.0,0,0,LVW277162,17.41,,S
+66,1,3,"Garcia, Mrs. Elizabeth",female,38.0,0,0,LD990370,12.4,,S
+67,1,3,"Anderson, Dr. David",male,8.0,0,0,TE932667,16.87,,S
+68,1,2,"White, Rev. David",male,15.0,3,0,K676182,22.63,,C
+69,0,1,"Johnson, Rev. James",male,50.0,0,0, 188769,83.26,,C
+70,1,2,"White, Mr. George",male,,0,0,819818,10.63,,S
+71,1,1,"White, Master David",male,35.0,0,4,749736,80.48,B56,S
+72,0,2,"Martin, Rev. Charles",male,,0,0,VJY 540791,20.13,A104,C
+73,0,3,"Garcia, Mr. Samuel",male,28.0,0,0,YD/358746,3.16,,S
+74,1,1,"Wilson, Mrs. Ellen",female,31.0,0,0,HV 710386,58.42,D81,S
+75,1,1,"Lee, Master James",male,24.0,1,0,PDE36050,67.07,,S
+76,0,2,"Walker, Mrs. Mary",female,,1,0,N430583,24.13,B93,Q
+77,0,2,"Allen, Mr. Michael",male,40.0,2,0,331617,24.61,,S
+78,0,3,"Martinez, Mr. Joseph",male,42.0,0,0,B 274545,7.09,B53,C
+79,0,3,"Martin, Mr. Thomas",male,34.0,0,0,H/419357,12.34,,S
+80,0,3,"Wilson, Dr. Samuel",male,20.0,1,0,WGL690464,9.09,,Q
+81,0,3,"Robinson, Mr. David",male,1.0,1,0,YU/367923,0.0,,S
+82,0,2,"Jones, Master James",male,15.0,0,0,TJ 22281,15.15,,S
+83,1,3,"Jones, Ms. Florence",female,6.0,1,0,/898249,15.39,,C
+84,0,1,"Wilson, Rev. James",male,50.0,1,0,493248,12.73,,S
+85,0,1,"Lee, Rev. David",male,24.0,0,0,HR873820,84.51,F76,S
+86,1,1,"Moore, Dr. James",male,35.0,1,2,JFV685416,143.41,,S
+87,1,3,"Rodriguez, Rev. John",male,6.0,0,0,V/39849,6.2,,S
+88,1,3,"Miller, Mr. Samuel",male,20.0,0,0,B/756511,10.01,,S
+89,0,1,"White, Rev. Robert",male,,0,0,775211,27.84,C148,S
+90,1,3,"Garcia, Mrs. Anna",female,,0,0,OQM624438,18.14,,S
+91,1,1,"Moore, Ms. Emma",female,45.0,1,0,HU519733,76.67,B74,S
+92,0,3,"Allen, Mrs. Alice",female,32.0,0,1,G 684681,10.23,C3,C
+93,0,2,"Davis, Master John",male,,0,2,/975367,33.54,,C
+94,1,2,"Jones, Dr. Patrick",male,32.0,1,0,980435,26.61,,S
+95,0,2,"Taylor, Miss Catherine",female,,1,0,445109,11.24,,C
+96,0,3,"Lewis, Mr. Michael",male,,1,0,T519330,6.76,D40,S
+97,0,2,"White, Mr. Patrick",male,,0,0,PUX492377,24.95,,S
+98,1,1,"Allen, Master David",male,45.0,1,0,826754,55.04,,S
+99,1,1,"Miller, Ms. Catherine",female,,0,1,H 997538,0.0,,C
+100,0,3,"Wilson, Rev. Charles",male,0.0,0,0,GRJ416245,9.73,,S
+101,1,3,"Robinson, Ms. Margaret",female,37.0,0,0,645154,2.6,,C
+102,1,3,"Lee, Miss Helen",female,7.0,0,0, 518480,18.08,,S
+103,1,2,"Wilson, Rev. Michael",male,44.0,1,0,AUV76747,21.77,,S
+104,0,3,"King, Mrs. Emma",female,,0,0,PN/578092,5.47,,S
+105,0,3,"Allen, Dr. Robert",male,24.0,0,0, 60436,6.51,,C
+106,0,3,"Martin, Master Samuel",male,18.0,1,0,G 649721,0.55,,S
+107,0,2,"Lewis, Master Joseph",male,42.0,1,1,QUX/842300,9.01,,S
+108,0,2,"Brown, Miss Mary",female,6.0,0,1,L787940,30.16,,S
+109,1,1,"Harris, Rev. Joseph",male,28.0,2,0,UP 257611,169.27,,Q
+110,1,3,"Wilson, Rev. George",male,9.0,1,0,JD904942,13.63,,S
+111,0,3,"King, Dr. Samuel",male,,4,0,706524,9.54,,S
+112,0,1,"Rodriguez, Master Charles",male,24.0,3,0,930355,62.72,,S
+113,0,2,"Robinson, Dr. Patrick",male,19.0,2,0,HW432205,10.44,,S
+114,0,3,"Smith, Mr. William",male,,1,2,730816,20.3,,C
+115,1,1,"King, Rev. Henry",male,23.0,0,0,S733578,72.45,A77,S
+116,0,3,"Martin, Ms. Agnes",female,,0,1,832685,20.58,,C
+117,0,3,"Miller, Dr. Michael",male,3.0,0,0, 902051,16.97,,S
+118,1,3,"Martinez, Miss Mary",female,14.0,1,0,IX219823,1.3,C37,S
+119,0,2,"King, Rev. Thomas",male,58.0,0,0,M870331,13.34,,S
+120,1,3,"Williams, Mrs. Anna",female,28.0,1,0,Y865767,6.65,,C
+121,0,3,"Johnson, Master Thomas",male,17.0,0,0,FZ113538,9.6,,S
+122,1,3,"Allen, Dr. Samuel",male,13.0,0,0,237460,9.7,B126,S
+123,1,1,"Rodriguez, Ms. Lucy",female,24.0,0,1,KX274537,199.85,C94,C
+124,1,2,"Young, Rev. James",male,22.0,0,0,ST 90252,9.23,,C
+125,1,1,"Harris, Master Charles",male,,0,0,GZZ 334910,89.16,,S
+126,1,3,"Miller, Mrs. Elizabeth",female,22.0,0,0,BK/367404,13.08,,Q
+127,1,2,"Thompson, Miss Mary",female,20.0,1,0,/281689,19.98,,S
+128,1,1,"Jones, Dr. Thomas",male,41.0,0,0,FG468709,84.41,,C
+129,0,1,"Martin, Rev. Joseph",male,33.0,0,0, 886398,38.21,F15,C
+130,1,3,"Miller, Ms. Helen",female,22.0,0,0,P239964,10.53,,S
+131,0,1,"Clark, Miss Florence",female,39.0,0,0,MY674220,100.46,F116,S
+132,1,3,"Robinson, Miss Mary",female,9.0,0,0,F371373,11.64,,S
+133,1,3,"Miller, Dr. Charles",male,2.0,1,0,PR 774916,12.85,,S
+134,0,2,"Wilson, Ms. Helen",female,52.0,1,0,162180,34.13,F4,S
+135,0,3,"Garcia, Rev. George",male,27.0,0,0,JSF912128,14.68,,C
+136,1,1,"Jones, Mrs. Helen",female,,0,0,BC405712,82.85,B16,S
+137,0,3,"Thompson, Master Michael",male,22.0,0,0,182262,4.14,,S
+138,0,3,"Lewis, Ms. Alice",female,22.0,0,0,I749792,7.0,,C
+139,0,3,"Thompson, Master Samuel",male,16.0,1,2,YO 202994,8.9,,Q
+140,0,1,"Hall, Master Patrick",male,22.0,0,1,WI 395808,90.09,,S
+141,0,3,"Hall, Ms. Dorothy",female,32.0,1,0,XUA417833,7.61,,S
+142,0,3,"Williams, Master James",male,37.0,0,0,721486,5.32,,S
+143,1,3,"Brown, Mrs. Florence",female,30.0,0,0,XI456838,4.06,,S
+144,1,3,"Davis, Dr. James",male,24.0,0,1,638459,1.74,,S
+145,1,3,"Lewis, Master Samuel",male,,0,0,A 167445,8.83,,S
+146,0,2,"Lee, Rev. Edward",male,,5,0,GNV364987,5.3,,S
+147,0,2,"Garcia, Master David",male,21.0,0,0,867961,9.99,,Q
+148,0,3,"King, Dr. Edward",male,28.0,1,0,V 305330,8.03,C124,S
+149,0,2,"Martinez, Dr. George",male,46.0,1,0,KR182408,6.64,,S
+150,1,1,"Thompson, Master Samuel",male,25.0,0,1,523104,95.19,,S
+151,1,3,"Wright, Mrs. Ellen",female,,0,2,ZTX531154,13.7,,C
+152,0,3,"Williams, Miss Mary",female,10.0,0,0,KQU42746,7.25,,S
+153,1,1,"Allen, Ms. Elizabeth",female,,0,0,599944,62.52,F50,S
+154,1,3,"Hall, Mr. Robert",male,25.0,1,0,87933,12.69,,S
+155,1,1,"Anderson, Mr. David",male,,0,0,XB/623040,51.44,,S
+156,0,3,"Hall, Dr. Charles",male,25.0,2,0,T842842,6.09,,Q
+157,1,2,"Hall, Mrs. Anna",female,38.0,0,0,S50668,31.96,B28,S
+158,0,3,"Williams, Ms. Lucy",female,,0,1,242857,14.42,,S
+159,0,3,"Robinson, Rev. David",male,16.0,1,4,K/47906,13.01,,S
+160,1,3,"Jones, Mrs. Ellen",female,24.0,0,0,LZ 692780,14.63,,S
+161,1,1,"Martin, Master James",male,,1,0,W565859,0.91,B65,S
+162,0,3,"Clark, Mr. James",male,32.0,0,0,7912,16.77,,C
+163,1,1,"Rodriguez, Dr. David",male,,3,0,CVW361948,95.68,D41,S
+164,1,1,"Allen, Rev. John",male,32.0,1,0,L 834596,120.43,,S
+165,0,3,"Rodriguez, Miss Ellen",female,,1,0,F 902957,11.94,,S
+166,1,2,"Rodriguez, Miss Mary",female,39.0,0,0,IQ 759551,20.49,,S
+167,0,3,"Rodriguez, Mr. David",male,26.0,1,1,QZ567719,8.62,,S
+168,1,3,"Johnson, Master Patrick",male,19.0,0,0,Y 213778,11.84,,S
+169,0,2,"Wright, Mrs. Margaret",female,16.0,1,0,SL 903622,16.88,,S
+170,1,3,"Miller, Miss Agnes",female,36.0,0,0, 442361,14.34,,S
+171,0,2,"Anderson, Rev. John",male,57.0,0,3,AT/618838,4.14,,S
+172,0,3,"Allen, Dr. Joseph",male,8.0,0,0,443598,7.29,,C
+173,0,2,"Moore, Master Henry",male,,0,0,W 649349,40.45,,S
+174,0,3,"Robinson, Dr. Michael",male,31.0,0,0,ASI766225,6.87,,C
+175,1,1,"Martin, Ms. Lucy",female,,1,0,11705,70.45,D65,S
+176,0,1,"Davis, Rev. Samuel",male,47.0,0,5,LQ/19335,44.7,C80,S
+177,0,2,"Lee, Mrs. Elizabeth",female,46.0,1,0,QI 452890,23.36,,S
+178,0,3,"King, Mr. David",male,29.0,0,2,ZQ 57329,6.32,,S
+179,0,3,"Brown, Master Edward",male,,1,0,ZT683241,9.07,,S
+180,1,3,"Thompson, Ms. Alice",female,,1,0,884987,14.24,,S
+181,0,3,"White, Mr. George",male,18.0,0,0,V703009,6.51,,S
+182,0,3,"Moore, Master Patrick",male,8.0,1,0,R711170,13.94,,S
+183,0,3,"Moore, Miss Anna",female,28.0,2,0,857974,14.11,,S
+184,0,2,"Taylor, Miss Ellen",female,26.0,1,0,W933304,30.55,,S
+185,0,3,"Anderson, Master Patrick",male,37.0,0,0,SGQ 962232,10.7,,S
+186,0,3,"Young, Mr. James",male,31.0,0,1,B787417,26.21,,S
+187,1,2,"Williams, Rev. William",male,25.0,1,4,R 881396,30.55,,Q
+188,0,1,"Rodriguez, Rev. Charles",male,14.0,0,0,R 182521,93.0,F107,S
+189,0,3,"Moore, Mr. James",male,26.0,1,0,127646,5.62,,Q
+190,0,2,"Martin, Master James",male,30.0,0,1,441769,19.03,,S
+191,1,3,"White, Miss Anna",female,0.0,1,0,NXY 603807,17.13,,C
+192,1,2,"Clark, Miss Dorothy",female,36.0,0,1,GWY635635,37.1,,S
+193,1,1,"Brown, Miss Lucy",female,24.0,0,0,MV 769450,139.13,,C
+194,0,3,"Smith, Ms. Sarah",female,37.0,5,1,B 207625,13.93,,C
+195,1,1,"Walker, Mrs. Emma",female,,1,0,S892522,29.77,B71,Q
+196,1,1,"Anderson, Ms. Agnes",female,32.0,1,0,FKO457379,99.49,,S
+197,1,3,"Robinson, Mrs. Emma",female,31.0,2,0,ZZA837557,3.79,,S
+198,1,3,"Davis, Mr. Michael",male,33.0,0,0,PV 352120,2.56,,S
+199,0,1,"Hall, Dr. George",male,,0,1,FYB404159,89.57,B40,C
+200,0,2,"Garcia, Dr. David",male,31.0,0,5,890627,25.23,,C
+201,0,3,"Martin, Mr. George",male,,0,0,EBE49517,14.52,,S
+202,1,3,"Moore, Mr. David",male,15.0,0,0,VLP887054,12.49,E148,S
+203,0,3,"Martinez, Master Charles",male,44.0,2,0,T977696,12.66,,Q
+204,0,1,"Taylor, Rev. Charles",male,17.0,0,0, 12557,40.61,,S
+205,1,1,"Clark, Mr. Joseph",male,47.0,0,0,P 688606,75.8,F5,C
+206,1,1,"Clark, Mr. Thomas",male,32.0,0,1, 894694,19.72,D46,Q
+207,1,1,"Taylor, Ms. Mary",female,25.0,0,1,V951915,0.0,E56,S
+208,0,3,"Williams, Ms. Catherine",female,28.0,0,0,L 459175,13.7,,C
+209,0,1,"Lewis, Rev. Robert",male,44.0,0,0,FQ1269,49.88,,S
+210,1,3,"Taylor, Dr. John",male,27.0,0,0,IX200389,14.36,,S
+211,0,3,"Rodriguez, Rev. George",male,22.0,0,0,J985434,15.54,,C
+212,1,3,"King, Miss Mary",female,,1,0,RV983283,6.9,,S
+213,1,1,"Martin, Miss Agnes",female,41.0,0,0,SYT 992559,103.61,,Q
+214,1,3,"Hall, Mr. Charles",male,32.0,1,0,U392861,6.69,,S
+215,0,3,"Davis, Ms. Ellen",female,15.0,0,0,833532,0.77,,S
+216,0,3,"Smith, Mr. James",male,25.0,0,0,DM635819,10.62,,
+217,1,1,"Wilson, Rev. Henry",male,64.0,0,0,895729,61.17,C127,S
+218,1,1,"Smith, Miss Agnes",female,43.0,3,0,SFO 412164,62.4,,S
+219,1,3,"White, Dr. Samuel",male,,0,0,378277,19.88,,Q
+220,1,2,"Smith, Rev. Joseph",male,63.0,0,1,506776,4.74,,S
+221,1,2,"Williams, Dr. Charles",male,35.0,0,0,T 855073,23.83,,S
+222,0,3,"Brown, Mr. William",male,,1,0,Z565708,5.03,,S
+223,0,3,"Martinez, Ms. Agnes",female,28.0,0,0,CDF766148,14.54,,C
+224,1,3,"Williams, Miss Lucy",female,29.0,0,0,E 494207,11.49,,S
+225,0,2,"Garcia, Master Robert",male,29.0,1,0,K 110113,23.79,,S
+226,1,3,"Anderson, Master Michael",male,,0,1,NFI 648114,5.28,B82,C
+227,1,1,"Thompson, Mrs. Dorothy",female,43.0,0,0,BIC 104747,49.38,A44,S
+228,0,3,"Wilson, Rev. George",male,17.0,0,0,MUG211327,14.64,,S
+229,0,3,"Lewis, Ms. Sarah",female,36.0,0,0, 432582,18.85,,S
+230,1,1,"Taylor, Mrs. Florence",female,40.0,3,1, 503724,99.21,E141,S
+231,1,1,"Harris, Master Henry",male,47.0,0,1,807642,44.1,D69,S
+232,1,2,"Young, Miss Agnes",female,15.0,0,0,RGN 857155,23.39,,S
+233,0,3,"Wright, Mr. Joseph",male,,0,0,U/918516,22.14,E135,S
+234,0,3,"Lewis, Master Charles",male,29.0,0,0,K819494,10.51,,S
+235,1,3,"Martin, Mr. David",male,33.0,1,0,JX 75980,17.31,,Q
+236,1,3,"White, Dr. George",male,19.0,0,0,G83285,6.3,,S
+237,0,3,"Jones, Mrs. Elizabeth",female,41.0,1,0,CLR/955466,9.79,,S
+238,1,3,"Wright, Miss Emma",female,32.0,0,1,XOB 318034,13.1,,C
+239,1,1,"Hall, Miss Agnes",female,72.0,0,0,BXN 585213,95.89,E79,S
+240,1,1,"Miller, Ms. Sarah",female,,0,0,L 666936,49.34,,S
+241,0,3,"Allen, Dr. David",male,,1,0,NP562626,5.95,,S
+242,0,3,"Jones, Dr. Thomas",male,15.0,0,0,Z512005,14.94,,C
+243,1,1,"King, Ms. Lucy",female,34.0,0,0,U815637,127.66,,Q
+244,1,3,"Taylor, Miss Margaret",female,29.0,1,0,MNH532304,17.56,,S
+245,0,3,"Wilson, Mr. Charles",male,31.0,0,1,B317593,19.02,,S
+246,0,3,"Smith, Mr. Joseph",male,32.0,0,0,434963,10.67,,S
+247,0,3,"Lewis, Mr. James",male,50.0,0,0,TJ381001,8.44,,Q
+248,1,2,"Williams, Rev. Charles",male,4.0,1,0,PD/198825,33.51,,S
+249,1,2,"Smith, Miss Mary",female,,0,0,Y922960,27.13,,S
+250,1,2,"Williams, Master Joseph",male,30.0,0,4,XZK 46174,10.18,,C
+251,1,3,"Robinson, Ms. Agnes",female,19.0,0,0,FS205613,4.83,,
+252,0,3,"King, Mrs. Alice",female,32.0,0,0,O 169173,12.46,,S
+253,1,3,"Harris, Mrs. Sarah",female,14.0,0,0,QXS833791,9.11,,S
+254,0,2,"Rodriguez, Mr. Michael",male,31.0,0,4,593950,19.74,,S
+255,1,1,"Clark, Rev. James",male,16.0,0,0,H990017,122.9,,S
+256,1,3,"Wright, Ms. Mary",female,25.0,0,0,X5448,13.8,,C
+257,0,3,"Miller, Mrs. Lucy",female,15.0,1,0,WX702695,16.65,,C
+258,0,1,"Johnson, Master George",male,36.0,0,0,/708651,2.74,E113,S
+259,1,1,"Williams, Mrs. Margaret",female,45.0,0,0,DN 261752,90.14,D25,S
+260,0,3,"Anderson, Master Thomas",male,,1,0,J496024,13.47,,S
+261,0,1,"Thompson, Mrs. Catherine",female,33.0,1,0,DD 865723,18.94,A91,Q
+262,0,3,"Lewis, Master Michael",male,32.0,0,0,LXK983327,6.73,,S
+263,0,2,"Young, Rev. James",male,41.0,0,0,BS4546,11.6,F141,S
+264,1,1,"Jones, Mr. George",male,,0,1,693242,80.87,,C
+265,0,3,"Miller, Mr. Thomas",male,46.0,0,0,HE112154,18.14,,S
+266,0,1,"Johnson, Master Charles",male,38.0,0,0,I/719566,160.9,A8,S
+267,1,2,"Allen, Mr. Patrick",male,29.0,0,0,IP 391931,11.86,,S
+268,0,1,"Wright, Rev. Joseph",male,20.0,0,5,YL 997763,101.06,,S
+269,1,1,"Martin, Mrs. Helen",female,29.0,0,0,/664202,102.35,C70,S
+270,1,1,"King, Rev. Charles",male,28.0,0,0,WA516476,95.51,,C
+271,1,1,"Williams, Ms. Lucy",female,,0,1,800941,95.96,A136,C
+272,1,1,"Lewis, Mrs. Elizabeth",female,40.0,0,0,MK750983,92.15,D123,S
+273,1,1,"Jones, Master William",male,64.0,1,0,J54837,147.5,D28,C
+274,0,3,"White, Mr. Joseph",male,31.0,1,0, 105526,15.51,,S
+275,1,3,"Jones, Miss Margaret",female,10.0,0,0,S772509,4.7,,S
+276,1,2,"King, Ms. Ellen",female,17.0,0,0,AL897751,27.96,,S
+277,1,2,"Martin, Mr. John",male,29.0,0,0,SQ104812,28.92,,S
+278,0,3,"Martinez, Ms. Lucy",female,14.0,0,0,DD/980707,11.57,,Q
+279,1,3,"Johnson, Master Thomas",male,40.0,1,1,628881,15.66,,S
+280,0,3,"Robinson, Mr. Charles",male,8.0,0,0,/71335,10.94,,S
+281,1,1,"White, Ms. Sarah",female,44.0,0,0, 466824,88.02,C1,S
+282,0,1,"Miller, Dr. Michael",male,19.0,0,1,P60073,84.85,,S
+283,0,1,"Wright, Miss Anna",female,37.0,0,0,G555388,0.0,F104,C
+284,0,2,"Lee, Rev. Samuel",male,15.0,0,1,L547891,19.2,,S
+285,0,3,"Lee, Miss Helen",female,33.0,0,0,F304814,6.66,,S
+286,0,2,"Robinson, Master Joseph",male,44.0,2,0,631467,8.14,A137,S
+287,1,1,"Moore, Dr. John",male,42.0,0,0, 13471,137.36,B103,C
+288,1,2,"Robinson, Master Henry",male,45.0,0,0,D 572852,25.04,,S
+289,0,3,"Martin, Mr. Joseph",male,,0,1, 283547,9.85,,S
+290,1,1,"White, Miss Elizabeth",female,,0,1, 565870,57.41,F84,S
+291,0,3,"Miller, Master William",male,27.0,0,4,QT343624,11.48,,S
+292,1,1,"Lewis, Master Thomas",male,44.0,0,0,MX37860,119.66,E137,S
+293,1,3,"Jones, Rev. George",male,32.0,1,1,A 328056,5.87,,S
+294,1,1,"Lewis, Master Michael",male,16.0,0,0,UL56312,79.81,,S
+295,0,3,"Taylor, Mrs. Alice",female,,0,2,M/766014,14.34,,S
+296,0,3,"Lee, Dr. James",male,12.0,0,0,M343883,0.32,C82,S
+297,0,3,"Robinson, Ms. Dorothy",female,36.0,0,1,S61429,9.71,,Q
+298,1,3,"Wilson, Mr. Charles",male,0.0,0,0,PB 722090,7.85,,S
+299,1,3,"Lewis, Mrs. Margaret",female,48.0,1,0,JW700917,9.33,,S
+300,0,3,"Lee, Master Michael",male,1.0,0,0,PER75529,7.49,,C
+301,0,3,"Williams, Master Joseph",male,25.0,0,0,R111236,10.69,,S
+302,1,1,"Williams, Mrs. Anna",female,,1,0,LRO223688,156.95,E119,S
+303,1,3,"Lewis, Ms. Agnes",female,31.0,0,4,W529865,8.38,,C
+304,1,3,"Wright, Ms. Dorothy",female,33.0,0,0,MN 869951,11.46,,S
+305,0,3,"Lee, Rev. James",male,37.0,0,0, 217948,19.97,,Q
+306,0,3,"Williams, Dr. Robert",male,30.0,0,0,848551,7.25,,S
+307,1,2,"Taylor, Mrs. Ellen",female,47.0,0,0,686064,38.15,B74,S
+308,0,3,"Smith, Rev. Thomas",male,39.0,1,0,P 469328,10.03,,S
+309,1,2,"Johnson, Ms. Helen",female,66.0,1,2,S702874,37.82,,S
+310,1,1,"Young, Dr. David",male,,1,4,/53538,110.01,,S
+311,0,3,"Lee, Dr. James",male,21.0,4,0, 921512,11.54,,S
+312,1,2,"Wilson, Miss Florence",female,18.0,1,0,E138956,19.34,C60,C
+313,1,1,"Johnson, Miss Dorothy",female,33.0,1,0,Y885107,55.04,,S
+314,0,2,"Walker, Rev. David",male,23.0,1,1,VB568170,20.76,,S
+315,0,2,"Young, Dr. Samuel",male,30.0,1,0,P628666,28.97,,S
+316,1,2,"Miller, Master John",male,,1,0,771017,19.87,E40,S
+317,0,2,"Anderson, Mr. Thomas",male,42.0,2,4,S 897393,16.83,,S
+318,0,3,"Williams, Dr. Joseph",male,41.0,0,1,ER927396,8.75,,C
+319,0,2,"King, Mr. Joseph",male,,0,0, 536131,29.92,,C
+320,0,3,"Young, Miss Alice",female,29.0,0,0,600615,16.13,,C
+321,0,3,"Smith, Ms. Emma",female,30.0,1,0,S668811,6.66,,S
+322,1,3,"King, Master William",male,22.0,0,0,834400,6.66,,S
+323,0,2,"Martinez, Master Robert",male,48.0,1,0,X 11889,23.79,,C
+324,0,3,"King, Master George",male,25.0,1,0,O675024,17.64,,S
+325,0,3,"Robinson, Mr. Charles",male,31.0,3,0,NBM380597,15.73,,S
+326,0,3,"Miller, Mr. David",male,,0,0,A104612,3.74,,S
+327,1,3,"Taylor, Rev. James",male,27.0,1,0,EEP 737440,8.68,,S
+328,1,3,"Young, Ms. Catherine",female,14.0,1,0,RG154820,5.35,,S
+329,1,3,"Hall, Mr. Thomas",male,28.0,2,2,C 88300,8.66,,S
+330,1,2,"Anderson, Rev. Robert",male,23.0,1,0,NSS862153,36.04,A136,C
+331,0,3,"Young, Master Robert",male,58.0,0,2,OCQ880120,2.89,,S
+332,1,1,"Martinez, Miss Helen",female,51.0,0,0,DLE 727881,15.25,,C
+333,0,3,"Wright, Master Charles",male,43.0,0,0,VNE 462272,5.86,,S
+334,1,3,"Lewis, Rev. John",male,0.0,3,1,LM938545,11.44,,S
+335,1,1,"Hall, Miss Margaret",female,48.0,0,0,Z/307808,104.83,B54,C
+336,0,3,"Jones, Rev. Robert",male,,1,0,AE229161,12.19,,S
+337,1,1,"Martin, Rev. William",male,30.0,1,0,JYU 214136,127.03,A62,C
+338,0,3,"Martin, Ms. Agnes",female,34.0,0,0,X 445557,1.18,,C
+339,0,1,"Allen, Master Thomas",male,45.0,0,0, 184226,127.53,E73,S
+340,0,3,"Lewis, Dr. James",male,27.0,0,0,544034,8.44,,S
+341,0,1,"Young, Mr. Patrick",male,,1,0,B783473,109.26,F52,S
+342,0,3,"Rodriguez, Rev. Edward",male,27.0,0,0,IIO 251504,3.38,,S
+343,1,3,"Johnson, Ms. Mary",female,40.0,0,0,TT354003,10.02,,S
+344,1,3,"Davis, Mr. David",male,,1,0,HT/491651,11.18,,S
+345,1,3,"Moore, Dr. Charles",male,13.0,0,0, 545227,15.78,,S
+346,0,3,"Garcia, Dr. Patrick",male,31.0,1,0,X94659,2.07,D109,S
+347,0,3,"Wright, Master William",male,43.0,0,0,792047,10.15,,S
+348,0,2,"Johnson, Mr. George",male,25.0,0,0,YW 726604,9.15,,C
+349,0,3,"Martin, Mr. Robert",male,34.0,0,0,QQP729003,12.53,,S
+350,1,1,"Martinez, Ms. Anna",female,35.0,0,0,YYB630554,111.09,,S
+351,0,3,"Garcia, Dr. James",male,44.0,0,0,AXQ 418403,16.44,,S
+352,1,1,"Davis, Mr. Charles",male,,1,0,Z/483646,58.6,C20,C
+353,0,3,"White, Mr. Michael",male,31.0,0,5,GUA298519,14.64,,S
+354,0,3,"Walker, Rev. Patrick",male,26.0,0,2,PLB 260880,16.8,,S
+355,1,3,"Brown, Mr. John",male,22.0,0,0,974263,1.78,,S
+356,0,3,"Thompson, Master Robert",male,7.0,0,0,CUA785538,13.06,,C
+357,1,3,"Brown, Rev. Samuel",male,33.0,2,0,IQL432464,14.79,,S
+358,0,3,"Williams, Miss Dorothy",female,,0,1,EIR875380,8.71,,S
+359,0,3,"Brown, Mrs. Emma",female,33.0,4,1,L279369,3.95,,S
+360,1,3,"Allen, Master David",male,24.0,0,0,S159259,14.71,,S
+361,1,3,"Miller, Dr. John",male,,0,0,602545,4.0,,S
+362,0,1,"Harris, Mr. Henry",male,18.0,0,0,862589,72.87,,S
+363,0,1,"Martin, Rev. Samuel",male,27.0,0,1,/636433,78.4,E122,S
+364,0,1,"Garcia, Dr. David",male,33.0,1,1,QUI 288753,108.62,,S
+365,1,3,"Taylor, Ms. Emma",female,17.0,0,0,FET 785792,6.87,,S
+366,0,2,"Lee, Mrs. Sarah",female,24.0,0,0,380343,13.15,,S
+367,1,3,"Garcia, Mrs. Catherine",female,28.0,0,0,FO476864,10.49,,S
+368,0,3,"Young, Rev. William",male,15.0,0,0,ZQV85077,15.03,,S
+369,1,2,"Jones, Mrs. Florence",female,34.0,2,2,QWE844140,42.87,,S
+370,1,3,"White, Dr. Michael",male,0.0,3,0,/979653,2.46,,S
+371,0,3,"Taylor, Dr. David",male,14.0,1,0,Q488054,11.58,,S
+372,0,2,"Williams, Mr. Samuel",male,6.0,1,0,919143,9.13,,S
+373,1,2,"Lewis, Mrs. Anna",female,46.0,1,0,GPF 153540,30.19,,Q
+374,0,2,"Harris, Mr. William",male,20.0,0,1,347972,10.61,A24,S
+375,1,1,"Clark, Ms. Alice",female,45.0,1,0,326075,53.01,,C
+376,1,1,"Lewis, Rev. George",male,,0,1,GRY 5442,56.43,E83,S
+377,1,3,"Thompson, Ms. Lucy",female,22.0,1,0,702529,9.62,,S
+378,0,2,"Thompson, Mr. James",male,24.0,3,0,NEI 972981,23.23,,S
+379,1,2,"Martinez, Mr. Patrick",male,46.0,0,0,W 551902,24.84,,Q
+380,1,3,"Harris, Mrs. Sarah",female,18.0,1,0,R441902,9.97,,S
+381,1,3,"Anderson, Mr. Michael",male,47.0,2,0, 875066,3.35,,S
+382,0,3,"Anderson, Rev. Edward",male,37.0,0,0,53145,13.64,,S
+383,0,3,"Hall, Master Robert",male,,0,0,R 309579,9.74,,S
+384,0,3,"Walker, Rev. Charles",male,22.0,2,0,542504,15.81,,S
+385,1,2,"Martinez, Rev. James",male,,3,0, 323453,12.92,,S
+386,0,3,"Davis, Mr. Thomas",male,5.0,0,0,OI431957,1.99,,S
+387,1,3,"Smith, Rev. David",male,,0,1,/200416,9.83,,S
+388,0,3,"Taylor, Mrs. Agnes",female,37.0,1,2,KJ534615,16.48,,S
+389,0,1,"Robinson, Mr. Samuel",male,,0,0,NM 936688,86.44,A77,S
+390,0,3,"Smith, Master Edward",male,,0,1,H 507362,9.0,,S
+391,1,3,"Hall, Dr. Thomas",male,13.0,0,0,M340232,5.65,,S
+392,0,1,"Lewis, Mr. Joseph",male,48.0,0,5,JN196292,150.31,,S
+393,0,3,"Lee, Master James",male,20.0,0,0,Z714998,4.85,,S
+394,0,3,"Rodriguez, Miss Emma",female,34.0,0,0,YQC250128,6.37,,S
+395,0,1,"Lewis, Mrs. Catherine",female,,0,0,KE979344,102.8,D9,S
+396,0,3,"Jones, Master Joseph",male,20.0,1,1,EGE401242,0.72,,Q
+397,1,3,"Wright, Mr. Samuel",male,,0,0,CI/419865,16.37,,S
+398,0,2,"Garcia, Rev. Joseph",male,,0,0,K504764,26.24,,S
+399,0,3,"Johnson, Rev. David",male,26.0,0,0,WIU751358,14.5,,S
+400,0,2,"Jones, Master William",male,22.0,0,0,UY856692,25.58,,S
+401,1,2,"Robinson, Miss Mary",female,3.0,0,1,I738089,18.39,,S
+402,0,3,"Smith, Dr. Henry",male,9.0,0,0,EAF413908,4.68,,Q
+403,0,3,"Wilson, Master James",male,11.0,0,0,EIF 848171,9.3,,S
+404,1,1,"White, Dr. Joseph",male,29.0,0,0,DTS111524,40.99,,S
+405,0,3,"Lee, Mr. Michael",male,41.0,0,0,VM607908,12.43,,S
+406,0,3,"Davis, Dr. Samuel",male,25.0,0,0,UU303150,14.03,,S
+407,0,2,"Brown, Mr. Michael",male,,2,1,SPL 520525,34.77,B28,C
+408,0,3,"Jones, Ms. Catherine",female,29.0,1,4,737146,11.86,,Q
+409,1,1,"Martinez, Dr. Henry",male,,0,0,YWL/574228,116.98,E57,C
+410,0,3,"Garcia, Dr. William",male,,0,0,RA16158,8.51,,S
+411,0,3,"Jones, Mr. James",male,1.0,0,0,Q569872,7.61,,C
+412,1,3,"Williams, Mrs. Alice",female,34.0,0,0,HM 415881,12.37,,S
+413,1,1,"Martin, Master David",male,60.0,0,0,IB 193107,64.54,E38,S
+414,1,3,"Wright, Miss Helen",female,28.0,0,0,TJ 104363,11.35,,C
+415,1,1,"Young, Mrs. Lucy",female,37.0,0,0,472717,37.55,,S
+416,0,2,"Lewis, Rev. George",male,31.0,0,0,Y590130,11.18,,S
+417,0,1,"Allen, Miss Ellen",female,55.0,1,0,R 558288,105.42,,S
+418,0,3,"Miller, Mr. David",male,28.0,1,1,LF68759,14.43,,S
+419,1,1,"Smith, Miss Dorothy",female,48.0,1,0,X346392,40.57,F74,S
+420,0,3,"White, Dr. Edward",male,34.0,0,0,59506,13.35,,S
+421,0,3,"Garcia, Mrs. Margaret",female,38.0,0,2,/35944,7.34,,S
+422,1,1,"Jones, Rev. Robert",male,37.0,0,0,VG885331,80.66,,C
+423,1,1,"Clark, Master Robert",male,,1,0,Z 35909,136.68,C122,S
+424,0,1,"Allen, Dr. Henry",male,53.0,0,0, 463819,112.3,,S
+425,1,3,"Lee, Ms. Mary",female,28.0,0,0,146696,13.98,,S
+426,0,3,"Davis, Rev. Joseph",male,31.0,0,0,OGY70181,19.54,,S
+427,1,1,"Clark, Master Edward",male,49.0,2,0,FRI751725,51.84,B34,C
+428,1,3,"Clark, Miss Emma",female,29.0,0,0,536525,5.07,,S
+429,1,1,"Rodriguez, Mrs. Florence",female,34.0,0,0,R69606,51.12,,S
+430,0,3,"Lee, Master Edward",male,45.0,0,0,243157,8.73,,S
+431,0,3,"Williams, Master Samuel",male,35.0,0,0,E663518,0.0,,S
+432,1,3,"Young, Rev. Joseph",male,18.0,0,0,N 30558,8.96,,S
+433,1,3,"Taylor, Ms. Catherine",female,42.0,0,0,WT 820252,7.28,,S
+434,0,3,"Johnson, Mr. Thomas",male,4.0,0,1,F/96021,13.92,,S
+435,1,1,"King, Miss Sarah",female,59.0,1,0,ZCC139845,94.1,B26,S
+436,0,1,"Lee, Rev. Patrick",male,45.0,0,0,JL581182,55.97,E109,S
+437,0,1,"White, Master David",male,16.0,1,0,40067,103.6,,S
+438,0,3,"Robinson, Rev. Samuel",male,33.0,0,0,XZR314594,13.62,,S
+439,0,3,"Wright, Mr. George",male,21.0,1,2,SV 882859,6.16,,C
+440,0,3,"Martin, Mrs. Mary",female,18.0,0,0,PW/843980,7.53,,S
+441,0,3,"Garcia, Master Thomas",male,32.0,0,0,WZ343777,0.0,,S
+442,1,1,"Wilson, Rev. Robert",male,40.0,0,2,X561545,36.37,,C
+443,1,3,"Lee, Miss Dorothy",female,38.0,2,0,126658,6.29,,C
+444,1,1,"Miller, Miss Anna",female,,0,0,614632,82.97,A101,Q
+445,1,2,"Rodriguez, Miss Margaret",female,39.0,1,0,L817524,10.55,,S
+446,0,3,"Wilson, Master David",male,,1,0,SWL 633373,7.43,,S
+447,0,3,"Davis, Dr. Samuel",male,,0,0,H603266,3.87,,S
+448,1,3,"Clark, Miss Sarah",female,21.0,0,0, 270339,10.86,,S
+449,1,1,"Lee, Mr. Michael",male,37.0,0,0,M/881336,97.03,,S
+450,1,3,"Young, Master Henry",male,21.0,0,1,I16559,12.01,,C
+451,1,1,"Lee, Mrs. Emma",female,17.0,0,0,CK735486,80.49,,C
+452,1,3,"Garcia, Mr. Henry",male,5.0,0,0,PPI662675,2.29,,C
+453,0,3,"Garcia, Mr. Robert",male,,0,0,AHG654252,6.9,,C
+454,1,1,"Thompson, Ms. Dorothy",female,,0,0,AWF6492,63.71,F77,C
+455,1,1,"Moore, Master Charles",male,43.0,1,0,265981,63.87,E2,S
+456,0,1,"White, Master Joseph",male,13.0,0,1,ERN103929,83.0,,C
+457,0,3,"Garcia, Rev. Robert",male,42.0,1,0,216403,17.13,,C
+458,0,3,"Wilson, Mr. Henry",male,,0,0,YV293659,14.06,,S
+459,0,3,"Taylor, Mr. Charles",male,,0,0,A 542117,5.06,,S
+460,1,3,"Taylor, Mrs. Dorothy",female,,0,0,X 953099,13.39,,S
+461,0,3,"Walker, Miss Sarah",female,,0,0,NIE 635171,13.2,,S
+462,1,1,"Brown, Rev. Joseph",male,52.0,0,2,NR954493,47.76,,S
+463,0,3,"Williams, Rev. James",male,27.0,2,0, 473040,14.24,,S
+464,1,2,"Johnson, Mrs. Elizabeth",female,5.0,0,0,T/516020,18.4,,Q
+465,0,3,"Martinez, Master Samuel",male,52.0,0,4,E 442272,2.95,,S
+466,0,3,"Anderson, Dr. Michael",male,43.0,0,0,QHT501669,12.28,,S
+467,1,3,"Smith, Mr. Thomas",male,,0,2, 412083,11.08,,S
+468,1,3,"Davis, Mrs. Margaret",female,30.0,0,0,EM535828,8.86,,S
+469,0,1,"Wright, Mr. Charles",male,26.0,0,0,BT618107,78.5,,S
+470,1,3,"Wright, Mrs. Margaret",female,41.0,0,2,DFG244212,6.4,,S
+471,0,2,"Robinson, Dr. David",male,44.0,0,0,/847892,26.1,,S
+472,0,3,"Martinez, Mr. Henry",male,29.0,0,0,EOF 565849,9.78,,S
+473,1,1,"Clark, Dr. Edward",male,,5,0,161270,86.66,B18,C
+474,0,1,"Jones, Mr. John",male,39.0,0,0, 265985,94.29,B119,S
+475,0,2,"Brown, Dr. David",male,34.0,0,0,E 737892,8.45,,S
+476,0,2,"Moore, Dr. Charles",male,18.0,2,0,387473,11.06,,Q
+477,1,2,"Garcia, Dr. Samuel",male,,0,0,V800056,0.0,,S
+478,1,3,"Robinson, Master Samuel",male,34.0,0,0,IM105164,12.82,,S
+479,1,3,"Lewis, Dr. Michael",male,15.0,1,0,W44717,3.94,,Q
+480,0,2,"Garcia, Master Michael",male,,2,0,L237345,21.33,,S
+481,0,2,"Wright, Mrs. Dorothy",female,3.0,1,0,SMV 199582,23.71,,S
+482,0,1,"Martinez, Rev. Edward",male,31.0,0,0,WP141691,104.09,B75,C
+483,1,3,"Wilson, Ms. Dorothy",female,,3,0,KJA243075,3.98,,S
+484,1,2,"Brown, Miss Catherine",female,33.0,0,0,YU148438,19.35,,S
+485,0,1,"King, Dr. John",male,27.0,4,0,SG/313740,146.81,,S
+486,1,2,"Martinez, Miss Ellen",female,,1,0,N 902514,37.14,,S
+487,1,3,"King, Mrs. Helen",female,,2,0,RDF934297,14.94,,S
+488,0,1,"White, Rev. Patrick",male,22.0,0,0,HNQ512934,93.5,C31,S
+489,1,3,"Brown, Mr. Joseph",male,35.0,0,5,441921,4.97,,S
+490,1,3,"Lee, Mr. Robert",male,20.0,0,2, 970631,13.59,,S
+491,0,3,"Williams, Dr. Edward",male,17.0,0,0,398478,9.21,,C
+492,0,3,"White, Mr. Michael",male,36.0,0,3,JM97598,12.8,,S
+493,1,3,"Rodriguez, Ms. Lucy",female,,2,1,J324115,6.84,,S
+494,1,2,"Martinez, Miss Sarah",female,20.0,0,0,JGR79211,18.27,E106,C
+495,0,3,"Davis, Dr. William",male,,0,0,HNO475697,10.82,,C
+496,1,3,"Allen, Miss Sarah",female,,0,0,263149,11.23,,S
+497,0,2,"Garcia, Rev. George",male,22.0,0,0,D222647,24.94,,C
+498,1,3,"Harris, Ms. Elizabeth",female,41.0,0,0,VHD265121,7.1,,S
+499,1,2,"Brown, Mr. John",male,19.0,0,0,VD150518,6.57,,S
+500,1,3,"Miller, Miss Sarah",female,26.0,1,0,768241,18.12,,C
+501,1,3,"Wilson, Mrs. Anna",female,,1,3,PHF/698962,22.45,,S
+502,1,3,"Martin, Mr. David",male,25.0,0,0,S62877,12.24,,S
+503,0,3,"King, Dr. Henry",male,,0,0,VU/35039,3.38,,S
+504,0,3,"White, Miss Ellen",female,,0,0,RVM534043,6.13,,S
+505,0,3,"Moore, Dr. Thomas",male,39.0,1,0,/258834,12.55,,S
+506,0,3,"Hall, Dr. John",male,22.0,1,1,XP135538,16.71,,S
+507,0,2,"Robinson, Ms. Agnes",female,,0,0,UAE628051,7.87,,S
+508,0,3,"Walker, Rev. James",male,32.0,1,0,LL390589,9.38,,S
+509,0,3,"Brown, Dr. Michael",male,13.0,0,0,J412327,10.98,,Q
+510,1,1,"Brown, Rev. Edward",male,55.0,0,0,ROG386239,114.58,,S
+511,0,1,"Brown, Rev. James",male,,1,0,M499429,66.26,,C
+512,1,3,"Williams, Mrs. Agnes",female,19.0,0,1,FL822677,2.18,,S
+513,1,1,"Garcia, Mr. Charles",male,67.0,0,0,Y 605712,104.85,B122,S
+514,1,2,"Martin, Dr. Edward",male,3.0,0,0,GTE637626,31.25,,S
+515,0,2,"Martin, Mr. Thomas",male,,0,0,K204886,19.17,,Q
+516,0,1,"Hall, Miss Ellen",female,38.0,0,0,PPC 514728,96.21,B96,S
+517,0,2,"Allen, Master George",male,,0,0,D473413,15.26,E58,
+518,1,3,"Miller, Ms. Margaret",female,14.0,0,0,A 929944,5.77,,S
+519,1,1,"Brown, Mrs. Elizabeth",female,43.0,0,0,/819781,121.06,D106,S
+520,0,3,"Allen, Ms. Dorothy",female,17.0,1,0,VY 645566,11.94,,S
+521,1,3,"Harris, Miss Margaret",female,8.0,0,2,JZN468765,12.45,,S
+522,1,2,"Smith, Miss Emma",female,32.0,2,0,Y38203,35.02,,S
+523,1,1,"Wilson, Mrs. Mary",female,35.0,0,0,RZ/62612,37.81,,S
+524,1,3,"Young, Rev. Joseph",male,17.0,0,0, 32842,7.24,,S
+525,1,1,"Thompson, Miss Lucy",female,55.0,0,0,P 282217,86.32,,S
+526,0,2,"King, Dr. Robert",male,37.0,1,0,566684,14.36,,S
+527,0,3,"Williams, Mr. William",male,29.0,0,0,H541295,13.92,,C
+528,0,3,"Smith, Mrs. Sarah",female,31.0,1,0,YJA3287,9.06,A47,C
+529,0,3,"Jones, Mrs. Catherine",female,30.0,0,0,59644,5.04,,S
+530,1,2,"Rodriguez, Miss Mary",female,27.0,0,0,DTO 705420,20.66,,C
+531,1,3,"Robinson, Mr. William",male,17.0,0,0,AMS781916,10.85,,
+532,0,3,"Martin, Rev. Henry",male,27.0,0,0,LKL62666,14.67,,C
+533,0,2,"Clark, Mr. Edward",male,27.0,0,0,F 729031,23.93,,C
+534,0,3,"Thompson, Mr. John",male,2.0,0,0,WHV909196,12.31,,S
+535,0,1,"Robinson, Dr. George",male,,0,0,J761210,92.81,E94,S
+536,1,1,"Wright, Rev. Joseph",male,37.0,0,1,58758,72.47,,S
+537,0,3,"Miller, Rev. George",male,42.0,0,2,/382183,6.42,F77,Q
+538,0,1,"Moore, Mrs. Agnes",female,44.0,0,0,EXK502828,91.55,,S
+539,0,1,"Robinson, Rev. James",male,43.0,0,0,KW665200,66.68,E17,S
+540,0,3,"Smith, Miss Anna",female,,0,0, 998217,18.45,,S
+541,0,3,"White, Master Charles",male,12.0,0,0,/505829,16.71,,C
+542,0,3,"Lewis, Mr. Samuel",male,39.0,0,0,119848,13.16,,S
+543,0,3,"Garcia, Rev. John",male,23.0,0,1,JNX629081,11.89,,S
+544,1,3,"Jones, Rev. Robert",male,,1,0,385916,9.56,,Q
+545,1,1,"Williams, Miss Lucy",female,,0,0,FWQ760635,29.56,,S
+546,0,2,"Miller, Rev. John",male,28.0,0,0,127855,17.84,,S
+547,0,2,"Johnson, Dr. William",male,,1,0,Y515036,21.01,,S
+548,1,1,"Thompson, Ms. Margaret",female,37.0,0,1, 110428,89.18,C83,S
+549,1,3,"Walker, Miss Dorothy",female,23.0,0,0,VH/700954,12.35,,S
+550,1,2,"Smith, Master David",male,32.0,2,0,ERT 447470,29.21,,S
+551,0,3,"Thompson, Dr. Robert",male,37.0,2,0,EDS510955,6.54,,S
+552,0,1,"Wright, Mr. Samuel",male,40.0,1,0,U285361,52.68,F145,C
+553,0,1,"Lewis, Master Samuel",male,17.0,0,0,KVM415482,138.03,E137,S
+554,0,3,"Brown, Dr. John",male,18.0,0,0,AB23788,13.85,,S
+555,0,1,"Robinson, Dr. Thomas",male,27.0,4,0,154059,64.37,E85,S
+556,1,1,"Davis, Miss Lucy",female,60.0,2,0,EN 303812,75.71,B87,S
+557,1,2,"Davis, Dr. William",male,14.0,0,1,ZBE537850,18.97,,S
+558,0,3,"Rodriguez, Rev. Thomas",male,,0,0,936632,10.16,E67,S
+559,0,3,"Garcia, Mr. Henry",male,,0,0,G235367,12.36,,S
+560,1,3,"Lee, Mrs. Emma",female,25.0,0,1, 928881,22.67,,S
+561,1,1,"Rodriguez, Dr. William",male,27.0,1,0, 596431,87.59,B12,S
+562,0,2,"Hall, Mrs. Helen",female,64.0,0,0,CPB 237065,26.63,,C
+563,1,3,"King, Miss Emma",female,15.0,0,2,SEA355091,1.57,,S
+564,0,3,"Jones, Rev. Henry",male,15.0,0,0,WMV/308720,7.58,,S
+565,0,3,"Wright, Mr. Edward",male,37.0,0,0,Z/828107,16.14,,S
+566,0,3,"Clark, Dr. Charles",male,38.0,0,0,NT260215,12.01,,S
+567,0,3,"Rodriguez, Dr. William",male,23.0,0,0,KOX62452,0.0,,S
+568,0,1,"White, Mrs. Sarah",female,,0,0,UJ178009,106.96,C148,S
+569,1,2,"Johnson, Mr. Thomas",male,35.0,2,1,FEX936474,39.18,,S
+570,0,3,"Williams, Mrs. Lucy",female,6.0,0,0,NR554941,0.02,,S
+571,1,2,"Johnson, Mr. Joseph",male,45.0,0,1,214932,35.19,,S
+572,0,3,"Young, Rev. Edward",male,33.0,0,0,QWO756867,0.0,,S
+573,0,3,"Jones, Rev. James",male,34.0,0,0,S551889,14.69,B125,S
+574,0,3,"Anderson, Ms. Florence",female,17.0,0,0,T 378121,9.96,,S
+575,1,3,"Lewis, Ms. Ellen",female,,0,0,HG 333827,0.0,,S
+576,0,3,"Jones, Rev. Samuel",male,36.0,0,0,Z 991794,12.23,,S
+577,0,3,"Miller, Mr. Michael",male,17.0,0,0,XE963343,15.75,,S
+578,1,3,"Wilson, Ms. Helen",female,46.0,0,0,DG/761774,11.82,,C
+579,0,3,"Clark, Dr. George",male,34.0,0,0,KA 248087,12.92,,C
+580,0,2,"Lewis, Ms. Agnes",female,,0,0,M 673001,15.88,,S
+581,1,3,"Miller, Rev. Joseph",male,22.0,0,0,EJQ166100,0.69,,C
+582,1,3,"Taylor, Rev. Thomas",male,20.0,0,0,FC511067,13.46,,S
+583,0,1,"Smith, Dr. Thomas",male,45.0,0,0,427604,149.99,,S
+584,1,2,"Clark, Dr. Henry",male,37.0,0,0,QR893027,31.3,B120,S
+585,1,3,"Robinson, Dr. Edward",male,43.0,0,0,YPN334521,0.06,,C
+586,0,3,"Hall, Rev. Thomas",male,31.0,0,0,HI/450535,2.43,,S
+587,0,1,"Jones, Ms. Elizabeth",female,43.0,4,0,HGG973127,46.16,B79,S
+588,0,2,"Wright, Mr. Patrick",male,30.0,5,0,967234,4.07,,S
+589,0,1,"Allen, Dr. Patrick",male,31.0,3,0,TP 524290,81.77,D84,Q
+590,0,1,"Thompson, Master George",male,,0,0,A340093,95.74,,C
+591,0,3,"Thompson, Mr. James",male,24.0,0,0,802817,2.85,,S
+592,0,2,"Johnson, Master Robert",male,,0,1,MX193984,27.77,,S
+593,0,2,"Hall, Dr. James",male,45.0,0,1,RF 601728,26.01,,S
+594,0,3,"Moore, Mr. David",male,18.0,0,0,498574,7.26,,S
+595,1,1,"Clark, Mr. Henry",male,35.0,0,0,MA 8834,73.1,B94,S
+596,1,2,"Harris, Ms. Agnes",female,21.0,0,0,T322764,0.5,,S
+597,0,3,"White, Master John",male,37.0,0,5,BB/197321,8.34,,Q
+598,1,3,"Rodriguez, Ms. Mary",female,13.0,0,0,778520,10.04,,C
+599,0,3,"White, Rev. Henry",male,,1,0, 590548,10.84,,S
+600,0,3,"Anderson, Dr. Charles",male,46.0,0,0,BUN419138,11.89,,S
+601,0,3,"Wilson, Miss Sarah",female,28.0,1,0,H319512,11.22,,C
+602,0,3,"Thompson, Mr. David",male,18.0,0,0,CXW 861146,8.68,,S
+603,1,3,"Lewis, Mrs. Agnes",female,21.0,0,0,/142811,11.43,,S
+604,0,3,"King, Dr. Michael",male,19.0,0,0,/759484,15.01,,C
+605,1,3,"Young, Dr. Charles",male,19.0,0,0,299038,9.52,,S
+606,0,3,"Garcia, Mrs. Ellen",female,34.0,0,1,FPX723769,11.59,,C
+607,0,3,"Wright, Rev. William",male,35.0,0,1,TU736722,9.07,,S
+608,1,1,"Garcia, Rev. Patrick",male,42.0,0,0,F/440216,54.13,,S
+609,0,3,"White, Miss Anna",female,,0,0,K 92593,12.61,,S
+610,1,2,"Jones, Miss Anna",female,30.0,0,0,300905,14.45,,S
+611,1,3,"Rodriguez, Miss Margaret",female,47.0,2,1,GXK577716,11.93,A21,S
+612,0,3,"Williams, Master Charles",male,5.0,0,0,QA 761284,10.14,,S
+613,0,3,"Martinez, Master Henry",male,,0,0,JY 996475,8.48,,C
+614,0,3,"King, Ms. Mary",female,37.0,0,1,EU 348277,8.36,,S
+615,0,2,"Moore, Rev. Patrick",male,16.0,0,0,Q/222282,14.92,,S
+616,0,3,"Young, Mrs. Anna",female,24.0,0,0,R 964375,1.77,,S
+617,1,3,"Hall, Rev. George",male,,0,0,ZMI994662,11.91,,C
+618,0,2,"Martin, Mr. Patrick",male,47.0,1,0,UV/106818,22.32,,Q
+619,1,1,"Jones, Mrs. Mary",female,36.0,0,0,XA139058,113.99,,S
+620,1,1,"Johnson, Mr. George",male,,0,0,FAF120325,58.74,,S
+621,0,3,"Lewis, Rev. Charles",male,34.0,0,2,MB 324195,19.48,,S
+622,1,3,"Young, Rev. James",male,12.0,1,0,MD312714,8.1,,S
+623,0,3,"Anderson, Ms. Alice",female,18.0,1,1, 640133,5.62,,S
+624,1,3,"Miller, Miss Lucy",female,37.0,2,0,945577,5.03,,S
+625,0,3,"Jones, Master James",male,42.0,0,0,X244516,1.33,,S
+626,1,2,"Taylor, Mr. William",male,,0,2,UDZ129344,35.33,B115,C
+627,0,3,"Williams, Mrs. Sarah",female,15.0,0,0,A 973364,16.86,,S
+628,0,1,"Smith, Master Michael",male,,1,0,Z901279,104.03,E37,S
+629,1,3,"Moore, Master Henry",male,27.0,0,0,N680756,5.52,,S
+630,1,3,"White, Dr. John",male,14.0,0,0,IW 302092,19.06,,S
+631,0,3,"Young, Rev. Edward",male,33.0,0,1,778841,8.24,,Q
+632,1,3,"Harris, Miss Agnes",female,62.0,0,0, 835107,8.65,,S
+633,1,1,"Walker, Miss Sarah",female,23.0,0,0,948304,137.49,,S
+634,1,2,"Johnson, Ms. Helen",female,51.0,0,0,B154051,26.59,,S
+635,1,1,"Walker, Rev. George",male,,0,0,G535071,168.04,,S
+636,0,1,"Clark, Master James",male,16.0,1,0,D40049,89.95,C80,C
+637,1,3,"Wilson, Rev. William",male,12.0,0,0,H55612,8.01,,S
+638,0,3,"Martinez, Dr. John",male,26.0,1,0,GH/677912,6.94,,S
+639,0,3,"Smith, Mr. John",male,,0,0,FDT 676356,0.77,,Q
+640,0,3,"Hall, Dr. Samuel",male,19.0,1,1,VS/938153,8.61,,S
+641,0,3,"Martin, Mr. James",male,30.0,0,0,53857,15.72,,S
+642,0,3,"Moore, Rev. Charles",male,36.0,2,0,J647422,12.99,C14,S
+643,0,1,"Walker, Mrs. Ellen",female,52.0,0,0,J 927503,80.81,,S
+644,1,1,"Wilson, Master William",male,,0,0,130012,40.2,,S
+645,0,3,"Robinson, Rev. Thomas",male,31.0,0,0,Y149673,11.13,,S
+646,0,3,"Rodriguez, Mrs. Dorothy",female,20.0,0,0,EEU254630,15.06,,Q
+647,1,1,"Anderson, Ms. Elizabeth",female,28.0,0,0,QL458071,97.23,,S
+648,1,3,"Anderson, Mrs. Dorothy",female,24.0,1,1,619183,10.83,,S
+649,1,3,"Brown, Rev. James",male,17.0,2,0,R 566909,6.02,,S
+650,1,1,"Clark, Mrs. Sarah",female,30.0,0,0,663954,114.69,A8,S
+651,1,2,"Davis, Master George",male,44.0,0,4,H773695,0.0,,S
+652,0,3,"Wilson, Rev. Edward",male,15.0,0,0,J 750821,11.91,,C
+653,0,3,"Thompson, Master Thomas",male,18.0,1,1, 850557,22.85,,S
+654,1,1,"Williams, Rev. Charles",male,50.0,1,0,416584,19.67,B36,Q
+655,0,3,"Clark, Rev. Michael",male,20.0,0,1,VAO 834025,8.79,,S
+656,0,2,"Johnson, Dr. David",male,46.0,2,0, 124797,19.92,,S
+657,1,3,"Clark, Ms. Margaret",female,11.0,0,0,WP 368534,7.69,,S
+658,0,2,"White, Dr. Patrick",male,23.0,1,0,8050,30.36,,Q
+659,0,3,"Williams, Mr. Edward",male,25.0,3,0,E 747927,12.36,,S
+660,0,2,"Young, Dr. Michael",male,35.0,1,0,XCC 153501,21.52,,C
+661,1,2,"Moore, Dr. Charles",male,52.0,0,4,R97497,27.97,,S
+662,1,3,"Young, Rev. James",male,13.0,0,0,HCI 317703,10.08,,S
+663,0,1,"Harris, Dr. Edward",male,29.0,0,0,BBH 967805,207.19,F4,S
+664,0,1,"Johnson, Rev. Samuel",male,23.0,1,1,N259380,86.05,,S
+665,1,2,"Brown, Ms. Ellen",female,21.0,0,0,CA/276900,21.95,,S
+666,1,3,"Thompson, Ms. Margaret",female,35.0,1,0,MJH668762,1.45,,S
+667,0,3,"Johnson, Mr. George",male,9.0,2,0,144238,7.28,,C
+668,1,3,"King, Master Samuel",male,16.0,0,0,/331754,15.74,,Q
+669,1,2,"Harris, Mrs. Dorothy",female,,0,0,Y869381,6.65,,S
+670,1,2,"Wright, Mrs. Emma",female,45.0,0,0,VKB 985129,0.0,B142,C
+671,1,1,"Clark, Master Michael",male,5.0,0,0,371676,81.29,A81,S
+672,1,3,"White, Mrs. Catherine",female,42.0,0,0,639691,16.85,,S
+673,0,3,"Anderson, Miss Ellen",female,16.0,0,0,M201866,10.21,,S
+674,1,3,"Brown, Ms. Florence",female,40.0,0,0,UB895978,8.32,,S
+675,0,3,"Garcia, Master Charles",male,21.0,0,0,997400,0.71,,C
+676,0,2,"Davis, Mr. Samuel",male,,0,0,L824134,24.52,,S
+677,0,3,"Williams, Mr. Charles",male,44.0,0,0,QEB 107002,13.31,B118,S
+678,0,3,"Walker, Rev. Joseph",male,34.0,0,0, 672685,1.09,,S
+679,0,1,"Walker, Master Thomas",male,,0,0,YKP299504,125.38,,S
+680,0,2,"Lee, Rev. Robert",male,41.0,0,0,614710,27.66,,S
+681,0,1,"Clark, Rev. Charles",male,34.0,1,1,/130612,125.29,,S
+682,0,1,"Williams, Rev. William",male,12.0,0,0,Z/975337,103.34,,Q
+683,1,1,"Robinson, Miss Mary",female,44.0,0,0,IP259756,106.15,,C
+684,0,3,"Martinez, Master William",male,27.0,2,0,ZBH614915,12.6,,S
+685,1,3,"Miller, Rev. Charles",male,,0,0, 892967,14.34,,S
+686,1,2,"Robinson, Mrs. Ellen",female,30.0,0,1,W 458268,1.81,,S
+687,0,2,"Williams, Mrs. Agnes",female,20.0,0,2,MFB7715,4.99,,Q
+688,1,3,"Hall, Mrs. Mary",female,6.0,0,2,DC131538,6.32,E37,S
+689,0,3,"Davis, Mrs. Emma",female,,0,0,D916766,9.35,,C
+690,1,3,"Walker, Mrs. Sarah",female,49.0,1,0,TT/997051,11.94,,S
+691,1,2,"Moore, Dr. Robert",male,44.0,1,0,O 797308,23.25,,S
+692,0,3,"Jones, Master James",male,25.0,0,0, 382401,15.59,,S
+693,1,1,"Johnson, Rev. Thomas",male,,0,0,YI 483614,125.94,D57,S
+694,0,2,"Jones, Rev. Edward",male,34.0,0,0,PBO986431,11.28,,S
+695,1,3,"Lewis, Mrs. Mary",female,9.0,0,0,OHT579360,11.19,,S
+696,0,3,"Davis, Dr. William",male,23.0,0,2,711446,5.76,,S
+697,0,3,"Rodriguez, Mr. Henry",male,,1,0,FE196641,9.06,,S
+698,0,3,"Johnson, Master James",male,24.0,1,0,MP 331573,11.61,,S
+699,0,3,"Lee, Dr. Thomas",male,23.0,0,1, 178029,0.0,,S
+700,0,2,"Harris, Master Thomas",male,12.0,0,0,S 987293,44.11,,Q
+701,0,2,"Robinson, Rev. Joseph",male,50.0,0,0,SI894435,25.66,,
+702,0,2,"Taylor, Ms. Mary",female,52.0,0,0, 552947,14.04,D146,S
+703,1,1,"Jones, Mr. Thomas",male,55.0,1,0,332606,157.09,,C
+704,0,3,"Lee, Mrs. Mary",female,45.0,0,0, 97347,8.26,,S
+705,1,2,"White, Mrs. Sarah",female,,1,0,579659,21.33,,S
+706,1,3,"Lewis, Dr. Patrick",male,19.0,1,0, 18079,7.56,,C
+707,1,3,"Young, Rev. Michael",male,10.0,2,0,JBO 465170,18.26,,S
+708,0,3,"Rodriguez, Miss Emma",female,35.0,0,0,FV600863,9.48,,C
+709,1,2,"Anderson, Master Robert",male,47.0,0,0,648995,21.49,,C
+710,1,3,"Hall, Ms. Mary",female,,1,1,GFP/637864,16.02,,S
+711,1,3,"Martin, Dr. Charles",male,6.0,1,0,AG100192,12.93,,S
+712,1,3,"Rodriguez, Miss Lucy",female,,0,0,FZW 459894,9.73,,S
+713,1,3,"Walker, Mrs. Margaret",female,1.0,1,0,905181,15.55,,S
+714,0,3,"Rodriguez, Rev. William",male,22.0,0,1,L91368,22.69,,S
+715,0,3,"Rodriguez, Mr. Michael",male,53.0,0,0,RNJ371775,11.59,,S
+716,1,1,"White, Mrs. Agnes",female,33.0,1,0,OQP849690,84.67,E148,S
+717,0,3,"Jones, Master Edward",male,37.0,0,0,UW774393,10.85,,S
+718,1,1,"Brown, Dr. George",male,30.0,0,0,526180,132.42,,S
+719,0,3,"Wright, Master Henry",male,30.0,2,0,OX/532871,7.0,,C
+720,0,3,"Walker, Mr. Edward",male,,1,0,E865923,8.61,,S
+721,1,3,"Davis, Ms. Ellen",female,,1,0,FBK942697,2.31,,S
+722,0,2,"Thompson, Mrs. Sarah",female,,0,0,K313314,8.16,,S
+723,1,1,"Garcia, Dr. Henry",male,,5,0,662439,59.29,F55,Q
+724,1,3,"Martin, Miss Agnes",female,30.0,0,0,JX951224,9.72,,C
+725,0,1,"Anderson, Mr. Charles",male,36.0,0,0,NTW575598,150.76,F135,S
+726,0,1,"Lee, Master James",male,31.0,0,0,HEI594699,101.44,,S
+727,0,2,"Rodriguez, Rev. Charles",male,,1,0,SN11545,10.88,,Q
+728,1,1,"Lee, Mrs. Helen",female,28.0,1,2,OPG928504,50.88,F77,S
+729,0,3,"Brown, Rev. George",male,24.0,1,1,P861757,16.87,,S
+730,0,3,"King, Rev. John",male,10.0,0,1,G 768326,15.63,,S
+731,1,2,"Robinson, Master William",male,45.0,0,0,Q173512,20.28,,S
+732,1,1,"Jones, Miss Emma",female,,0,0,UJ115479,62.3,D38,S
+733,0,1,"Jones, Rev. John",male,37.0,0,0,A/462780,125.0,,Q
+734,0,2,"Moore, Mr. Henry",male,29.0,0,0,B 609465,10.07,,S
+735,1,1,"Young, Ms. Helen",female,37.0,0,0,SY693022,95.68,,C
+736,1,3,"King, Master James",male,19.0,1,0,ZTN 10771,21.36,,S
+737,0,1,"Smith, Master Edward",male,34.0,1,0,GZA910174,88.21,F141,S
+738,1,2,"Taylor, Mr. David",male,37.0,1,0,96161,12.24,,C
+739,1,2,"Young, Dr. John",male,50.0,0,1,RJ/412836,24.1,,S
+740,1,2,"Young, Dr. James",male,17.0,0,0,GYB352603,15.3,,Q
+741,1,1,"Clark, Mrs. Helen",female,37.0,0,0,IU109580,24.24,B51,Q
+742,0,1,"Lewis, Mr. William",male,24.0,0,0,DN47901,108.04,A55,S
+743,1,3,"Anderson, Mrs. Alice",female,19.0,0,0,AP 387722,15.59,,Q
+744,1,1,"Clark, Ms. Agnes",female,34.0,0,2,YFJ876949,67.56,E66,S
+745,0,3,"Jones, Master Henry",male,27.0,0,0,MP 269581,8.11,,S
+746,0,3,"King, Mr. Thomas",male,,1,1,570530,5.19,,C
+747,1,2,"Williams, Ms. Catherine",female,26.0,0,1,N189793,18.5,,C
+748,1,2,"Harris, Master Joseph",male,34.0,0,0,DLV 440801,14.38,,S
+749,0,3,"Miller, Miss Alice",female,50.0,0,0,P 817280,4.94,,Q
+750,0,3,"Miller, Ms. Ellen",female,35.0,0,0,FJK425831,19.46,,S
+751,0,2,"Lee, Dr. Henry",male,8.0,0,0,N 960365,24.66,,C
+752,1,2,"Smith, Dr. James",male,48.0,0,0,E780845,25.72,,C
+753,0,2,"Martinez, Dr. Robert",male,30.0,0,5,FKM12352,28.83,,C
+754,1,3,"Smith, Mr. Henry",male,10.0,0,0,OZ901785,13.86,,S
+755,1,3,"Young, Master Joseph",male,19.0,1,1,420458,7.93,,S
+756,1,1,"King, Dr. Henry",male,41.0,0,0,QMF171535,90.9,,
+757,0,2,"Clark, Ms. Emma",female,23.0,0,4,I646675,17.31,,S
+758,1,3,"White, Ms. Agnes",female,11.0,0,0,B690230,12.19,F108,C
+759,1,1,"Young, Mrs. Alice",female,,0,0,BCY997117,93.67,,C
+760,0,3,"Taylor, Mr. William",male,37.0,0,0,T 365662,8.09,,S
+761,0,3,"Rodriguez, Dr. Edward",male,17.0,1,0,873633,3.35,,C
+762,1,1,"Robinson, Rev. Henry",male,29.0,0,1,Q/297393,85.85,,S
+763,0,1,"Rodriguez, Mr. James",male,24.0,0,0,OI437872,71.83,,S
+764,1,1,"Wright, Ms. Emma",female,,0,0,LL13072,4.39,F6,S
+765,0,3,"Moore, Dr. Henry",male,49.0,0,0,YK314193,12.54,,C
+766,1,1,"Anderson, Mr. Patrick",male,,0,0,PW884767,118.61,,S
+767,1,1,"Robinson, Ms. Sarah",female,32.0,0,0,O762857,181.13,,S
+768,0,1,"Miller, Master Patrick",male,,0,0,I783417,64.35,F107,S
+769,1,1,"Taylor, Master Michael",male,37.0,3,0,LIO 706631,58.45,F102,Q
+770,0,3,"White, Rev. Thomas",male,34.0,1,0,U 883519,4.45,,S
+771,0,2,"White, Master Thomas",male,12.0,5,0,WLF905365,22.09,D127,S
+772,1,3,"Walker, Ms. Anna",female,28.0,0,2,VV 974020,11.01,,C
+773,0,3,"Davis, Rev. George",male,44.0,1,0, 390173,5.94,,S
+774,1,3,"Garcia, Miss Emma",female,,0,0,Y374468,9.13,,S
+775,1,1,"Johnson, Mrs. Florence",female,47.0,0,0,P840778,0.85,,S
+776,0,3,"Jones, Ms. Anna",female,23.0,4,0,S822689,14.63,,S
+777,1,3,"Clark, Rev. Samuel",male,10.0,0,0,CHI 25116,6.15,,S
+778,1,1,"Davis, Dr. James",male,40.0,1,0,VEG313258,78.61,E144,S
+779,0,3,"Thompson, Ms. Lucy",female,32.0,1,0,YPE268160,2.87,,S
+780,0,3,"Walker, Rev. John",male,32.0,0,0,Z 137639,7.09,,S
+781,0,2,"Martin, Mr. Charles",male,36.0,1,0,VVQ 222267,17.2,,C
+782,0,3,"Miller, Ms. Elizabeth",female,,0,4,558250,9.94,,S
+783,1,3,"Moore, Mr. John",male,33.0,2,0,GP 275570,12.4,,S
+784,1,3,"Smith, Mrs. Margaret",female,26.0,1,0,M312031,17.2,,C
+785,1,3,"Lee, Miss Florence",female,19.0,0,0,ZG/842404,13.66,,S
+786,1,2,"Robinson, Ms. Catherine",female,48.0,0,0,KWQ978909,29.62,,S
+787,0,3,"Miller, Rev. David",male,31.0,0,0,894376,17.23,,S
+788,1,2,"Moore, Miss Agnes",female,27.0,0,0,YS796481,25.7,,S
+789,0,3,"Moore, Mr. Charles",male,15.0,0,0,HM367696,9.82,,C
+790,1,3,"Lewis, Ms. Mary",female,28.0,1,0,250629,15.05,,S
+791,1,1,"Miller, Mrs. Catherine",female,42.0,0,0,O915977,122.92,,Q
+792,0,2,"Davis, Miss Sarah",female,,1,2,NT350540,26.49,,Q
+793,0,2,"Smith, Rev. Michael",male,55.0,0,0,GG620276,5.45,,S
+794,1,1,"Taylor, Dr. Michael",male,41.0,0,1,RX373165,46.34,E136,S
+795,0,1,"Martin, Master David",male,43.0,0,0,C552356,69.01,,Q
+796,0,2,"Robinson, Master Joseph",male,21.0,1,2,WZ815065,27.8,,Q
+797,0,1,"Lewis, Mr. Robert",male,70.0,0,0,YU/430744,79.15,D20,S
+798,0,1,"Johnson, Master John",male,21.0,0,0,HJV126804,125.47,C100,S
+799,0,3,"Taylor, Mr. John",male,24.0,0,0,E57479,16.58,,S
+800,1,3,"Lee, Miss Lucy",female,,1,0, 123849,16.0,,S
+801,1,3,"Jones, Mrs. Emma",female,33.0,0,0,FKT290022,16.03,,S
+802,0,2,"Robinson, Mr. Michael",male,35.0,0,5,JY559921,9.63,,S
+803,1,3,"Smith, Mrs. Emma",female,18.0,1,0,MS35265,12.41,,S
+804,1,3,"Clark, Miss Helen",female,11.0,1,0,UL 529901,6.96,,S
+805,0,1,"Davis, Mr. David",male,46.0,0,0,S429100,14.04,A98,S
+806,0,1,"Allen, Rev. Henry",male,,0,1,C854113,68.5,F8,S
+807,0,3,"Brown, Ms. Catherine",female,,0,1,KI/58542,16.62,,S
+808,1,1,"Martinez, Miss Dorothy",female,17.0,0,0, 313652,98.43,C83,S
+809,0,3,"Robinson, Ms. Catherine",female,27.0,1,0,H574630,20.09,,S
+810,1,3,"Thompson, Ms. Anna",female,30.0,0,0,AQ 381349,10.89,,S
+811,1,1,"Hall, Mrs. Alice",female,,0,0,YNN/481476,177.91,,S
+812,0,1,"Walker, Mr. John",male,29.0,0,1,505527,87.1,B43,S
+813,0,3,"Wilson, Rev. Charles",male,33.0,0,0,EIH769049,10.11,,S
+814,1,3,"Taylor, Dr. James",male,13.0,0,0,697470,3.6,,S
+815,1,1,"Martinez, Ms. Helen",female,34.0,0,0,ML 220948,124.42,C19,C
+816,0,3,"Lee, Dr. Edward",male,8.0,0,0,WO 24311,7.49,,S
+817,1,3,"Hall, Rev. Edward",male,26.0,3,1,MDH323825,6.76,,S
+818,1,3,"Robinson, Miss Agnes",female,,1,0,MY338968,16.41,,C
+819,0,3,"Taylor, Master Henry",male,38.0,0,0,KHI865184,15.79,,S
+820,1,2,"Martin, Miss Alice",female,27.0,0,0,OF722392,31.32,,S
+821,1,1,"Anderson, Master Edward",male,33.0,0,2,Z348602,65.51,F102,S
+822,1,3,"Anderson, Miss Anna",female,,0,0,AE404152,9.75,,S
+823,1,2,"Harris, Mrs. Dorothy",female,26.0,0,2,WV780944,19.4,,C
+824,0,3,"Lewis, Mr. Thomas",male,30.0,1,0,BU296794,13.91,,C
+825,1,3,"Anderson, Miss Elizabeth",female,31.0,0,1,XBY404577,17.77,,S
+826,1,1,"Smith, Rev. George",male,50.0,0,0,WL739650,94.73,E132,S
+827,0,3,"Rodriguez, Rev. Robert",male,25.0,0,0,QQ 847857,19.87,,C
+828,1,1,"Martin, Mrs. Elizabeth",female,46.0,0,0,JX553037,115.89,F77,C
+829,1,3,"Moore, Miss Catherine",female,37.0,3,0,UFV542635,8.83,,S
+830,1,2,"Anderson, Master Robert",male,12.0,0,0,ZF726183,28.29,,S
+831,0,3,"Wright, Master William",male,52.0,1,0,XLL81834,18.53,,C
+832,1,3,"Garcia, Mrs. Elizabeth",female,42.0,1,0,O546505,19.99,,C
+833,1,2,"Lewis, Mr. George",male,7.0,0,0,812978,31.87,,S
+834,0,3,"Smith, Mr. Henry",male,28.0,0,0,XV/152514,10.13,F138,S
+835,0,3,"Jones, Master John",male,,0,0,ISL894756,8.92,,S
+836,1,3,"Young, Mr. Michael",male,24.0,1,2,EG314557,12.88,,S
+837,1,3,"Robinson, Miss Dorothy",female,,0,4,OQ915792,18.37,,S
+838,1,3,"Martin, Master David",male,32.0,0,0,882369,12.17,,S
+839,1,2,"Lewis, Rev. Henry",male,24.0,1,0,/965673,24.55,,C
+840,1,3,"King, Mrs. Elizabeth",female,12.0,1,0,FGU 925798,10.26,,Q
+841,1,1,"Moore, Mr. David",male,,0,0,Q324735,66.88,,S
+842,0,3,"Martinez, Mrs. Dorothy",female,,0,1, 662373,9.19,,S
+843,0,3,"Williams, Mr. James",male,38.0,1,0,L233368,10.68,,S
+844,1,2,"Jones, Mrs. Ellen",female,43.0,0,0,ALP/973086,37.18,,S
+845,1,1,"Allen, Mrs. Agnes",female,51.0,1,0,IW775155,70.41,,S
+846,1,3,"Thompson, Miss Catherine",female,28.0,0,0,FK 795870,10.26,,C
+847,1,2,"Lee, Dr. Thomas",male,37.0,0,1,L366866,11.35,,S
+848,0,3,"Young, Mr. Samuel",male,15.0,1,0,YA/204516,13.58,,S
+849,1,1,"Wright, Miss Catherine",female,48.0,0,0, 699707,134.67,E110,S
+850,0,3,"Taylor, Dr. Michael",male,39.0,0,0,I610342,18.12,,S
+851,1,1,"Robinson, Rev. Michael",male,21.0,0,2,A57206,88.13,D43,S
+852,0,1,"Moore, Rev. Henry",male,,0,0, 44637,102.97,D63,S
+853,0,3,"Smith, Mrs. Dorothy",female,29.0,1,1,UYV3459,9.23,,S
+854,1,3,"Taylor, Miss Lucy",female,45.0,0,2,VZ 541180,12.64,,S
+855,0,1,"Clark, Mr. Charles",male,34.0,0,0,CK692638,92.56,,S
+856,0,3,"Rodriguez, Miss Alice",female,,0,2,844837,10.29,,S
+857,0,3,"Robinson, Master Joseph",male,29.0,2,0,XY801462,10.69,,S
+858,1,3,"Wright, Dr. Charles",male,19.0,0,0,404101,12.26,,S
+859,1,2,"Rodriguez, Master James",male,0.0,2,0,EZ636911,17.06,A24,C
+860,1,3,"Robinson, Mr. James",male,21.0,1,0,180957,8.79,,Q
+861,0,3,"Rodriguez, Dr. Thomas",male,38.0,0,0,NZE 458790,18.54,,S
+862,1,3,"Walker, Ms. Helen",female,23.0,1,0,F372985,23.55,,S
+863,1,3,"Jones, Miss Lucy",female,2.0,1,0,P64809,3.98,,S
+864,0,3,"Young, Master James",male,37.0,0,0,MDE/365477,3.7,,S
+865,1,1,"Lewis, Master Samuel",male,29.0,0,0,561368,41.71,F43,Q
+866,0,3,"Walker, Dr. Michael",male,46.0,1,0,Q538468,9.48,,S
+867,1,3,"Martin, Ms. Anna",female,18.0,1,0,U267734,14.48,,S
+868,0,3,"Harris, Mrs. Agnes",female,16.0,1,5,JRA206328,12.96,,Q
+869,1,1,"Martinez, Miss Margaret",female,22.0,5,2,X/954918,86.88,,C
+870,1,1,"Brown, Master Patrick",male,33.0,0,0,Q625198,101.16,,C
+871,0,3,"King, Mr. William",male,22.0,1,0,EP388091,6.54,,Q
+872,1,1,"Moore, Mr. William",male,32.0,1,0,Z460193,70.24,B10,S
+873,0,3,"Thompson, Rev. Joseph",male,,0,0,E 450065,9.9,,S
+874,0,2,"Harris, Master Patrick",male,39.0,0,0, 642199,4.16,,S
+875,0,3,"Walker, Rev. Charles",male,24.0,0,0,/436167,4.19,,C
+876,0,3,"Rodriguez, Ms. Elizabeth",female,27.0,1,0,996500,4.39,B108,C
+877,0,2,"Garcia, Rev. William",male,,0,0,Y428103,27.64,,S
+878,0,2,"Smith, Rev. Robert",male,43.0,1,0,LD386924,22.45,A108,S
+879,1,3,"Rodriguez, Miss Sarah",female,62.0,0,0,AI886373,13.06,,S
+880,0,3,"Wright, Mr. Henry",male,,0,1,A882115,0.8,,S
+881,1,2,"Williams, Mrs. Catherine",female,40.0,0,0,525285,5.16,A52,S
+882,0,3,"Williams, Rev. Michael",male,20.0,0,0, 347278,13.32,,S
+883,0,3,"Walker, Miss Emma",female,,1,0,Q159816,0.0,,S
+884,1,3,"Young, Dr. Joseph",male,23.0,0,0,O12423,16.12,,S
+885,1,1,"Jones, Mr. Samuel",male,51.0,1,0,EXZ933051,7.07,A126,C
+886,1,2,"Clark, Ms. Lucy",female,,0,0,IVY 533587,28.43,,S
+887,1,2,"Brown, Mr. David",male,21.0,4,0,V284380,11.11,,S
+888,1,1,"Garcia, Rev. Robert",male,,0,0,491539,121.96,F114,C
+889,1,1,"Allen, Master John",male,19.0,0,0,SNC/357609,208.33,,S
+890,0,3,"Lee, Mr. Joseph",male,27.0,0,0,TN854719,0.0,,S
+891,1,2,"Wright, Ms. Ellen",female,43.0,0,0,691097,26.95,,S

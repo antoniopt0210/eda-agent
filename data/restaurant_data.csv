@@ -1,0 +1,516 @@
+restaurant_name,cuisine_type,city,rating,number_of_reviews,price_range,avg_meal_cost,has_delivery,has_outdoor_seating,phone,date_opened
+Mama Rosa's Kitchen,Korean,New York,5.0,104,$$$$,49.47,True,False,(541) 397-6915,2014-03-03
+Café Mocha,Chinese,New York,3.7,105,$,12.83,No,False,(992) 290-2756,2020-01-02
+Seafood Shack,Chinese,Chicago,4.2,85,$,9.56,False,False,(830) 930-4527,2011-09-15
+Ramen Republic,Mediterranean,Seattle,4.8,159,$$$,76.7,Yes,True,(906) 528-3946,2009-02-02
+The Dumpling Den,thai food,New York,4.1,681,$,16.67,Yes,False,(839) 391-4095,2016-09-21
+Ramen Republic,Mexican,Houston,3.8,350,$$,19.64,Yes,N,(557) 326-4357,2010-02-06
+Kebab King,French,Los Angeles,3.4,128,$$,20.43,False,False,(501) 237-5709,09/17/2008
+BBQ Smoke House , American,San Francisco,3.9,4,$,10.04,yes,False,(972) 899-7998,2016-04-29
+The Grill House, American,Boston,3.6,86,$$,24.8,True,False,(304) 490-7335,2016-12-22
+The Pancake Spot,Indian,Houston,2.9,480,$$$,43.2,True,Y,N/A,2006-02-15
+Curry House,Korean,Chicago,3.3,138,$$,17.99,False,False,N/A,2019-11-22
+BBQ Smoke House,italian,Denver,4.0,450,$,14.81,yes,N,(643) 608-5526,2006-11-10
+Spice Route, American,Denver,3.9,315,$$,27.95,Yes,N,(306) 833-4693,2013-10-19
+BBQ Smoke House,italian,San Francisco,3.9,483,$$,18.92,True,N,(443) 500-5782,2020-04-18
+Ramen Republic,Italian,Miami,3.9,121,$$$$,111.42,False,False,N/A,2020-08-17
+Curry House,American,Chicago,4.1,264,$$$,45.76,No,True,(326) 635-5199,2021-06-05
+STEAKHOUSE 55,Korean,San Francisco,3.1,798,$,9.72,No,True,(447) 929-4949,11/14/2019
+Pasta La Vista,italian,Miami,3.7,22,$$,30.13,Yes,True,N/A,2016-05-23
+Café Mocha,Mexican,Phoenix,3.1,133,$$,27.1,,False,(220) 768-6819,2020-07-14
+Kebab King,thai food,Boston,3.1,140,$$,27.55,False,Y,(883) 992-6226,2016-02-13
+Taco Fiesta,chinese,Chicago,4.7,794,$,7.96,False,True,(585) 899-5345,2023-11-15
+Lobster Lounge,french ,San Francisco,2.7,-1,$$,27.84,False,False,(583) 860-3537,2012-11-03
+Seafood Shack,Korean,seattle,4.1,-1,$,13.73,True,False,(434) 299-4853,2014-09-27
+Ramen Republic,Korean,San Francisco,4.1,169,$$,29.14,Yes,,(549) 411-9673,10/06/2006
+Falafel Factory,Mexican,Phoenix,4.8,128,$$$,59.94,yes,N,(543) 546-6925,2007-02-11
+Burger Barn,Japaneese,Boston,4.1,108,$$$,35.57,True,N,N/A,2012-01-16
+Seafood Shack,Indian,New York,3.9,152,$$,29.28,False,N,,2009-05-11
+Pho Real,Japanese,Seattle,3.6,87,$$$$,100.33,No,N,(281) 398-2439,2014-07-24
+Café Mocha,Japanese,San Francisco,3.3,625,$$,25.72,False,True,(895) 503-2295,2005-09-08
+Lobster Lounge,french ,Los Angeles,4.5,11,$,9.97,True,True,(880) 441-3428,2005-06-15
+Wings & Things,Korean,Houston,2.5,624,$$$,37.55,No,False,(204) 831-6993,2023-11-04
+Seafood Shack,Italian,Phoenix,3.7,70,$$,,True,False,N/A,12/21/2021
+Ramen Republic,ITALIAN,Denver,3.5,751,$$$,45.8,False,False,(246) 853-2676,10/17/2022
+BBQ Smoke House , American,San Francisco,3.9,4,$,10.04,yes,False,(972) 899-7998,2016-04-29
+Dragon Wok,ITALIAN,Los Angeles,3.3,574,$$,25.55,True,False,(632) 265-8308,2022-01-10
+Café Mocha,Chinese,San Francisco,4.7,303,$,12.15,False,Y,N/A,2012-07-28
+Seafood Shack, American,New York,3.4,322,$$$,47.14,False,,(225) 568-8235,2011-07-28
+Pasta La Vista,ITALIAN,Chicago,3.1,178,$$$,40.32,No,True,(780) 276-7153,2006-05-26
+The Dumpling Den,thai food,New York,4.1,681,$,16.67,Yes,False,(839) 391-4095,2016-09-21
+Ramen Republic,Thai,Denver,4.2,10,$$,26.6,False,False,(869) 502-1021,2005-06-06
+Kebab King,Italian,Los Angeles,5.0,21,$$,25.3,False,True,(428) 433-2974,2007-05-05
+WINGS & THINGS,Thai,Chicago,4.1,20,$$,23.77,Yes,False,(545) 389-4413,2020-01-21
+Pizza Planet,INDIAN,San Francisco,4.0,90,$$,27.29,False,N,(924) 611-3089,2020-11-03
+Noodle Bar,Korean,Chicago,4.0,61,$,16.53,True,N,(745) 870-1139,2017-07-03
+Wings & Things,American,Miami,3.2,4,$$$$,123.6,False,Y,(255) 745-2283,2018-02-17
+Taco Fiesta,Japanese,Boston,2.5,341,$$,28.69,True,False,(844) 387-7207,2013-07-22
+THE PANCAKE SPOT,INDIAN,Phoenix,2.8,313,$$$$,91.59,No,Y,(549) 800-7075,2008-04-22
+Olive Garden Express,French,Los Angeles,4.5,253,$$$,,No,False,(466) 776-4055,2017-10-07
+Le Petit Bistro,French,Seattle,4.8,84,$$$$,75.48,False,Y,(609) 666-3290,2015-12-16
+Spice Route,french ,Phoenix,3.7,597,$$,23.33,False,False,(433) 741-6207,2019-12-05
+Falafel Factory,Indian,Houston,,127,$$$,71.71,No,False,(942) 941-4766,2020-03-30
+Noodle Bar,italian,Phoenix,3.7,99,$$,17.93,False,N,N/A,2014-07-10
+Curry House,INDIAN,Los Angeles,4.6,363,$$$,34.47,True,True,(370) 227-9690,2007-05-11
+Pizza Planet, American,Boston,,13,$$,34.18,False,False,(576) 946-6639,2008-09-15
+Ramen Republic,Mediterranean,Phoenix,3.4,136,$$$$,103.17,Yes,True,(580) 678-2763,2012-05-24
+Dragon Wok,Mexican,Houston,2.7,13,$$,27.6,yes,False,(840) 283-8362,2005-09-28
+Ramen Republic,mexcian,Boston,4.7,39,$$$,55.25,False,False,(755) 740-2492,2009-07-12
+Pizza Planet,Thai,Seattle,3.7,125,$$$,40.79,Yes,N,N/A,2009-09-20
+Wings & Things,chinese,Los Angeles,3.9,261,$$,24.77,False,Y,(232) 690-5767,2014-10-18
+Sushi Palace ,Mexican,Phoenix,3.7,36,$$,25.12,Yes,,(850) 474-2043,2023-04-19
+Noodle Bar,French,Chicago,2.8,399,$$,16.67,Yes,False,(652) 936-9678,2013-03-03
+Burger Barn,italian,Miami,4.3,284,$$,25.98,True,N,(502) 903-5623,2017-06-04
+Falafel Factory,chinese,Chicago,,131,$$,17.06,False,False,(204) 232-5853,2020-07-27
+Pho Real,Japaneese,Seattle,,10,$,15.57,False,N,(912) 863-8243,01/26/2013
+Falafel Factory,INDIAN,Los Angeles,3.4,99,$$,26.85,No,False,(361) 754-2659,2019-08-22
+Waffle World,Japaneese,New York,5.0,65,$$$$,78.62,False,False,(959) 604-8808,2014-02-09
+Green Leaf Vegan,chinese,New York,3.6,140,$,9.54,yes,N,(449) 530-1068,2021-08-22
+Curry House,Japaneese,Houston,2.4,3,$,14.65,True,True,(417) 987-2517,2023-08-17
+Dragon Wok,Chinese,Boston,5.0,34,$$,22.31,True,Y,N/A,2010-12-13
+The Golden Fork ,Chinese,Chicago,4.1,220,$,12.73,yes,True,(528) 411-6714,2011-03-21
+Spice Route,thai food,Miami,,42,$$$,53.03,No,Y,(812) 423-7708,2008-01-24
+Pizza Planet,Korean,Boston,4.9,29,$,16.16,yes,N,(436) 205-2701,2022-03-07
+Curry House,Italian,Chicago,3.4,107,$$,28.7,True,True,(555) 258-6433,2018-02-11
+Steakhouse 55 ,Japaneese,san francisco,4.4,-1,$$$,61.06,Yes,False,(985) 866-5762,01/01/2016
+Falafel Factory,mexcian,New York,3.7,210,$$,26.76,True,,N/A,2021-03-05
+Green Leaf Vegan,American,Los Angeles,4.1,140,$,8.82,True,Y,(585) 617-4890,08/21/2018
+Curry House,french ,San Francisco,5.0,603,$$,22.42,True,False,(743) 515-2076,2022-03-02
+Pasta La Vista,American,Houston,3.0,4,$$$,49.89,False,,(559) 538-8283,2022-11-30
+Green Leaf Vegan,french ,Seattle,3.4,65,$$,27.83,Yes,N,(970) 439-3057,2009-02-05
+Le Petit Bistro,italian,San Francisco,4.8,33,$,9.87,No,True,(867) 650-2111,2023-11-10
+The Pancake Spot,French,San Francisco,3.5,53,$$,28.37,False,True,(206) 622-7872,2016-05-24
+The Dumpling Den,thai food,Denver,3.9,58,$$$$,82.2,No,False,N/A,2007-05-01
+Green Leaf Vegan,INDIAN,Los Angeles,4.1,568,$$$,42.78,True,Y,(300) 793-1685,2013-09-13
+The Grill House,ITALIAN,San Francisco,4.5,306,$,7.39,yes,False,(393) 267-6615,2007-06-07
+Noodle Bar,thai food,San Francisco,3.5,295,$$,24.66,No,False,(278) 540-6934,2010-10-03
+Burger Barn,American,San Francisco,3.9,259,$$,35.37,True,False,(754) 941-4007,2020-02-07
+Seafood Shack ,thai food,San Francisco,3.2,130,$$,23.51,False,False,(593) 612-7698,2011-06-25
+The Pancake Spot,italian,denver,5.0,-1,$$$,47.67,False,Y,(292) 918-4999,2016-02-11
+Mama Rosa's Kitchen,Italian,Phoenix,4.0,46,$$,23.83,True,Y,(788) 840-1234,2018-06-08
+Le Petit Bistro,Itallian,Miami,2.6,327,$,12.4,Yes,False,(514) 868-2729,2024-01-14
+The Pancake Spot,french ,Boston,4.8,468,$$,23.95,False,False,(854) 791-1562,04/05/2020
+Green Leaf Vegan,Italian,Seattle,3.4,94,$$$,55.99,True,False,(849) 547-7141,2014-01-15
+The Grill House,Thai,Houston,4.0,190,$$,,False,False,(692) 695-5611,2015-11-28
+The Golden Fork,INDIAN,Miami,3.5,159,$,12.32,True,Y,(626) 224-9229,2014-12-18
+Dragon Wok,italian,Boston,3.7,21,$,16.0,True,,(372) 710-3998,2017-06-26
+Café Mocha,ITALIAN,Seattle,4.8,40,$$$,55.23,No,Y,(428) 206-2713,2011-05-21
+Noodle Bar,Thai,Seattle,4.4,31,$$,22.28,No,,(769) 341-3422,2020-03-27
+Kebab King,Japanese,Seattle,3.4,426,$$$,49.51,,Y,(893) 858-5150,2022-09-24
+Falafel Factory,Mediterranean,San Francisco,3.4,-1,$$$,34.53,Yes,True,(626) 547-9375,2008-06-29
+The Grill House,ITALIAN,Miami,2.3,71,$$,30.99,yes,False,(385) 376-1702,2006-04-29
+Pho Real,ITALIAN,Seattle,4.1,581,$,13.4,Yes,True,(859) 966-6173,2022-03-02
+Falafel Factory,Mexican,Phoenix,4.8,128,$$$,59.94,yes,N,(543) 546-6925,2007-02-11
+Burger Barn,italian,Miami,4.3,284,$$,25.98,True,N,(502) 903-5623,2017-06-04
+Le Petit Bistro,thai food,Seattle,4.9,293,$$,21.82,Yes,False,(931) 905-4123,2009-10-15
+The Grill House,American,Chicago,4.1,222,$$,23.25,Yes,False,(481) 687-5312,2020-11-16
+Noodle Bar,Korean,San Francisco,2.9,64,$$$,57.89,True,True,N/A,2018-05-21
+Green Leaf Vegan,chinese,Houston,3.3,38,$$,25.94,yes,True,(625) 442-2781,2018-07-27
+Taco Fiesta,italian,San Francisco,4.0,508,$$$$,79.57,True,Y,(689) 699-2626,2011-12-02
+Sushi Palace ,Japanese,Phoenix,4.2,40,$,5.0,False,True,(629) 912-2461,2021-12-15
+The Dumpling Den,french ,Miami,3.1,75,$$,13.84,False,True,(940) 746-1951,2011-05-11
+Le Petit Bistro,French,Chicago,4.5,31,$$$,36.67,No,Y,(950) 854-2801,2018-08-02
+Lobster Lounge,thai food,Miami,4.6,110,$$$$,86.37,,True,(567) 484-7515,2016-05-29
+Wings & Things,Chinese,Chicago,3.0,490,$$,15.42,True,False,(759) 255-2802,2008-09-18
+Dragon Wok ,mexcian,Miami,5.0,125,$$,23.5,No,Y,(293) 353-1280,2010-04-19
+Ramen Republic,Chinese,Houston,2.8,15,$$,29.18,Yes,True,(551) 546-8736,2012-10-21
+Wings & Things,Italian,New York,3.3,1,$,8.38,True,False,(349) 713-7962,2019-05-05
+Wings & Things,italian,Denver,4.3,224,$$,27.0,Yes,True,(249) 819-7543,2022-02-04
+The Dumpling Den,Itallian,Phoenix,4.2,774,$$,,yes,,(424) 573-1629,2018-11-28
+Lobster Lounge,Korean,Miami,3.5,22,$$$,60.23,True,False,(372) 995-5810,2020-03-28
+Spice Route,Japanese,Phoenix,3.7,367,$$,19.24,True,Y,(866) 264-7850,2010-10-30
+The Dumpling Den,Itallian,New York,4.8,81,$,10.44,True,,(441) 918-1486,2010-11-28
+Spice Route,thai food,Chicago,3.4,104,$$$,72.14,True,False,(975) 313-4897,2020-11-05
+Steakhouse 55,thai food,Chicago,4.5,42,$$,23.06,True,True,(292) 813-8879,2008-02-04
+Curry House,ITALIAN,Houston,4.1,402,$$,,False,False,(673) 541-4557,2017-11-20
+Pho Real,Chinese,Miami,4.9,236,$,13.22,Yes,N,(753) 859-1680,2022-01-12
+Pasta La Vista , American,Houston,4.4,365,$,11.6,True,False,N/A,2014-09-10
+Pizza Planet,INDIAN,San Francisco,4.0,90,$$,27.29,False,N,(924) 611-3089,2020-11-03
+Falafel Factory,Mediterranean,Miami,3.8,32,$$,23.73,No,N,N/A,10/13/2023
+BBQ Smoke House,Japanese,Houston,5.0,355,$$,29.1,Yes,False,,2007-01-30
+Falafel Factory,Korean,Denver,3.2,322,$$,30.49,No,True,(383) 523-6177,2012-07-25
+Dragon Wok,Korean,Chicago,4.3,27,$$,35.17,True,False,(840) 479-3705,2007-11-03
+BBQ Smoke House,italian,San Francisco,3.9,483,$$,18.92,True,N,(443) 500-5782,2020-04-18
+Ramen Republic,chinese,San Francisco,3.1,47,$$,34.75,yes,Y,(729) 577-9969,2017-12-20
+Wings & Things,Mediterranean,Boston,3.9,231,$,11.45,,,(290) 367-5264,2012-04-24
+Wings & Things,Chinese,San Francisco,4.1,2,$$,28.82,No,True,(700) 541-5307,2022-07-07
+Sushi Palace,Indian,Denver,3.0,363,$$,24.18,True,False,(932) 954-8848,2014-09-05
+Olive Garden Express,ITALIAN,Chicago,3.5,398,$$$$,75.53,True,True,(494) 344-9071,2021-06-14
+Kebab King,mexcian,Miami,3.0,213,$$$,51.43,yes,True,(668) 655-5949,2020-05-03
+THE GRILL HOUSE,Mediterranean,Seattle,4.2,7,$$,22.05,No,Y,(218) 386-4523,2006-11-17
+Ramen Republic,Itallian,San Francisco,4.9,148,$,15.42,Yes,N,(785) 649-4509,2016-11-15
+Spice Route,Mexican,Los Angeles,4.4,223,$$,27.01,True,False,(442) 375-4940,2021-11-09
+Sushi Palace ,italian,Chicago,4.2,9,$,12.22,Yes,N,(382) 369-5631,2021-09-13
+Noodle Bar,INDIAN,Seattle,3.8,496,$$,34.71,False,False,N/A,2006-04-04
+Mama Rosa's Kitchen,mexcian,Seattle,4.2,503,$$$,46.07,Yes,False,(240) 276-2212,09/12/2016
+Green Leaf Vegan, American,New York,3.2,427,$$,22.13,,True,(930) 826-5755,2010-12-29
+Ramen Republic,Mexican,Miami,4.1,16,$$$,45.49,True,Y,(461) 483-4213,2021-06-26
+Kebab King,Mediterranean,Houston,4.1,295,$$,18.94,True,False,(572) 805-3356,2022-06-11
+The Grill House,Japaneese,Boston,4.8,91,$,12.2,True,True,,2005-03-03
+Ramen Republic,Mexican,miami,5.0,98,$$$,32.45,No,Y,N/A,2023-07-15
+Pho Real,Indian,Boston,3.3,287,$$$,67.86,yes,True,(814) 899-1751,2015-05-04
+Spice Route,American,San Francisco,3.7,86,$$,20.51,,True,N/A,2006-11-05
+Ramen Republic,Mexican,Los Angeles,3.1,104,$$$,57.1,True,N,,2006-11-13
+Falafel Factory, American,Boston,,82,$$,28.4,,N,(291) 880-5317,2023-12-28
+Noodle Bar,INDIAN,New York,4.3,102,$$$,49.09,No,False,(344) 696-4079,2018-07-31
+Curry House,italian,Miami,3.0,33,$$,26.57,False,False,(416) 368-5637,2022-01-31
+Mama Rosa's Kitchen ,American,Seattle,3.3,213,$$$,32.51,No,N,(709) 386-2902,2013-10-05
+The Golden Fork,INDIAN,Denver,2.8,355,$$,21.68,No,,(565) 772-1101,2010-06-13
+Kebab King,Korean,Miami,,137,$$$,54.17,False,False,(671) 648-3278,2006-03-02
+Taco Fiesta ,Itallian,Denver,3.8,141,$,7.25,False,False,(687) 272-1083,2022-01-18
+The Golden Fork,Thai,Seattle,2.7,49,$$$,71.73,Yes,Y,(514) 726-9739,2023-02-19
+The Golden Fork,ITALIAN,Denver,3.2,201,$$$$,76.64,True,,(608) 749-4205,2014-09-30
+Curry House,Indian,Phoenix,2.8,72,$$$,63.82,True,False,(350) 209-4655,2017-12-18
+The Pancake Spot,chinese,New York,3.9,44,$,12.63,False,True,(917) 809-3967,2009-09-18
+Ramen Republic,mexcian,Seattle,3.7,125,$$,28.98,True,Y,(673) 781-1740,2024-01-10
+Waffle World,Mexican,Seattle,3.6,29,$$$,43.4,,True,(309) 618-3430,2015-02-01
+Pasta La Vista,Italian,Houston,,44,$,15.19,No,,(522) 527-3617,2018-07-15
+Café Mocha,Japanese,Denver,3.0,63,$$$$,103.04,No,N,(867) 783-9927,2014-10-27
+Dragon Wok,ITALIAN,San Francisco,4.1,500,$,9.97,yes,True,(878) 676-7482,2014-02-19
+SUSHI PALACE,Mediterranean,Seattle,4.8,1025,$$,20.86,False,Y,N/A,2018-10-23
+Sushi Palace,French,Seattle,4.2,66,$$,32.13,Yes,N,(846) 284-5710,2021-05-15
+Lobster Lounge,Japaneese,phoenix,3.0,12,$$$$,108.97,True,N,(609) 583-3844,2018-09-28
+Café Mocha,Japanese,Houston,2.0,88,$,12.24,False,,(874) 707-4017,2022-10-03
+Le Petit Bistro,Mexican,Los Angeles,4.5,110,$$$,62.13,False,False,(372) 664-9621,2011-09-14
+Falafel Factory,Italian,Chicago,3.6,355,$,19.4,True,Y,(968) 802-6983,2017-11-28
+Kebab King,Japaneese,Seattle,5.0,338,$$,24.61,No,True,N/A,2023-04-21
+Kebab King,Indian,San Francisco,3.6,195,$$$$,84.73,False,N,(624) 203-5136,2006-05-09
+Noodle Bar,ITALIAN,Houston,3.4,68,$$$,38.48,yes,False,(226) 402-2998,2016-12-06
+Pasta La Vista,Japaneese,Miami,3.9,103,$$,21.71,True,False,(532) 673-4388,2019-12-29
+Olive Garden Express,french ,Houston,4.1,36,$$$,58.76,,False,(210) 246-8313,2019-08-30
+BBQ Smoke House,Japaneese,Houston,3.3,1,$$,20.92,True,Y,(736) 326-7124,2021-07-15
+Sushi Palace,Japaneese,San Francisco,3.7,767,$$,24.05,True,False,(850) 943-4918,2009-10-06
+The Grill House,Indian,Los Angeles,3.3,63,$$$,58.92,No,False,(446) 381-5664,2023-05-09
+Steakhouse 55 ,mexcian,New York,3.5,164,$$$,59.49,No,False,,2015-11-07
+Le Petit Bistro,ITALIAN,New York,3.3,228,$$,35.33,True,False,(354) 495-5679,2005-12-16
+Falafel Factory,chinese,New York,3.5,390,$$$,36.18,yes,False,(212) 653-6351,2010-10-04
+Pho Real,French,Boston,4.5,62,$$$,35.17,True,Y,(491) 615-4039,2011-10-16
+Café Mocha,Italian,Phoenix,5.0,387,$,11.3,True,False,(300) 843-9256,2020-10-13
+The Golden Fork,thai food,Los Angeles,4.3,38,$$$,42.0,False,False,(985) 761-7023,2010-12-09
+Kebab King,mexcian,New York,2.4,146,$,17.09,Yes,False,(796) 369-1892,2017-01-14
+Pho Real,Italian,Miami,3.8,105,$$,17.8,True,N,N/A,2021-07-28
+Olive Garden Express,Japanese,Denver,3.5,38,$$,32.79,True,N,(982) 394-4718,2020-05-11
+Sushi Palace,Indian,New York,5.0,97,$$,22.75,False,N,(612) 872-2952,2006-03-19
+The Grill House,Indian,New York,3.4,58,$$$$,99.76,No,False,,2020-09-15
+The Grill House,ITALIAN,Houston,5.0,-1,$$$,33.9,True,,(245) 525-6002,2009-07-16
+The Grill House, American,Seattle,4.4,119,$$$,32.23,,True,(587) 797-3678,2024-02-19
+Curry House,Mexican,Denver,3.8,441,$$$,,yes,True,(672) 298-2305,2011-11-09
+Pasta La Vista,Korean,Boston,3.1,-1,$$$,50.4,False,N,(316) 250-3198,2013-04-02
+Waffle World,ITALIAN,Seattle,4.1,395,$$$,37.43,False,True,(432) 270-3501,2013-02-17
+The Dumpling Den,ITALIAN,San Francisco,3.2,21,$$,25.26,Yes,True,(783) 976-4277,2007-05-03
+Sushi Palace,italian,Phoenix,2.6,28,$$,24.11,yes,N,(840) 205-9045,2009-05-28
+The Golden Fork,Chinese,Los Angeles,4.5,60,$,13.33,True,Y,(553) 229-8338,2013-03-07
+The Dumpling Den,Mediterranean,Phoenix,3.6,90,$$,19.78,No,False,(587) 583-5942,2018-06-06
+CAFÉ MOCHA,ITALIAN,Denver,3.5,306,$$$,46.66,yes,True,(713) 615-9827,2023-11-28
+The Pancake Spot ,Italian,New York,,162,$,9.99,True,False,(921) 708-2908,2021-12-22
+CAFÉ MOCHA,Japanese,Seattle,3.4,47,$$$,37.36,No,False,(504) 713-5782,2009-06-16
+The Golden Fork,INDIAN,Miami,3.5,159,$,12.32,True,Y,(626) 224-9229,2014-12-18
+The Dumpling Den,italian,New York,3.9,36,$$$,49.94,True,False,(463) 885-1065,2009-04-21
+Spice Route,thai food,Los Angeles,4.5,204,$$$$,74.63,Yes,,(683) 322-1799,2011-08-27
+Burger Barn,ITALIAN,Denver,3.1,233,$,16.42,False,True,N/A,2022-02-03
+The Golden Fork,Italian,Miami,4.3,-1,$$$,76.07,True,Y,(489) 735-4305,2021-07-24
+The Dumpling Den,Indian,Boston,3.0,25,$$,9.25,True,N,(951) 566-7363,2014-05-19
+Dragon Wok,italian,Denver,4.3,183,$$$$,89.4,False,Y,(519) 263-3804,2016-10-06
+Green Leaf Vegan,chinese,Houston,3.8,57,$$$$,,False,False,(754) 977-9044,2008-09-09
+Café Mocha,chinese,Houston,4.3,99,$$$,,True,N,(573) 739-4004,03/17/2020
+Green Leaf Vegan,Indian,Phoenix,2.8,44,$$,18.44,True,False,(367) 200-3219,2005-07-17
+Pho Real,American,Boston,3.4,1099,$,13.74,No,False,(700) 793-7103,2009-10-26
+Café Mocha,ITALIAN,New York,4.3,837,$,9.18,Yes,False,(201) 700-7621,01/05/2014
+Café Mocha,American,Miami,3.4,191,$$,21.84,Yes,False,(264) 372-7205,2009-05-08
+Dragon Wok,Mediterranean,Seattle,3.9,29,$$,27.93,True,False,(621) 612-7817,2008-02-23
+Mama Rosa's Kitchen ,Mediterranean,Denver,3.3,230,$$$,52.41,True,True,(350) 425-1436,2020-07-17
+The Dumpling Den,Korean,Los Angeles,4.1,24,$$,22.68,False,Y,(352) 890-4745,2009-08-24
+Wings & Things,french ,San Francisco,4.2,707,$$,30.11,False,True,(917) 946-6644,2010-12-28
+Waffle World,Korean,Houston,,152,$$,30.41,Yes,Y,(588) 872-9002,2008-10-20
+Kebab King,Mexican,Denver,4.4,215,$$$,39.55,False,False,(856) 624-6985,2022-02-12
+Dragon Wok,Mexican,Denver,4.5,40,$,13.71,False,N,,08/23/2015
+Café Mocha,Japanese,Chicago,4.6,37,$,17.56,False,Y,(747) 727-2916,2010-10-23
+Wings & Things,mexcian,San Francisco,4.2,591,$,20.18,True,,(877) 947-4164,2014-09-04
+Curry House,chinese,Phoenix,4.5,321,$$,24.4,False,N,(451) 305-8313,2015-01-23
+Lobster Lounge,chinese,Seattle,3.8,28,$$$$,82.15,True,True,(290) 438-1179,2017-08-08
+Taco Fiesta,french ,Chicago,2.9,197,$,10.72,No,,(450) 854-7792,2013-04-10
+Falafel Factory,American,New York,5.0,678,$$$,69.61,False,True,(685) 334-1631,2007-03-30
+Ramen Republic,Italian,Boston,3.6,49,$$$,47.32,No,Y,(863) 297-6263,05/17/2017
+Burger Barn,Mediterranean,Phoenix,4.1,280,$$,29.51,Yes,N,N/A,2013-06-04
+Burger Barn,Japanese,Miami,3.8,162,$,,True,Y,(730) 706-2951,2014-08-27
+Pho Real,Mediterranean,Houston,4.0,189,$$,32.01,True,Y,(760) 537-9374,2017-11-17
+Falafel Factory, American,Phoenix,4.4,290,$,9.54,False,False,(230) 680-5171,2006-02-14
+Spice Route,thai food,Chicago,,159,$,15.15,Yes,False,(751) 700-3952,2005-02-20
+Steakhouse 55 ,mexcian,New York,3.5,164,$$$,59.49,No,False,,2015-11-07
+Pho Real, American,Seattle,4.0,7,$$,31.15,False,True,(343) 988-1077,2008-08-15
+Waffle World,Mediterranean,Chicago,3.4,174,$$,30.34,False,False,(363) 843-9919,2023-07-31
+Dragon Wok,Mexican,New York,4.8,7,$$,22.1,True,True,N/A,2017-02-17
+THE PANCAKE SPOT,Korean,Los Angeles,3.8,371,$$$$,91.66,False,Y,(378) 450-1805,2022-02-11
+WINGS & THINGS,mexcian,Seattle,3.4,257,$,9.39,True,True,(365) 773-1653,2014-10-26
+Dragon Wok,mexcian,San Francisco,4.7,52,$$$,45.83,Yes,False,(482) 744-4309,2011-09-06
+Wings & Things, American,Chicago,3.1,163,$$,26.01,Yes,N,(677) 373-8618,2016-06-03
+Pasta La Vista,Chinese,Miami,3.9,153,$$,26.81,,True,(809) 562-9274,2011-03-11
+The Dumpling Den,Mexican,Miami,4.7,475,$$,24.65,yes,False,(577) 900-6776,2016-12-14
+Sushi Palace,thai food,San Francisco,4.6,86,$$$,50.82,No,False,(310) 948-4332,2021-08-29
+Steakhouse 55,french ,Houston,2.5,123,$$$$,39.03,True,True,(707) 439-7564,2011-06-16
+LE PETIT BISTRO,Korean,New York,4.2,8,$$$,50.21,No,True,(411) 823-9119,2008-09-10
+Noodle Bar,mexcian,Seattle,3.8,23,$$,22.42,True,True,(651) 745-4076,2007-11-28
+The Golden Fork,Korean,Boston,3.6,5,$,12.88,No,True,(748) 311-5411,2006-09-17
+STEAKHOUSE 55,Itallian,Boston,3.7,293,$$$,43.29,True,N,(549) 917-1243,2008-01-10
+BBQ Smoke House,French,Houston,2.7,135,$$,26.5,False,,(626) 871-2256,07/30/2006
+Green Leaf Vegan,thai food,Los Angeles,3.1,1094,$,8.06,True,,(440) 237-7844,2017-06-22
+The Grill House,Korean,San Francisco,3.8,84,$,14.33,True,False,(323) 462-2731,2011-03-12
+Spice Route,Thai,Phoenix,3.2,15,$$,25.83,No,False,N/A,2022-10-11
+Seafood Shack,Thai,Denver,3.2,47,$$,30.62,True,Y,(949) 606-4469,2021-02-02
+Falafel Factory,Chinese,Denver,2.3,429,$,19.98,True,N,(637) 936-2175,2010-11-28
+Steakhouse 55,Mediterranean,Miami,3.6,68,$$,25.34,False,False,(873) 687-6869,2010-04-22
+Curry House,chinese,San Francisco,4.7,4,$$,24.89,False,False,(574) 441-7823,2008-07-22
+Dragon Wok,Japaneese,New York,4.0,168,$$,29.89,False,False,(902) 806-7534,2006-12-24
+Olive Garden Express ,Italian,Chicago,5.0,99,$$$,56.83,False,,(694) 369-8665,12/12/2012
+Sushi Palace,italian,denver,4.4,380,$$,27.8,Yes,False,(307) 750-8188,01/29/2018
+Spice Route,American,Chicago,2.6,336,$,11.46,True,,(407) 850-1545,2015-09-07
+The Pancake Spot,Japaneese,Phoenix,3.7,27,$$$,46.23,Yes,,(589) 271-1177,2014-09-13
+Green Leaf Vegan, American,New York,4.5,235,$,11.43,No,True,(227) 210-6592,2019-12-05
+The Golden Fork,french ,Houston,3.9,674,$,17.69,No,True,(949) 865-8568,2019-12-02
+Pho Real,chinese,Seattle,4.9,399,$$,33.24,True,False,(855) 235-5862,2020-01-26
+Kebab King,Mediterranean,San Francisco,4.9,45,$$,27.44,False,,(488) 644-5537,2023-12-22
+Spice Route,italian,Chicago,3.2,24,$$$,44.8,False,,(624) 654-9450,2019-08-20
+Steakhouse 55,Itallian,Boston,2.9,217,$$,26.06,,False,,2012-02-22
+Spice Route,Japaneese,Los Angeles,4.5,379,$$,23.14,No,Y,(429) 491-4227,2007-11-06
+Wings & Things,Korean,Seattle,4.5,130,$,14.48,yes,Y,(896) 418-5375,2005-06-17
+Ramen Republic,Japanese,Boston,,269,$$,26.46,True,False,(297) 779-1903,2018-06-28
+Falafel Factory,french ,Seattle,4.1,734,$$$,51.6,No,False,(695) 384-2643,2020-06-23
+Olive Garden Express,italian,San Francisco,3.2,680,$,13.55,True,False,(825) 980-9010,2007-12-07
+Kebab King,American,Los Angeles,3.4,-1,$$$,48.52,yes,False,(225) 603-4461,01/30/2024
+The Grill House,french ,Houston,3.7,674,$$$,57.84,False,False,(959) 284-6904,02/21/2009
+Wings & Things,French,Miami,4.3,133,$$,,True,,,05/21/2014
+Taco Fiesta,Indian,Seattle,,-1,$,11.7,False,False,(255) 451-8989,2019-05-27
+Pasta La Vista,Chinese,Miami,3.9,153,$$,26.81,,True,(809) 562-9274,2011-03-11
+Olive Garden Express,Chinese,San Francisco,3.5,77,$$,24.52,True,True,(324) 281-3533,2007-05-17
+Curry House,American,San Francisco,4.7,311,$$,23.84,True,True,(232) 996-3866,2016-11-04
+Pasta La Vista,Chinese,Phoenix,3.1,1024,$$,29.76,Yes,False,(533) 393-2808,2006-04-05
+Curry House,American,San Francisco,4.4,104,$$,14.24,True,True,(845) 232-2370,03/01/2020
+The Grill House,Mediterranean,Seattle,2.9,480,$$,,Yes,False,(421) 395-8603,2022-02-10
+Falafel Factory,Indian,Phoenix,3.6,-1,$$,16.81,No,,(638) 768-7262,2006-06-16
+Ramen Republic,Korean,Houston,3.7,141,$$,31.12,True,,(976) 326-5805,2007-01-07
+Green Leaf Vegan,chinese,Boston,4.4,305,$$$$,112.58,True,False,(532) 455-7053,2015-01-03
+The Dumpling Den,italian,Phoenix,1.7,208,$$$,42.73,True,N,(952) 342-3107,2013-07-01
+Kebab King,Chinese,Chicago,4.6,68,$$,20.08,No,True,(971) 790-6349,2017-12-19
+The Golden Fork,Japanese,San Francisco,3.7,61,$$$,58.79,Yes,False,N/A,2018-01-23
+Noodle Bar,Mexican,Seattle,,661,$$,25.27,No,False,(851) 868-4113,2013-06-09
+The Grill House ,thai food,Boston,3.3,9,$$,34.22,False,Y,(488) 321-9084,2010-10-02
+The Pancake Spot,Japaneese,Miami,2.4,99,$$,22.05,,False,(781) 388-5845,2006-02-03
+BBQ Smoke House,Chinese,Seattle,4.6,166,$$$,46.7,False,N,N/A,2008-12-16
+Wings & Things,Thai,Houston,4.0,516,$$$,,,True,(253) 874-1002,2009-12-28
+Pizza Planet,thai food,New York,3.4,50,$$$,49.67,False,N,(870) 788-5294,2010-06-25
+Green Leaf Vegan,INDIAN,Los Angeles,4.1,568,$$$,42.78,True,Y,(300) 793-1685,2013-09-13
+Green Leaf Vegan,chinese,Denver,3.2,4,$$,14.56,False,False,(410) 683-2868,2017-09-26
+Burger Barn,thai food,Houston,,6,$$$,48.25,True,False,(985) 542-6645,2016-04-05
+The Dumpling Den,Chinese,Miami,4.6,10,$$$,45.37,True,Y,N/A,2009-03-02
+Pasta La Vista,Japaneese,San Francisco,4.3,363,$$,29.02,True,True,(495) 919-2130,2005-11-15
+Pasta La Vista,Thai,Denver,3.1,8,$$$,37.86,True,False,,2010-04-23
+Wings & Things,Japanese,New York,2.8,58,$$,29.62,Yes,N,(327) 493-6228,2022-01-18
+Kebab King,INDIAN,Boston,4.4,64,$$$$,85.77,No,False,N/A,2006-03-13
+Spice Route,french ,New York,3.8,761,$$$,42.92,No,False,(966) 412-4298,03/02/2021
+Mama Rosa's Kitchen,Itallian,New York,3.5,88,$$$,53.61,False,True,(567) 641-9337,2011-11-24
+Curry House,Chinese,Boston,2.6,199,$$$,65.64,No,Y,(958) 804-4965,2022-05-08
+Burger Barn,mexcian,Los Angeles,3.9,71,$$,18.07,True,False,(758) 307-6370,2012-09-16
+The Golden Fork,italian,Los Angeles,2.2,189,$$$,64.14,yes,True,(514) 245-8173,2021-08-15
+Kebab King,French,Chicago,3.7,395,$$,23.49,True,Y,(462) 757-9918,2011-09-12
+Kebab King ,INDIAN,Miami,4.5,69,$$,20.66,False,N,(390) 522-8581,2018-11-22
+Café Mocha,INDIAN,Phoenix,3.1,60,$$$$,115.77,No,False,(326) 657-9447,2019-01-08
+SPICE ROUTE,italian,New York,2.3,319,$$$,53.58,No,False,(726) 243-6254,2008-03-27
+Waffle World,French,Houston,3.0,71,$,12.74,True,False,(244) 956-7185,2016-04-19
+Lobster Lounge,mexcian,Boston,3.5,78,$,14.32,False,False,(798) 967-7910,2017-07-22
+Pho Real,Italian,New York,3.3,1,$,14.9,No,False,(724) 209-6111,2021-01-31
+Noodle Bar,Japaneese,Miami,3.1,498,$,13.39,Yes,True,(994) 332-2604,2019-02-01
+Taco Fiesta,Itallian,Phoenix,3.3,36,$$$$,,yes,False,,2018-09-23
+Sushi Palace,Itallian,New York,4.4,307,$$,21.27,yes,True,(649) 943-4531,2012-12-14
+Seafood Shack,mexcian,Houston,4.6,445,$$$,48.49,False,True,N/A,2017-05-24
+Kebab King,french ,Los Angeles,4.0,12,$,10.19,yes,False,(884) 835-5162,2015-02-09
+Spice Route,thai food,Boston,4.2,7,$$$,48.89,False,Y,(438) 756-3439,01/16/2019
+Noodle Bar,ITALIAN,Houston,3.5,46,$$,21.97,yes,N,(232) 921-2163,09/30/2011
+Waffle World,Itallian,Denver,2.9,724,$$$$,108.05,False,False,(529) 551-4431,01/22/2014
+Sushi Palace,Italian,Los Angeles,3.3,138,$$$,54.51,True,True,(868) 562-2810,08/26/2016
+Lobster Lounge,Itallian,Boston,4.1,408,$$,,yes,Y,(338) 317-5169,2013-07-14
+Sushi Palace,italian,Phoenix,2.6,28,$$,24.11,yes,N,(840) 205-9045,2009-05-28
+Burger Barn,Mediterranean,Los Angeles,2.7,535,$$,20.05,False,False,,2018-03-19
+Pasta La Vista,INDIAN,Chicago,3.2,24,$$$$,78.19,No,,(224) 951-5464,2012-03-06
+Green Leaf Vegan,INDIAN,Miami,3.8,99,$$,27.39,False,False,(818) 566-5523,2022-11-17
+Waffle World,Thai,Boston,3.5,394,$$$,43.41,Yes,False,(986) 995-5386,2022-10-20
+Pizza Planet,Mexican,Miami,,629,$$,21.64,No,True,(933) 984-9293,12/17/2017
+Burger Barn,Mexican,New York,3.7,62,$,12.5,No,False,N/A,2011-12-13
+Mama Rosa's Kitchen,Thai,New York,2.6,378,$,12.19,False,,(763) 937-3121,2007-10-22
+Falafel Factory,American,Houston,3.6,123,$,9.39,Yes,N,(722) 575-4910,2013-01-29
+Sushi Palace,italian,Houston,3.2,570,$$$,38.35,False,,(834) 634-1814,2006-10-12
+Olive Garden Express ,INDIAN,Phoenix,4.1,33,$$$$,99.71,Yes,True,(256) 765-4803,2022-04-22
+KEBAB KING ,italian,Seattle,4.3,138,$,9.85,True,True,(692) 671-1547,2005-07-29
+The Golden Fork,American,Miami,4.0,476,$$,21.76,,True,(610) 968-1746,2009-11-23
+Seafood Shack,Italian,New York,3.7,256,$$$,48.86,No,True,(269) 955-3267,2013-03-13
+Sushi Palace,INDIAN,Phoenix,4.0,8,$$,21.17,No,True,N/A,2017-08-19
+Noodle Bar,Itallian,Phoenix,4.0,69,$$$,55.48,No,False,,2015-12-24
+Sushi Palace,thai food,Los Angeles,2.4,128,$,6.6,False,True,,2017-10-06
+Pho Real,Mexican,Denver,4.1,18,$,11.12,No,False,N/A,2015-04-14
+Falafel Factory,Mediterranean,New York,4.6,66,$$$,29.7,True,False,(435) 389-7651,2021-05-24
+Pho Real,italian,Chicago,4.1,437,$$$,46.0,No,False,(948) 818-6915,2007-12-25
+Wings & Things,mexcian,Phoenix,3.8,340,$,13.31,Yes,N,(946) 571-6837,2014-03-06
+Pho Real,Indian,Houston,3.4,261,$,12.81,False,False,,2012-08-22
+BBQ Smoke House,mexcian,Boston,3.5,859,$$,29.99,False,True,(374) 881-3755,2017-03-20
+Steakhouse 55,Italian,Houston,3.2,125,$,10.26,Yes,False,(637) 705-6447,2010-03-26
+Curry House,Mexican,Seattle,2.6,158,$,10.01,True,False,N/A,2015-08-13
+Le Petit Bistro,INDIAN,Seattle,5.0,92,$$,31.65,False,False,(698) 446-9885,2011-11-15
+Mama Rosa's Kitchen,Indian,seattle,3.6,142,$$$$,132.78,No,,(799) 998-6807,2016-06-23
+Ramen Republic,Japaneese,Houston,3.6,281,$$,22.12,yes,,(897) 368-9047,2009-02-25
+Noodle Bar,Itallian,Phoenix,3.6,21,$$,,True,,(320) 629-6329,2019-09-24
+The Golden Fork,American,Houston,4.2,113,$$$$,83.78,yes,False,(323) 692-7072,2005-02-25
+Le Petit Bistro,mexcian,Phoenix,2.7,227,$,19.68,True,Y,(258) 733-9933,2018-01-14
+Ramen Republic,mexcian,Boston,3.6,185,$$$,65.14,True,Y,(613) 701-9472,2015-04-16
+Curry House,italian,Miami,3.2,322,$$,34.77,True,True,(431) 868-4391,2016-04-05
+Pho Real,Itallian,Boston,3.2,31,$$$$,56.95,Yes,True,N/A,03/09/2006
+Lobster Lounge,chinese,New York,3.6,115,$$$$,82.12,Yes,False,N/A,2010-07-10
+Mama Rosa's Kitchen,French,Seattle,4.4,624,$$$,59.51,False,True,(675) 989-4644,2009-12-30
+The Pancake Spot,Japanese,san francisco,3.4,514,$,10.74,,False,,2018-10-23
+Dragon Wok ,Mexican,Denver,3.4,-1,$,6.27,yes,False,N/A,2018-06-18
+The Dumpling Den,French,Phoenix,3.1,-1,$$,24.74,Yes,False,(479) 692-9250,2013-12-30
+Mama Rosa's Kitchen,Japaneese,san francisco,4.1,3,$$$,42.37,yes,N,(839) 347-7928,2006-09-04
+Café Mocha,mexcian,Seattle,4.2,412,$$,22.09,True,True,(900) 636-9089,2008-06-26
+The Pancake Spot,Japaneese,San Francisco,2.7,90,$$$,41.1,True,True,(846) 401-6902,05/08/2007
+Spice Route ,Itallian,New York,4.2,1,$$$,31.04,True,False,(438) 358-8675,2018-10-03
+Le Petit Bistro,italian,Seattle,4.4,86,$$,25.16,True,Y,(553) 801-7785,2019-03-16
+The Golden Fork,INDIAN,Denver,3.1,234,$$$,41.19,False,True,(653) 341-4663,2006-06-16
+STEAKHOUSE 55,Chinese,San Francisco,3.8,50,$$$,65.7,yes,Y,(762) 929-9687,2011-09-14
+Taco Fiesta,INDIAN,Chicago,4.1,108,$$,23.22,False,True,(888) 355-9376,2022-02-03
+Burger Barn,Japanese,Miami,4.1,255,$$,21.39,yes,True,N/A,2017-03-22
+Pasta La Vista,Japanese,Boston,4.6,487,$$$,52.72,True,True,(823) 401-7777,2005-01-25
+BBQ Smoke House,American,San Francisco,2.4,639,$$,19.68,yes,False,(449) 940-5618,2022-07-16
+Taco Fiesta,Italian,San Francisco,4.4,259,$$,24.85,True,False,(839) 992-6937,2023-07-30
+Lobster Lounge,Italian,Houston,3.6,233,$$$,49.77,False,True,(949) 241-8326,2012-10-05
+Taco Fiesta,french ,Houston,3.4,60,$$,22.42,No,N,(229) 316-3636,2023-11-05
+Taco Fiesta,chinese,San Francisco,3.3,217,$$$$,85.03,False,Y,(639) 282-9184,2021-11-28
+Waffle World,INDIAN,Houston,3.4,121,$,5.0,No,Y,(450) 259-2108,2009-07-16
+Kebab King,ITALIAN,Phoenix,3.6,29,$$,24.91,No,True,(895) 320-7254,2010-03-28
+Pasta La Vista,Mexican,Phoenix,3.6,221,$$$$,118.94,yes,N,(270) 247-4553,2011-04-15
+Curry House,Indian,Miami,3.3,70,$$$,44.84,No,True,(451) 339-8809,2006-09-16
+Steakhouse 55,Mexican,Phoenix,3.9,95,$$$,,False,N,(283) 486-4533,2017-12-19
+The Dumpling Den, American,Denver,3.6,236,$$,24.62,Yes,,,2010-10-19
+Falafel Factory,thai food,Boston,4.2,257,$,11.99,Yes,Y,(450) 291-1086,2009-03-15
+Kebab King,Japaneese,Miami,3.9,145,$$$,42.97,False,False,(750) 747-3277,2018-03-12
+Wings & Things,Italian,Seattle,3.7,110,$$$,31.95,No,Y,,04/30/2020
+Ramen Republic,Italian,Denver,4.3,145,$$$,48.38,True,,(596) 753-7821,2011-10-16
+Taco Fiesta,thai food,New York,3.3,119,$$,28.08,False,N,(581) 780-5084,2005-09-06
+Waffle World,mexcian,boston,3.2,610,$$,15.08,yes,Y,(508) 358-8914,2011-08-28
+Curry House,thai food,Los Angeles,2.9,135,$$$,58.66,yes,,(433) 712-3482,2014-04-03
+The Pancake Spot ,Korean,seattle,,17,$$$$,82.77,No,False,(921) 580-9606,2006-09-30
+WAFFLE WORLD,ITALIAN,Seattle,4.5,499,$,5.24,yes,False,N/A,2009-07-30
+Seafood Shack,Indian,New York,5.0,37,$$$,45.17,No,False,(251) 648-2327,2007-03-28
+Waffle World,french ,Seattle,4.4,69,$$,21.45,No,True,(954) 293-2307,2009-03-07
+Spice Route,thai food,Miami,2.9,347,$,11.22,No,False,(719) 871-3875,2022-05-31
+Seafood Shack,thai food,Chicago,3.3,265,$,13.32,True,False,(601) 561-8842,2022-07-07
+Noodle Bar ,Indian,Phoenix,4.1,292,$,14.55,False,True,(602) 720-4043,2017-03-22
+The Pancake Spot ,Korean,Denver,2.7,327,$$,24.15,,True,(292) 819-4564,2019-05-11
+Lobster Lounge ,Chinese,New York,3.9,180,$$,28.77,True,True,(829) 830-1517,2006-03-03
+Lobster Lounge ,American,Houston,4.5,137,$$$,53.38,yes,True,(687) 517-2571,2013-09-14
+Pasta La Vista,Thai,Boston,2.8,49,$$,14.09,,False,N/A,2009-02-03
+Lobster Lounge,Itallian,San Francisco,4.4,584,$$,27.13,True,False,(921) 665-9149,2010-08-24
+The Pancake Spot,Indian,New York,3.1,68,$$,25.03,No,N,(521) 610-6493,2008-09-03
+Le Petit Bistro,french ,San Francisco,2.8,230,$$,,True,False,(356) 804-3866,2015-09-19
+Burger Barn,Indian,New York,4.3,4,$,14.37,True,,(727) 749-3611,2011-06-12
+Sushi Palace,mexcian,Boston,4.5,165,$$$$,115.4,No,False,(960) 494-8351,2005-07-28
+Noodle Bar,ITALIAN,Phoenix,3.8,137,$$,19.34,No,False,(208) 892-8006,2023-08-11
+Curry House,Mediterranean,Chicago,4.3,231,$$,28.12,Yes,Y,(454) 803-6662,2011-05-07
+Waffle World,thai food,Phoenix,4.1,48,$$$$,79.33,True,True,(435) 674-9486,2016-07-22
+The Golden Fork,French,Seattle,3.4,1110,$$,25.21,False,N,(735) 409-6899,2014-08-14
+Steakhouse 55 ,Japaneese,san francisco,4.4,-1,$$$,61.06,Yes,False,(985) 866-5762,01/01/2016
+The Dumpling Den,French,Chicago,4.2,42,$,10.75,False,True,(573) 298-3583,2018-12-14
+Noodle Bar,Mexican,Boston,4.1,5,$,8.24,True,False,(537) 672-7241,2005-10-31
+The Dumpling Den, American,boston,3.8,11,$$$$,123.86,False,False,N/A,2011-09-17
+Kebab King,Japaneese,Chicago,4.5,274,$$,21.24,No,N,,2017-06-06
+Dragon Wok,thai food,Seattle,3.6,291,$$$,,No,Y,(383) 253-2530,2005-07-07
+Kebab King,Chinese,Houston,4.5,125,$$$,57.13,True,N,(364) 828-7329,2012-10-19
+The Grill House,Itallian,San Francisco,3.8,167,$$$,,Yes,True,(365) 744-5329,07/21/2022
+Lobster Lounge, American,Los Angeles,3.2,813,$$,28.66,yes,,(970) 927-1627,2017-05-08
+Green Leaf Vegan,thai food,Los Angeles,4.0,62,$$$,50.48,True,,(947) 268-2160,2015-05-03
+Falafel Factory,Thai,Miami,4.7,36,$$$,65.48,yes,False,(513) 357-1598,2014-10-22
+Waffle World,Mediterranean,Boston,2.9,153,$$$,49.98,True,True,(745) 909-6672,2010-02-20
+Pasta La Vista,INDIAN,San Francisco,3.7,392,$$,29.9,yes,True,N/A,2016-01-23
+Pho Real,italian,Phoenix,3.3,436,$$$,41.04,No,Y,(714) 672-5357,2022-01-30
+Ramen Republic,French,San Francisco,3.9,170,$$,27.55,No,False,(872) 325-6379,2014-04-24
+Ramen Republic,Japaneese,Boston,4.2,142,$,15.42,True,Y,(441) 395-7336,2008-07-22
+Wings & Things,Itallian,Houston,,216,$$$,66.85,False,True,(897) 706-4981,2019-02-25
+Falafel Factory,French,Los Angeles,3.2,5,$$,24.11,True,False,(585) 251-3928,2019-11-15
+The Dumpling Den,Japanese,Boston,2.7,350,$$$,57.95,Yes,True,(410) 918-5535,06/05/2011
+Pizza Planet,mexcian,Miami,4.2,203,$$$,56.77,False,False,(299) 744-1114,02/13/2017
+The Dumpling Den,italian,Denver,2.6,17,$$$,37.03,No,False,(288) 887-3502,01/04/2007
+Pasta La Vista,Japaneese,New York,3.2,328,$$,23.71,True,,N/A,2011-02-20
+Ramen Republic,chinese,Miami,3.4,17,$,13.77,False,True,(774) 241-6126,2007-09-26
+RAMEN REPUBLIC,chinese,Miami,4.3,156,$$$$,40.82,yes,N,(814) 628-2870,2010-02-12
+Seafood Shack,ITALIAN,Denver,3.7,29,$,14.92,yes,True,(453) 372-2120,2018-10-01
+Le Petit Bistro,Mexican,Miami,4.2,637,$$,24.38,Yes,N,(339) 305-3009,2016-03-04
+Steakhouse 55,Mexican,San Francisco,2.2,78,$,8.59,No,False,(332) 666-6628,2020-07-17
+Taco Fiesta,Thai,New York,4.7,162,$,11.11,False,True,N/A,2024-01-05
+Ramen Republic, American,Los Angeles,5.0,76,$$$,66.35,No,False,(912) 992-3236,2013-08-26
+The Grill House,french ,Miami,2.3,481,$$$,42.21,Yes,,(618) 724-6025,08/30/2010
+Curry House,French,Boston,3.0,220,$$$,62.81,,,(525) 402-7165,2016-11-26
+Dragon Wok,Thai,Seattle,3.7,61,$$,16.4,False,N,(789) 593-3750,06/05/2008
+Dragon Wok ,Indian,Miami,4.4,19,$$$,40.4,True,Y,(670) 688-6750,10/24/2018
+BBQ Smoke House,Japaneese,Denver,4.7,194,$$$,45.11,True,True,(254) 572-7323,03/08/2015
+Curry House,Japanese,Los Angeles,2.6,120,$$,22.09,Yes,False,,2018-01-20
+Ramen Republic,french ,Boston,5.0,40,$$,28.11,No,True,(929) 848-1796,2019-04-06
+Burger Barn,French,Seattle,4.0,-1,$,10.46,Yes,Y,(712) 668-6820,2009-04-14
+Wings & Things,Chinese,Boston,4.2,347,$$,28.41,No,,(269) 734-2319,2009-06-26
+The Pancake Spot,thai food,Los Angeles,3.4,206,$,13.53,True,False,(929) 763-2311,2018-09-28
+Pho Real,Japanese,Seattle,3.6,15,$$,23.16,False,True,(699) 809-1544,2023-10-24
+Waffle World,Mexican,San Francisco,3.4,680,$,12.17,yes,N,(619) 914-3586,2019-04-04
+Ramen Republic,mexcian,Seattle,3.1,166,$$,24.53,True,True,N/A,11/10/2023
+WINGS & THINGS,Thai,Chicago,4.1,20,$$,23.77,Yes,False,(545) 389-4413,2020-01-21
+Olive Garden Express, American,Chicago,5.0,19,$$,19.36,True,True,(660) 475-5687,07/26/2008
+Pizza Planet,mexcian,Houston,3.4,15,$$$$,56.8,,N,(337) 771-1122,2018-10-23
+Pho Real,Thai,Denver,3.2,30,$$,20.09,Yes,False,(819) 550-3120,2024-01-18
+Spice Route ,Thai,Houston,4.5,161,$$$$,98.56,Yes,Y,(988) 651-1757,2017-12-09
+Green Leaf Vegan,Japanese,Boston,,116,$$,18.87,True,True,(809) 945-3380,2020-02-04
+Falafel Factory,French,New York,3.2,39,$,13.63,,False,(797) 526-7304,2009-07-19
+Pho Real,Chinese,Houston,4.3,149,$$,25.78,True,,(650) 653-7721,2008-09-19
+Pho Real,Italian,Chicago,4.5,620,$,11.98,True,Y,(703) 998-1363,2008-09-23
+Noodle Bar,Italian,new york,4.6,11,$$,24.39,True,True,N/A,2015-12-08
+Seafood Shack,mexcian,Miami,3.1,583,$$$$,72.64,,N,(276) 244-9105,2007-02-27
+Sushi Palace,Mediterranean,Seattle,4.1,297,$$,17.58,yes,N,(804) 259-9515,2023-07-17
+Olive Garden Express,American,Miami,3.5,60,$,16.66,False,False,N/A,02/18/2022
+Spice Route,Japaneese,Los Angeles,4.5,379,$$,23.14,No,Y,(429) 491-4227,2007-11-06
+Taco Fiesta,American,Boston,4.1,40,$$,28.77,True,Y,N/A,2008-06-02
+Falafel Factory ,Chinese,Houston,2.2,88,$$$$,90.16,,False,N/A,2023-09-13
+Pasta La Vista,Indian,New York,3.9,64,$$$,41.21,,True,N/A,2021-03-10
+Spice Route, American,Miami,3.6,58,$,20.21,True,,N/A,2013-03-24
+Burger Barn,thai food,Chicago,3.4,294,$$$$,84.32,True,Y,(341) 334-8587,2018-09-12
+Olive Garden Express,French,Boston,4.2,362,$$,20.36,True,N,(351) 507-3624,2008-06-07
+Pho Real,ITALIAN,Chicago,3.5,199,$$,22.87,No,N,N/A,2012-05-27
+Café Mocha,Japaneese,Phoenix,4.6,462,$$,30.24,False,False,,2016-01-18
+The Pancake Spot,American,New York,3.3,308,$$,25.65,No,True,(900) 602-2100,11/30/2007
+Pizza Planet,italian,Phoenix,2.9,185,$$,30.1,No,False,N/A,10/17/2017
+Spice Route,Korean,Boston,3.4,122,$$$$,98.57,yes,False,(499) 590-2837,2016-05-14
+Steakhouse 55,Itallian,Denver,3.9,95,$$,30.5,True,False,(419) 953-1914,2016-08-18
+Green Leaf Vegan,Korean,Denver,4.1,145,$$,25.99,True,N,(907) 611-9893,2011-03-29
+Taco Fiesta,Italian,houston,3.5,164,$$$$,81.28,True,False,(631) 826-2887,2005-01-30
+Wings & Things, American,Denver,3.9,938,$$$,70.95,False,True,(388) 781-5412,2010-03-14
+Pasta La Vista ,Japaneese,Phoenix,,83,$$,20.83,False,False,(692) 733-6272,07/22/2015
+Lobster Lounge ,Mediterranean,New York,,65,$$,25.25,yes,,(894) 423-5822,2014-06-30
+The Golden Fork,Japaneese,Seattle,4.1,115,$$$,54.41,False,True,(746) 268-8178,2014-01-12
+Lobster Lounge ,mexcian,New York,4.7,-1,$$,17.41,True,N,(445) 407-6976,2011-03-05
+Pizza Planet,ITALIAN,Chicago,2.8,248,$$,,No,True,(540) 916-1186,2021-10-02
+Falafel Factory,Korean,Seattle,4.5,54,$,10.58,yes,N,(974) 680-9434,2013-09-04
+Wings & Things, American,San Francisco,5.0,-1,$$,16.31,Yes,False,(304) 524-7109,2005-05-10
+Spice Route ,INDIAN,Houston,,178,$$,,True,False,,2005-03-08
+Le Petit Bistro,Korean,Los Angeles,,352,$$,27.35,True,True,(967) 733-6988,2022-07-12
+Taco Fiesta,Chinese,Denver,4.3,121,$$,22.78,yes,False,(891) 266-5557,2007-12-24
+BBQ Smoke House,French,New York,4.0,119,$$$,61.58,yes,Y,(433) 885-5594,2023-05-30
+Kebab King,thai food,New York,4.0,247,$$$,44.99,False,True,(553) 852-2158,2022-02-24
+BBQ Smoke House, American,Phoenix,3.8,105,$$$,51.47,True,False,(965) 982-5008,2010-05-04
+Lobster Lounge,Thai,Phoenix,4.4,267,$$$,52.86,False,,(419) 468-5596,2006-08-14
+Pizza Planet,mexcian,New York,4.2,234,$$$,57.79,yes,False,N/A,2020-01-19
+Seafood Shack, American,Phoenix,4.6,27,$$$$,111.64,False,,N/A,2016-05-04
+Burger Barn,Indian,Los Angeles,4.5,401,$$,19.91,Yes,True,(220) 865-6065,2019-12-09
+The Pancake Spot,Japaneese,Chicago,2.9,52,$$$,,True,True,(412) 616-4138,2006-09-28
+THE PANCAKE SPOT,italian,Boston,3.4,227,$$$,30.23,No,False,N/A,2017-03-09
+Curry House,Thai,New York,3.9,118,$,13.3,No,N,(766) 587-4259,2019-05-09
+STEAKHOUSE 55,Itallian,Boston,3.7,293,$$$,43.29,True,N,(549) 917-1243,2008-01-10
+The Golden Fork,Mediterranean,New York,4.6,370,$$,27.13,No,,(728) 874-3878,2012-10-24
+BBQ Smoke House,INDIAN,Boston,4.6,37,$$,23.71,False,False,(935) 771-2959,2017-05-19
+Falafel Factory,Japanese,Denver,3.7,407,$$$,,True,N,(615) 496-2884,2022-12-03
+Falafel Factory,french ,Denver,3.5,69,$$,23.74,False,,(284) 893-1996,2013-08-25
+Spice Route,INDIAN,Boston,4.4,161,$$,26.61,False,False,(491) 780-3914,2006-01-01
+Wings & Things,french ,Chicago,5.0,14,$$,17.07,True,N,,2011-07-21
+Wings & Things,french ,Chicago,3.9,1,$,14.78,True,True,(525) 373-9815,2010-09-14

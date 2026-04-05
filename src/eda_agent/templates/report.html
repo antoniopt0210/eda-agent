@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA Report — {{ profile.shape.rows }} rows × {{ profile.shape.columns }} columns</title>
+    <style>
+        /* ── Reset & Base ─────────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; }
+        body {
+            font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+            color: #1e1e2e;
+            background: #f8f8fc;
+            line-height: 1.65;
+            padding: 0;
+        }
+
+        /* ── Layout ───────────────────────────────────────────── */
+        .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+        /* ── Header ───────────────────────────────────────────── */
+        .report-header {
+            background: linear-gradient(135deg, #6C63FF 0%, #4834d4 100%);
+            color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(108,99,255,.25);
+        }
+        .report-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .5rem; }
+        .report-header .subtitle { opacity: .85; font-size: 1rem; }
+        .report-header .meta { margin-top: 1rem; font-size: .85rem; opacity: .7; }
+
+        /* ── Cards ────────────────────────────────────────────── */
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,.06);
+            border: 1px solid #eeeef5;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #6C63FF;
+        }
+
+        /* ── Summary ──────────────────────────────────────────── */
+        .summary-text {
+            font-size: 1.05rem;
+            color: #444;
+            padding: 1rem 1.25rem;
+            background: #f5f5fa;
+            border-left: 4px solid #6C63FF;
+            border-radius: 4px;
+        }
+
+        /* ── Stats Grid ───────────────────────────────────────── */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 1rem;
+            background: #f5f5fa;
+            border-radius: 8px;
+        }
+        .stat-box .number {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #6C63FF;
+        }
+        .stat-box .label {
+            font-size: .8rem;
+            color: #888;
+            margin-top: .25rem;
+        }
+
+        /* ── Table ────────────────────────────────────────────── */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .9rem;
+        }
+        th, td { padding: .6rem .75rem; text-align: left; }
+        th {
+            background: #f5f5fa;
+            font-weight: 600;
+            color: #555;
+            border-bottom: 2px solid #ddd;
+        }
+        td { border-bottom: 1px solid #eee; }
+        tr:last-child td { border-bottom: none; }
+
+        /* ── Findings ─────────────────────────────────────────── */
+        .finding { }
+        .finding-header {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            margin-bottom: .75rem;
+        }
+        .finding-header h3 { font-size: 1.1rem; font-weight: 600; }
+        .badge {
+            font-size: .7rem;
+            font-weight: 700;
+            padding: .2rem .6rem;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+        }
+        .badge-high   { background: #ffe0e0; color: #c0392b; }
+        .badge-medium { background: #fff3cd; color: #856404; }
+        .badge-low    { background: #d4edda; color: #155724; }
+
+        .finding-narrative { color: #444; margin-bottom: 1rem; white-space: pre-line; }
+
+        .finding-chart {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+            margin: .75rem 0;
+            box-shadow: 0 1px 6px rgba(0,0,0,.08);
+        }
+
+        /* ── Footer ───────────────────────────────────────────── */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #aaa;
+            font-size: .8rem;
+        }
+
+        /* ── Print ────────────────────────────────────────────── */
+        @media print {
+            body { background: #fff; }
+            .report-header { box-shadow: none; }
+            .card { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
+            .finding-chart { max-height: 400px; object-fit: contain; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="report-header">
+        <h1>Exploratory Data Analysis Report</h1>
+        <div class="subtitle">Autonomous AI-powered analysis</div>
+        <div class="meta">Generated on {{ generated_at }} &nbsp;·&nbsp; {{ profile.shape.rows | string }} rows × {{ profile.shape.columns }} columns</div>
+    </div>
+
+    <!-- Executive Summary -->
+    <div class="card">
+        <h2>Executive Summary</h2>
+        <div class="summary-text">{{ summary }}</div>
+    </div>
+
+    <!-- Data Overview -->
+    <div class="card">
+        <h2>Data Overview</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="number">{{ "{:,}".format(profile.shape.rows) }}</div>
+                <div class="label">Rows</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">{{ profile.shape.columns }}</div>
+                <div class="label">Columns</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">{{ profile.memory_usage_mb }} MB</div>
+                <div class="label">Memory</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">{{ profile.quality.total_missing_pct }}%</div>
+                <div class="label">Missing</div>
+            </div>
+            <div class="stat-box">
+                <div class="number">{{ profile.quality.duplicate_rows }}</div>
+                <div class="label">Duplicates</div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Column</th>
+                    <th>Type</th>
+                    <th>Role</th>
+                    <th>Missing %</th>
+                    <th>Unique</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for col in profile.columns %}
+                <tr>
+                    <td><strong>{{ col.name }}</strong></td>
+                    <td>{{ col.dtype }}</td>
+                    <td>{{ col.role }}</td>
+                    <td>{{ col.missing_pct }}%</td>
+                    <td>{{ col.unique }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Findings -->
+    {% for finding in findings %}
+    <div class="card finding">
+        <div class="finding-header">
+            <span class="badge badge-{{ finding.importance }}">{{ finding.importance }}</span>
+            <h3>{{ finding.title }}</h3>
+        </div>
+        <div class="finding-narrative">{{ finding.narrative }}</div>
+        {% for chart_path in finding.chart_paths %}
+            {% set b64 = chart_path | b64image %}
+            {% if b64 %}
+            <img class="finding-chart" src="{{ b64 }}" alt="{{ finding.title }}">
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    <!-- Footer -->
+    <div class="footer">
+        Generated by <strong>EDA Agent</strong> — autonomous AI-powered exploratory data analysis.
+    </div>
+
+</div>
+</body>
+</html>

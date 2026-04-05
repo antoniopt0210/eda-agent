@@ -1,0 +1,501 @@
+match_id,tournament,date,radiant_team,dire_team,radiant_win,duration_minutes,radiant_score,dire_score,first_blood_time_sec,radiant_towers_destroyed,dire_towers_destroyed,radiant_pick_1,radiant_pick_2,radiant_pick_3,radiant_pick_4,radiant_pick_5,dire_pick_1,dire_pick_2,dire_pick_3,dire_pick_4,dire_pick_5,radiant_gold_advantage_10min,radiant_xp_advantage_10min,region
+7800000000,The International 2024,2024-11-24,Fnatic,Tundra Esports,True,35.4,40,36,109,3,8,Sven,Riki,Beastmaster,Venomancer,Mirana,Puck,Axe,Enigma,Shadow Fiend,Storm Spirit,-2840,7752,CN
+7800000001,ESL One Birmingham,2024-10-27,Evil Geniuses,PSG.LGD,False,20.6,31,37,206,0,6,Queen of Pain,Earthshaker,Mirana,Shadow Shaman,Necrophos,Lion,Lich,Axe,Lina,Sand King,1435,979,CN
+7800000002,Riyadh Masters 2024,2024-12-22,OG,PSG.LGD,False,33.3,46,52,163,9,2,Vengeful Spirit,Sniper,Kunkka,Queen of Pain,Bane,Puck,Riki,Venomancer,Tidehunter,Necrophos,-60,-985,CIS
+7800000003,Riyadh Masters 2024,2024-07-18,BetBoom Team,Fnatic,True,44.8,31,31,164,4,9,Drow Ranger,Sniper,Lion,Earthshaker,Tinker,Lina,Faceless Void,Slardar,Vengeful Spirit,Lich,2590,3443,CIS
+7800000004,ESL One Birmingham,2024-05-22,Team Liquid,OG,False,35.5,46,47,10,6,0,Enigma,Juggernaut,Kunkka,Lich,Shadow Shaman,Zeus,Sniper,Venomancer,Necrophos,Lion,-3250,1633,NA
+7800000005,The International 2024,2024-07-26,Fnatic,9Pandas,False,56.0,17,48,143,3,9,Lina,Zeus,Beastmaster,Warlock,Tinker,Venomancer,Sniper,Bane,Sand King,Shadow Shaman,-4434,-1731,CN
+7800000006,Riyadh Masters 2024,2024-12-10,BetBoom Team,Gaimin Gladiators,True,41.4,23,20,196,2,5,Vengeful Spirit,Lion,Lich,Sven,Tidehunter,Axe,Mirana,Anti-Mage,Enigma,Shadow Shaman,-1836,-6596,EU
+7800000007,PGL Wallachia,2024-04-01,nouns,PSG.LGD,False,31.3,41,56,69,2,4,Riki,Drow Ranger,Kunkka,Mirana,Warlock,Necrophos,Shadow Fiend,Pudge,Shadow Shaman,Phantom Lancer,211,-2839,NA
+7800000008,The International 2024,2024-10-19,Team Liquid,Natus Vincere,False,42.2,35,36,77,11,7,Necrophos,Razor,Tiny,Tinker,Shadow Shaman,Zeus,Axe,Bloodseeker,Mirana,Sven,3773,4554,CN
+7800000009,PGL Wallachia,2024-05-15,Team Secret,Tundra Esports,True,23.1,47,21,231,11,8,Witch Doctor,Puck,Windranger,Phantom Lancer,Beastmaster,Bloodseeker,Sven,Sniper,Drow Ranger,Queen of Pain,-1185,-3685,SEA
+7800000010,PGL Wallachia,2024-07-01,PSG.LGD,Fnatic,True,38.0,57,26,138,3,3,Phantom Lancer,Sven,Warlock,Shadow Fiend,Storm Spirit,Anti-Mage,Lion,Lina,Earthshaker,Windranger,3009,1290,CN
+7800000011,DreamLeague Season 22,2024-11-21,Gaimin Gladiators,Tundra Esports,True,36.1,31,23,70,0,9,Morphling,Mirana,Lina,Sniper,Slardar,Tinker,Zeus,Kunkka,Faceless Void,Shadow Fiend,-1454,2918,SA
+7800000012,DreamLeague Season 22,2024-03-03,OG,BetBoom Team,False,37.5,55,56,101,5,4,Tiny,Tidehunter,Faceless Void,Bane,Juggernaut,Puck,Earthshaker,Mirana,Beastmaster,Shadow Fiend,4346,1251,EU
+7800000013,DreamLeague Season 22,2024-03-18,OG,Natus Vincere,True,27.8,50,43,200,5,11,Enigma,Tinker,Earthshaker,Shadow Fiend,Juggernaut,Lich,Sniper,Warlock,Crystal Maiden,Riki,-1837,-1833,CN
+7800000014,ESL One Birmingham,2024-03-22,Fnatic,9Pandas,False,24.9,27,34,54,6,4,Earthshaker,Crystal Maiden,Tinker,Vengeful Spirit,Lion,Razor,Warlock,Morphling,Tidehunter,Drow Ranger,-2248,-780,EU
+7800000015,PGL Wallachia,2024-12-03,PSG.LGD,BetBoom Team,True,47.5,25,17,40,11,3,Sven,Phantom Lancer,Windranger,Venomancer,Witch Doctor,Morphling,Lion,Bane,Sniper,Slardar,-1635,3235,CIS
+7800000016,PGL Wallachia,2024-07-07,Evil Geniuses,Natus Vincere,True,48.5,23,15,10,1,5,Lion,Kunkka,Morphling,Necrophos,Anti-Mage,Bane,Vengeful Spirit,Faceless Void,Juggernaut,Bloodseeker,1505,-5432,SA
+7800000017,The International 2024,2024-09-06,PSG.LGD,Gaimin Gladiators,False,40.9,11,40,113,8,9,Witch Doctor,Windranger,Queen of Pain,Anti-Mage,Razor,Riki,Tinker,Morphling,Enigma,Tiny,2341,-2249,SEA
+7800000018,Riyadh Masters 2024,2024-02-08,PSG.LGD,Natus Vincere,False,37.9,22,41,56,0,2,Venomancer,Queen of Pain,Puck,Tidehunter,Shadow Fiend,Morphling,Faceless Void,Lich,Bloodseeker,Riki,3321,6616,NA
+7800000019,ESL One Birmingham,2024-07-22,OG,PSG.LGD,False,53.6,36,47,136,6,2,Phantom Lancer,Puck,Bloodseeker,Tinker,Necrophos,Juggernaut,Shadow Fiend,Zeus,Storm Spirit,Morphling,-2340,-7986,NA
+7800000020,DreamLeague Season 22,2024-07-04,Team Liquid,Tundra Esports,False,50.0,64,71,109,1,10,Drow Ranger,Enigma,Storm Spirit,Morphling,Faceless Void,Warlock,Tiny,Anti-Mage,Mirana,Lion,-2564,1118,EU
+7800000021,DreamLeague Season 22,2024-11-26,Gaimin Gladiators,nouns,False,33.6,38,44,259,5,6,Bloodseeker,Pudge,Crystal Maiden,Razor,Tiny,Queen of Pain,Faceless Void,Tinker,Puck,Lion,-4063,4029,CN
+7800000022,ESL One Birmingham,2024-10-25,Evil Geniuses,Alliance,False,53.1,19,48,58,7,10,Tidehunter,Riki,Vengeful Spirit,Slardar,Warlock,Sand King,Lina,Razor,Windranger,Earthshaker,2757,-201,NA
+7800000023,The International 2024,2024-02-06,Team Liquid,Alliance,False,26.0,29,33,176,3,1,Drow Ranger,Puck,Razor,Vengeful Spirit,Queen of Pain,Phantom Lancer,Mirana,Venomancer,Bloodseeker,Shadow Fiend,-7609,5011,NA
+7800000024,PGL Wallachia,2024-03-05,9Pandas,Tundra Esports,False,22.6,34,41,152,5,11,Necrophos,Bane,Witch Doctor,Drow Ranger,Lion,Venomancer,Puck,Earthshaker,Tinker,Zeus,1957,4261,SEA
+7800000025,BetBoom Dacha,2024-09-02,PSG.LGD,Gaimin Gladiators,False,26.8,48,54,178,0,9,Morphling,Storm Spirit,Kunkka,Crystal Maiden,Zeus,Shadow Shaman,Windranger,Witch Doctor,Sven,Bane,425,1433,NA
+7800000026,BetBoom Dacha,2024-03-19,nouns,OG,False,44.1,33,33,174,11,4,Zeus,Vengeful Spirit,Bloodseeker,Axe,Tidehunter,Pudge,Morphling,Shadow Shaman,Tiny,Sven,-4852,-3801,SA
+7800000027,BetBoom Dacha,2024-10-26,Tundra Esports,Virtus.pro,False,37.5,23,28,229,9,6,Mirana,Tinker,Venomancer,Morphling,Kunkka,Axe,Lion,Pudge,Queen of Pain,Sniper,-3919,-162,SA
+7800000028,The International 2024,2024-08-16,Evil Geniuses,9Pandas,False,53.7,30,34,14,6,3,Windranger,Bane,Axe,Beastmaster,Mirana,Shadow Fiend,Juggernaut,Tiny,Witch Doctor,Crystal Maiden,201,-864,EU
+7800000029,PGL Wallachia,2024-06-03,Natus Vincere,Gaimin Gladiators,True,37.7,30,25,258,10,6,Bane,Witch Doctor,Axe,Lion,Pudge,Tinker,Morphling,Kunkka,Shadow Fiend,Tidehunter,-4360,-3387,SEA
+7800000030,Riyadh Masters 2024,2024-07-19,Team Liquid,Evil Geniuses,True,34.5,50,29,235,9,7,Earthshaker,Queen of Pain,Riki,Juggernaut,Warlock,Mirana,Puck,Lich,Faceless Void,Sand King,-1646,-2923,SEA
+7800000031,The International 2024,2024-02-22,Team Spirit,PSG.LGD,False,40.5,30,32,119,3,9,Axe,Morphling,Slardar,Mirana,Bane,Tiny,Storm Spirit,Vengeful Spirit,Bloodseeker,Sven,4233,-1679,SA
+7800000032,DreamLeague Season 22,2024-10-18,Team Spirit,Alliance,True,37.1,51,43,215,6,11,Mirana,Vengeful Spirit,Warlock,Juggernaut,Riki,Beastmaster,Pudge,Sniper,Kunkka,Bloodseeker,-5247,4827,NA
+7800000033,Riyadh Masters 2024,2024-04-12,BetBoom Team,Gaimin Gladiators,False,34.1,23,36,43,9,3,Lich,Windranger,Tiny,Sven,Anti-Mage,Bloodseeker,Razor,Axe,Kunkka,Lion,-303,-2719,SA
+7800000034,PGL Wallachia,2024-02-06,OG,Tundra Esports,False,41.8,31,35,212,0,11,Beastmaster,Zeus,Pudge,Tinker,Anti-Mage,Enigma,Faceless Void,Necrophos,Riki,Phantom Lancer,-3610,68,SEA
+7800000035,ESL One Birmingham,2024-03-26,nouns,Team Spirit,False,40.7,53,57,48,6,7,Bloodseeker,Drow Ranger,Tinker,Axe,Crystal Maiden,Riki,Anti-Mage,Sven,Mirana,Warlock,-3441,10396,NA
+7800000036,Riyadh Masters 2024,2024-03-06,Fnatic,Team Secret,False,36.5,20,21,66,0,8,Queen of Pain,Necrophos,Puck,Windranger,Tidehunter,Lion,Tiny,Enigma,Beastmaster,Lich,-1173,-966,NA
+7800000037,PGL Wallachia,2024-06-21,Gaimin Gladiators,Tundra Esports,True,45.5,49,37,162,7,11,Phantom Lancer,Witch Doctor,Shadow Fiend,Morphling,Faceless Void,Queen of Pain,Pudge,Windranger,Tiny,Sand King,25,2761,SA
+7800000038,BetBoom Dacha,2024-06-24,OG,PSG.LGD,True,48.2,53,23,57,0,8,Anti-Mage,Morphling,Razor,Earthshaker,Windranger,Zeus,Mirana,Axe,Lich,Juggernaut,583,-2802,EU
+7800000039,DreamLeague Season 22,2024-01-20,Team Liquid,BetBoom Team,True,39.7,36,30,59,11,7,Juggernaut,Slardar,Witch Doctor,Sniper,Lina,Tinker,Tidehunter,Warlock,Faceless Void,Enigma,4648,-5237,CIS
+7800000040,DreamLeague Season 22,2024-09-19,nouns,Fnatic,True,32.3,33,26,64,7,9,Drow Ranger,Witch Doctor,Riki,Windranger,Slardar,Vengeful Spirit,Storm Spirit,Lina,Kunkka,Pudge,4439,-3962,CIS
+7800000041,The International 2024,2024-12-28,Team Spirit,BetBoom Team,True,40.5,52,45,23,8,4,Warlock,Riki,Shadow Shaman,Crystal Maiden,Windranger,Puck,Necrophos,Bane,Zeus,Axe,-515,-5001,SEA
+7800000042,BetBoom Dacha,2024-05-24,Fnatic,Evil Geniuses,False,55.7,17,26,179,4,2,Venomancer,Anti-Mage,Beastmaster,Razor,Shadow Fiend,Crystal Maiden,Sniper,Earthshaker,Tinker,Lion,-6021,5928,SA
+7800000043,BetBoom Dacha,2024-12-14,Team Spirit,Gaimin Gladiators,False,32.7,16,26,334,11,4,Witch Doctor,Faceless Void,Necrophos,Axe,Morphling,Lina,Tidehunter,Tiny,Puck,Lion,-266,-3646,SEA
+7800000044,ESL One Birmingham,2024-05-17,Tundra Esports,Team Liquid,True,34.7,44,13,201,10,11,Lion,Shadow Fiend,Axe,Drow Ranger,Tiny,Slardar,Windranger,Necrophos,Tinker,Anti-Mage,443,902,SEA
+7800000045,DreamLeague Season 22,2024-05-18,Team Spirit,Evil Geniuses,False,42.8,7,27,46,2,7,Sniper,Puck,Drow Ranger,Sven,Anti-Mage,Warlock,Shadow Shaman,Lion,Razor,Lina,3646,-6458,CIS
+7800000046,DreamLeague Season 22,2024-03-31,nouns,Alliance,False,31.7,37,43,125,2,6,Tidehunter,Drow Ranger,Venomancer,Morphling,Sand King,Slardar,Faceless Void,Mirana,Lion,Shadow Fiend,-3207,-2501,SEA
+7800000047,ESL One Birmingham,2024-01-20,Evil Geniuses,OG,False,44.1,24,32,63,6,3,Razor,Lich,Crystal Maiden,Pudge,Queen of Pain,Lina,Necrophos,Shadow Fiend,Tinker,Puck,-1710,-3786,CIS
+7800000048,PGL Wallachia,2024-01-24,Fnatic,OG,True,30.3,30,16,218,11,2,Faceless Void,Axe,Vengeful Spirit,Witch Doctor,Beastmaster,Tinker,Lina,Bloodseeker,Morphling,Earthshaker,-2083,-2182,CN
+7800000049,BetBoom Dacha,2024-05-08,Alliance,nouns,False,33.3,45,50,172,7,8,Witch Doctor,Pudge,Queen of Pain,Mirana,Tinker,Sniper,Lich,Tiny,Beastmaster,Morphling,-4011,955,SA
+7800000050,The International 2024,2024-11-30,Evil Geniuses,9Pandas,False,38.5,47,53,65,10,1,Sniper,Tidehunter,Morphling,Phantom Lancer,Beastmaster,Shadow Fiend,Faceless Void,Necrophos,Lich,Mirana,2623,-368,SEA
+7800000051,ESL One Birmingham,2024-09-19,BetBoom Team,PSG.LGD,True,44.3,22,19,62,7,11,Juggernaut,Axe,Witch Doctor,Tiny,Beastmaster,Pudge,Sven,Sniper,Shadow Fiend,Kunkka,4922,1090,CIS
+7800000052,Riyadh Masters 2024,2024-01-15,nouns,Fnatic,False,43.7,38,45,96,2,5,Lina,Witch Doctor,Tiny,Tidehunter,Juggernaut,Drow Ranger,Necrophos,Mirana,Faceless Void,Sand King,5815,-3165,CIS
+7800000053,Riyadh Masters 2024,2024-04-01,Natus Vincere,BetBoom Team,True,35.6,44,19,10,0,2,Bane,Tidehunter,Pudge,Shadow Shaman,Axe,Puck,Witch Doctor,Anti-Mage,Queen of Pain,Vengeful Spirit,1819,-2679,SEA
+7800000054,ESL One Birmingham,2024-07-12,PSG.LGD,Alliance,False,38.3,9,21,161,4,11,Anti-Mage,Tiny,Bane,Phantom Lancer,Razor,Earthshaker,Tidehunter,Beastmaster,Warlock,Lion,-987,-2091,EU
+7800000055,Riyadh Masters 2024,2024-11-11,Evil Geniuses,BetBoom Team,False,21.5,31,40,97,8,2,Storm Spirit,Axe,Tinker,Faceless Void,Juggernaut,Phantom Lancer,Riki,Sand King,Drow Ranger,Tidehunter,1221,6186,EU
+7800000056,Riyadh Masters 2024,2024-02-12,9Pandas,Evil Geniuses,False,57.6,24,39,120,7,5,Witch Doctor,Juggernaut,Necrophos,Faceless Void,Venomancer,Anti-Mage,Morphling,Earthshaker,Bane,Zeus,2238,-3602,SEA
+7800000057,BetBoom Dacha,2024-01-29,Evil Geniuses,Virtus.pro,False,36.5,34,43,161,3,0,Drow Ranger,Necrophos,Shadow Shaman,Lina,Sand King,Windranger,Tidehunter,Riki,Vengeful Spirit,Shadow Fiend,3327,-4075,EU
+7800000058,Riyadh Masters 2024,2024-01-20,Tundra Esports,Team Secret,False,48.0,36,38,10,1,9,Sniper,Axe,Queen of Pain,Beastmaster,Sven,Kunkka,Venomancer,Tidehunter,Windranger,Witch Doctor,4623,-4117,NA
+7800000059,PGL Wallachia,2024-07-02,Alliance,nouns,True,37.4,27,26,23,5,0,Kunkka,Faceless Void,Witch Doctor,Phantom Lancer,Zeus,Lich,Pudge,Shadow Shaman,Sniper,Shadow Fiend,3808,1852,SA
+7800000060,PGL Wallachia,2024-11-07,Team Spirit,Alliance,False,32.7,35,41,235,7,5,Zeus,Lina,Vengeful Spirit,Tinker,Juggernaut,Morphling,Warlock,Necrophos,Tiny,Pudge,5394,8667,CN
+7800000061,BetBoom Dacha,2024-09-12,BetBoom Team,OG,False,25.2,37,38,231,3,0,Crystal Maiden,Windranger,Tiny,Anti-Mage,Tinker,Warlock,Sand King,Bloodseeker,Kunkka,Vengeful Spirit,1396,1122,SA
+7800000062,ESL One Birmingham,2024-12-28,Team Spirit,Natus Vincere,False,21.7,43,51,136,5,7,Warlock,Crystal Maiden,Enigma,Axe,Kunkka,Tinker,Juggernaut,Sniper,Venomancer,Lina,-1308,-14,NA
+7800000063,BetBoom Dacha,2024-04-14,Team Liquid,Team Spirit,True,27.5,41,35,138,11,7,Pudge,Phantom Lancer,Lich,Riki,Tiny,Puck,Storm Spirit,Axe,Vengeful Spirit,Morphling,-2106,2573,SA
+7800000064,DreamLeague Season 22,2024-10-04,Team Liquid,PSG.LGD,True,33.0,46,44,173,8,11,Storm Spirit,Tinker,Bane,Venomancer,Shadow Shaman,Tiny,Queen of Pain,Sven,Warlock,Windranger,-3507,-9904,SEA
+7800000065,BetBoom Dacha,2024-08-09,Tundra Esports,Team Secret,True,54.0,34,24,85,9,9,Beastmaster,Lina,Juggernaut,Faceless Void,Mirana,Sand King,Kunkka,Morphling,Drow Ranger,Windranger,3065,4780,CIS
+7800000066,PGL Wallachia,2024-06-28,OG,Team Liquid,True,35.3,48,43,86,0,10,Sand King,Bloodseeker,Crystal Maiden,Phantom Lancer,Anti-Mage,Shadow Shaman,Tinker,Faceless Void,Storm Spirit,Tiny,-6535,1504,CN
+7800000067,ESL One Birmingham,2024-08-22,Gaimin Gladiators,PSG.LGD,False,27.0,51,56,112,11,7,Tiny,Beastmaster,Puck,Shadow Fiend,Tinker,Vengeful Spirit,Faceless Void,Storm Spirit,Lion,Razor,681,2576,SEA
+7800000068,The International 2024,2024-11-26,Team Liquid,Virtus.pro,True,42.7,12,9,10,10,11,Bloodseeker,Tinker,Enigma,Faceless Void,Bane,Mirana,Lion,Razor,Zeus,Earthshaker,4167,-1392,NA
+7800000069,The International 2024,2024-10-04,Fnatic,BetBoom Team,False,19.3,34,39,81,4,11,Earthshaker,Riki,Zeus,Sniper,Crystal Maiden,Windranger,Razor,Lich,Anti-Mage,Phantom Lancer,874,-2227,CN
+7800000070,PGL Wallachia,2024-03-23,Natus Vincere,Tundra Esports,True,49.0,58,39,191,8,10,Sniper,Kunkka,Enigma,Shadow Shaman,Tiny,Crystal Maiden,Phantom Lancer,Juggernaut,Faceless Void,Shadow Fiend,3068,-6599,EU
+7800000071,DreamLeague Season 22,2024-09-23,Fnatic,nouns,True,31.6,29,25,24,11,5,Shadow Shaman,Razor,Tinker,Mirana,Earthshaker,Crystal Maiden,Anti-Mage,Storm Spirit,Bane,Bloodseeker,-2138,-6403,NA
+7800000072,PGL Wallachia,2024-10-12,Gaimin Gladiators,Team Liquid,True,40.6,44,36,10,2,11,Lion,Riki,Crystal Maiden,Bane,Drow Ranger,Venomancer,Shadow Shaman,Queen of Pain,Witch Doctor,Sand King,-504,-433,CN
+7800000073,BetBoom Dacha,2024-01-17,BetBoom Team,Team Secret,True,51.1,45,38,228,9,7,Mirana,Shadow Fiend,Sniper,Windranger,Faceless Void,Vengeful Spirit,Kunkka,Zeus,Tiny,Beastmaster,2140,138,NA
+7800000074,Riyadh Masters 2024,2024-03-01,Tundra Esports,OG,True,39.9,49,35,80,9,9,Warlock,Crystal Maiden,Zeus,Witch Doctor,Shadow Fiend,Enigma,Venomancer,Kunkka,Morphling,Mirana,-4667,-7218,SEA
+7800000075,BetBoom Dacha,2024-02-26,Alliance,OG,False,42.6,40,44,203,5,10,Mirana,Tidehunter,Bane,Riki,Beastmaster,Slardar,Lich,Bloodseeker,Faceless Void,Juggernaut,2251,-1066,CIS
+7800000076,ESL One Birmingham,2024-10-04,Fnatic,Gaimin Gladiators,True,36.5,10,7,10,2,10,Earthshaker,Beastmaster,Razor,Sniper,Queen of Pain,Tiny,Riki,Puck,Storm Spirit,Mirana,-4306,5155,EU
+7800000077,Riyadh Masters 2024,2024-09-13,Natus Vincere,Team Spirit,False,38.8,16,36,148,0,10,Tiny,Puck,Kunkka,Warlock,Venomancer,Storm Spirit,Axe,Lich,Tinker,Zeus,3107,-2463,CIS
+7800000078,DreamLeague Season 22,2024-04-16,OG,Fnatic,False,20.8,47,47,152,4,6,Venomancer,Enigma,Sand King,Lich,Bloodseeker,Necrophos,Earthshaker,Witch Doctor,Tinker,Vengeful Spirit,-6901,-2267,CIS
+7800000079,DreamLeague Season 22,2024-02-13,Team Liquid,Natus Vincere,True,43.9,45,29,85,11,4,Venomancer,Crystal Maiden,Sniper,Axe,Lion,Mirana,Tinker,Shadow Fiend,Warlock,Anti-Mage,3958,-293,SA
+7800000080,ESL One Birmingham,2024-01-08,9Pandas,OG,False,25.2,14,23,126,9,6,Lina,Lion,Sven,Pudge,Anti-Mage,Juggernaut,Crystal Maiden,Axe,Vengeful Spirit,Puck,1211,4308,SEA
+7800000081,ESL One Birmingham,2024-10-23,BetBoom Team,Evil Geniuses,True,40.1,63,59,297,10,1,Crystal Maiden,Sand King,Venomancer,Bloodseeker,Lion,Shadow Fiend,Faceless Void,Enigma,Lich,Queen of Pain,-715,2115,SEA
+7800000082,BetBoom Dacha,2024-02-10,Evil Geniuses,PSG.LGD,True,37.8,49,45,10,11,6,Mirana,Slardar,Drow Ranger,Tiny,Lion,Vengeful Spirit,Zeus,Lina,Lich,Morphling,-1117,-6567,SA
+7800000083,BetBoom Dacha,2024-07-31,Virtus.pro,nouns,True,36.6,17,12,81,8,10,Beastmaster,Lina,Anti-Mage,Necrophos,Sand King,Witch Doctor,Storm Spirit,Tiny,Morphling,Lich,-2024,-1930,SEA
+7800000084,PGL Wallachia,2024-06-17,Team Liquid,Team Secret,True,33.9,41,11,141,11,1,Sniper,Warlock,Razor,Lion,Necrophos,Faceless Void,Vengeful Spirit,Kunkka,Sand King,Storm Spirit,1237,-1499,CIS
+7800000085,ESL One Birmingham,2024-08-26,PSG.LGD,Team Liquid,True,37.7,34,31,376,4,4,Shadow Fiend,Drow Ranger,Enigma,Zeus,Shadow Shaman,Lion,Sniper,Sven,Earthshaker,Faceless Void,-3271,-1124,NA
+7800000086,ESL One Birmingham,2024-05-05,nouns,BetBoom Team,False,25.1,26,34,53,5,7,Beastmaster,Faceless Void,Kunkka,Bane,Witch Doctor,Razor,Windranger,Lion,Tinker,Lina,-3571,-1469,CIS
+7800000087,Riyadh Masters 2024,2024-02-22,Fnatic,Gaimin Gladiators,False,59.2,40,48,198,0,10,Bloodseeker,Necrophos,Crystal Maiden,Venomancer,Tidehunter,Sand King,Faceless Void,Windranger,Shadow Shaman,Earthshaker,-1051,2928,SEA
+7800000088,BetBoom Dacha,2024-08-03,Natus Vincere,Virtus.pro,False,29.8,29,35,93,10,6,Tiny,Faceless Void,Zeus,Lina,Vengeful Spirit,Juggernaut,Pudge,Tidehunter,Slardar,Mirana,-5399,4368,NA
+7800000089,The International 2024,2024-07-26,Fnatic,nouns,True,49.7,23,19,209,8,7,Phantom Lancer,Crystal Maiden,Enigma,Necrophos,Warlock,Queen of Pain,Juggernaut,Pudge,Zeus,Kunkka,-4,2797,CIS
+7800000090,DreamLeague Season 22,2024-10-27,9Pandas,Alliance,False,35.1,20,24,19,6,5,Anti-Mage,Lina,Sniper,Puck,Zeus,Storm Spirit,Tidehunter,Shadow Fiend,Shadow Shaman,Slardar,-217,1647,SEA
+7800000091,The International 2024,2024-08-16,Virtus.pro,Natus Vincere,True,49.4,29,26,150,9,4,Shadow Fiend,Earthshaker,Sniper,Slardar,Riki,Razor,Enigma,Crystal Maiden,Sand King,Axe,-5226,-863,SEA
+7800000092,DreamLeague Season 22,2024-12-16,Team Secret,PSG.LGD,False,27.6,16,24,201,6,0,Beastmaster,Tiny,Phantom Lancer,Morphling,Tinker,Kunkka,Venomancer,Axe,Lion,Shadow Shaman,-729,1869,CIS
+7800000093,BetBoom Dacha,2024-03-16,PSG.LGD,Team Secret,True,55.5,61,31,286,1,9,Lina,Vengeful Spirit,Sniper,Sven,Shadow Fiend,Enigma,Lich,Bane,Mirana,Drow Ranger,720,-6470,EU
+7800000094,The International 2024,2024-10-07,nouns,OG,True,48.5,32,12,115,11,5,Warlock,Morphling,Mirana,Juggernaut,Puck,Windranger,Tiny,Phantom Lancer,Shadow Shaman,Tidehunter,829,789,SEA
+7800000095,The International 2024,2024-07-12,Team Secret,Team Liquid,False,26.4,18,45,184,6,7,Venomancer,Slardar,Vengeful Spirit,Queen of Pain,Lina,Razor,Drow Ranger,Lich,Crystal Maiden,Necrophos,-720,2374,SA
+7800000096,Riyadh Masters 2024,2024-11-05,BetBoom Team,Fnatic,False,25.1,11,19,121,9,1,Sven,Zeus,Tinker,Necrophos,Lion,Juggernaut,Warlock,Earthshaker,Shadow Fiend,Crystal Maiden,1171,7428,NA
+7800000097,DreamLeague Season 22,2024-02-01,Gaimin Gladiators,Fnatic,False,43.4,18,31,281,7,1,Slardar,Witch Doctor,Razor,Bloodseeker,Kunkka,Enigma,Earthshaker,Anti-Mage,Queen of Pain,Vengeful Spirit,1708,-2676,CIS
+7800000098,PGL Wallachia,2024-01-08,BetBoom Team,Evil Geniuses,True,45.3,51,50,32,10,9,Tiny,Mirana,Lina,Crystal Maiden,Queen of Pain,Lich,Faceless Void,Tidehunter,Puck,Razor,-3430,2574,EU
+7800000099,Riyadh Masters 2024,2024-01-08,Alliance,Team Liquid,False,37.8,28,29,99,11,5,Axe,Witch Doctor,Necrophos,Lich,Tiny,Venomancer,Enigma,Faceless Void,Earthshaker,Bane,1102,-9117,NA
+7800000100,The International 2024,2024-12-17,Team Spirit,Virtus.pro,False,36.4,48,48,93,8,1,Morphling,Axe,Drow Ranger,Kunkka,Windranger,Bane,Lina,Shadow Fiend,Faceless Void,Necrophos,-5951,-5054,CIS
+7800000101,Riyadh Masters 2024,2024-10-29,Gaimin Gladiators,Alliance,False,37.5,21,21,43,8,4,Sand King,Crystal Maiden,Beastmaster,Queen of Pain,Enigma,Phantom Lancer,Lion,Morphling,Slardar,Drow Ranger,3203,6916,SA
+7800000102,PGL Wallachia,2024-01-26,Team Liquid,BetBoom Team,False,48.6,25,34,150,8,9,Razor,Puck,Anti-Mage,Shadow Shaman,Shadow Fiend,Mirana,Tiny,Phantom Lancer,Windranger,Axe,-1077,-2571,CN
+7800000103,BetBoom Dacha,2024-04-24,Virtus.pro,Team Spirit,False,34.5,30,51,137,6,10,Shadow Fiend,Tinker,Kunkka,Crystal Maiden,Windranger,Tidehunter,Drow Ranger,Bloodseeker,Venomancer,Sniper,3631,-2775,NA
+7800000104,Riyadh Masters 2024,2024-06-02,Team Spirit,Gaimin Gladiators,True,25.2,30,5,177,8,11,Tiny,Windranger,Anti-Mage,Sven,Tinker,Slardar,Bloodseeker,Kunkka,Lion,Enigma,1983,-3591,SEA
+7800000105,ESL One Birmingham,2024-08-28,PSG.LGD,Tundra Esports,True,54.1,56,47,212,10,7,Slardar,Razor,Tiny,Kunkka,Necrophos,Beastmaster,Venomancer,Drow Ranger,Enigma,Bloodseeker,-2782,-12535,EU
+7800000106,The International 2024,2024-12-01,Natus Vincere,BetBoom Team,False,29.1,43,50,197,1,7,Crystal Maiden,Mirana,Shadow Fiend,Tidehunter,Tinker,Tiny,Razor,Faceless Void,Sand King,Kunkka,-1231,-393,EU
+7800000107,DreamLeague Season 22,2024-09-28,Fnatic,Gaimin Gladiators,False,48.7,44,58,10,11,0,Bloodseeker,Zeus,Kunkka,Tidehunter,Drow Ranger,Puck,Shadow Fiend,Sand King,Morphling,Tinker,-5838,2530,EU
+7800000108,Riyadh Masters 2024,2024-03-30,BetBoom Team,Alliance,False,51.5,41,46,136,0,10,Razor,Phantom Lancer,Bloodseeker,Storm Spirit,Drow Ranger,Shadow Fiend,Pudge,Juggernaut,Shadow Shaman,Sniper,-330,-5983,NA
+7800000109,The International 2024,2024-10-27,Team Spirit,PSG.LGD,False,40.7,26,37,212,3,5,Phantom Lancer,Tinker,Sand King,Riki,Witch Doctor,Warlock,Sven,Windranger,Juggernaut,Beastmaster,-666,-1372,CN
+7800000110,The International 2024,2024-07-08,Evil Geniuses,Team Secret,True,36.1,45,38,160,0,0,Riki,Sand King,Razor,Necrophos,Storm Spirit,Zeus,Lion,Tidehunter,Lich,Witch Doctor,-3549,-9547,CN
+7800000111,DreamLeague Season 22,2024-04-28,OG,nouns,True,40.5,37,26,247,2,8,Pudge,Witch Doctor,Axe,Earthshaker,Enigma,Venomancer,Mirana,Warlock,Slardar,Tidehunter,-2764,-6637,NA
+7800000112,DreamLeague Season 22,2024-05-15,OG,Fnatic,False,23.0,29,36,10,6,0,Pudge,Venomancer,Witch Doctor,Mirana,Bane,Storm Spirit,Tidehunter,Necrophos,Drow Ranger,Lion,2218,-3313,EU
+7800000113,ESL One Birmingham,2024-05-25,nouns,Team Secret,True,37.7,49,40,143,9,0,Faceless Void,Pudge,Juggernaut,Crystal Maiden,Windranger,Anti-Mage,Mirana,Necrophos,Witch Doctor,Bane,-905,992,EU
+7800000114,The International 2024,2024-03-18,Natus Vincere,OG,False,49.1,13,41,114,9,11,Lion,Tinker,Storm Spirit,Anti-Mage,Beastmaster,Sniper,Vengeful Spirit,Juggernaut,Axe,Enigma,-591,-5576,CIS
+7800000115,ESL One Birmingham,2024-08-17,nouns,Tundra Esports,False,21.1,38,40,120,9,1,Shadow Fiend,Crystal Maiden,Lich,Phantom Lancer,Bane,Tinker,Anti-Mage,Mirana,Lina,Sand King,4179,9,CIS
+7800000116,BetBoom Dacha,2024-07-11,Evil Geniuses,OG,True,40.7,36,22,328,10,10,Anti-Mage,Sand King,Vengeful Spirit,Tinker,Drow Ranger,Windranger,Morphling,Earthshaker,Shadow Shaman,Warlock,2876,-2904,CN
+7800000117,The International 2024,2024-10-16,Evil Geniuses,Alliance,True,31.0,35,27,268,0,5,Shadow Fiend,Puck,Kunkka,Sniper,Slardar,Tidehunter,Enigma,Storm Spirit,Tiny,Riki,1832,5038,CIS
+7800000118,DreamLeague Season 22,2024-11-04,9Pandas,Gaimin Gladiators,True,30.5,37,36,45,5,1,Bloodseeker,Puck,Venomancer,Kunkka,Witch Doctor,Riki,Vengeful Spirit,Lina,Mirana,Anti-Mage,3824,-814,EU
+7800000119,ESL One Birmingham,2024-10-12,Natus Vincere,Team Secret,False,30.2,52,54,58,8,6,Venomancer,Necrophos,Warlock,Lina,Witch Doctor,Tiny,Mirana,Lion,Vengeful Spirit,Anti-Mage,2220,441,CIS
+7800000120,DreamLeague Season 22,2024-02-23,PSG.LGD,Fnatic,False,36.0,33,49,118,11,0,Tiny,Phantom Lancer,Lich,Juggernaut,Slardar,Necrophos,Puck,Queen of Pain,Beastmaster,Shadow Fiend,5781,5654,CIS
+7800000121,PGL Wallachia,2024-08-29,Tundra Esports,Team Spirit,True,29.1,47,43,10,11,9,Crystal Maiden,Puck,Slardar,Venomancer,Morphling,Axe,Pudge,Zeus,Shadow Fiend,Beastmaster,-7,-1427,CN
+7800000122,PGL Wallachia,2024-07-23,Evil Geniuses,9Pandas,True,38.0,53,32,310,6,4,Queen of Pain,Beastmaster,Vengeful Spirit,Puck,Juggernaut,Shadow Shaman,Tidehunter,Kunkka,Sven,Slardar,4922,-1390,NA
+7800000123,ESL One Birmingham,2024-02-09,Team Spirit,PSG.LGD,False,26.9,29,29,208,10,5,Venomancer,Lion,Sand King,Tidehunter,Witch Doctor,Sven,Morphling,Bane,Storm Spirit,Razor,-2359,-5750,CIS
+7800000124,ESL One Birmingham,2024-05-16,Alliance,BetBoom Team,False,47.0,12,40,152,10,5,Slardar,Necrophos,Enigma,Sven,Bloodseeker,Shadow Fiend,Phantom Lancer,Crystal Maiden,Kunkka,Shadow Shaman,3378,3543,SA
+7800000125,The International 2024,2024-10-05,9Pandas,Gaimin Gladiators,False,39.8,24,47,14,1,2,Lich,Shadow Shaman,Juggernaut,Anti-Mage,Slardar,Faceless Void,Riki,Beastmaster,Drow Ranger,Phantom Lancer,-2287,-2282,NA
+7800000126,ESL One Birmingham,2024-08-22,Team Spirit,Natus Vincere,False,36.5,19,32,73,8,9,Sven,Razor,Warlock,Drow Ranger,Beastmaster,Sniper,Bloodseeker,Axe,Witch Doctor,Lion,50,-7887,EU
+7800000127,ESL One Birmingham,2024-05-29,Team Spirit,Gaimin Gladiators,True,59.6,39,37,213,0,11,Sniper,Sven,Earthshaker,Windranger,Crystal Maiden,Enigma,Zeus,Anti-Mage,Kunkka,Necrophos,1212,916,CN
+7800000128,BetBoom Dacha,2024-06-22,Team Liquid,BetBoom Team,True,15.0,44,34,85,7,2,Bloodseeker,Tiny,Slardar,Juggernaut,Windranger,Mirana,Pudge,Sniper,Necrophos,Axe,-1771,-5856,CIS
+7800000129,The International 2024,2024-03-15,OG,Team Secret,True,39.2,26,18,10,8,2,Queen of Pain,Razor,Windranger,Faceless Void,Axe,Bane,Shadow Fiend,Warlock,Phantom Lancer,Lion,3309,2036,EU
+7800000130,The International 2024,2024-11-14,nouns,Alliance,False,55.0,18,24,290,3,11,Venomancer,Faceless Void,Tinker,Windranger,Lich,Beastmaster,Earthshaker,Drow Ranger,Sniper,Kunkka,-122,-412,SA
+7800000131,ESL One Birmingham,2024-01-21,Team Liquid,Natus Vincere,True,44.5,38,33,252,6,2,Venomancer,Kunkka,Witch Doctor,Axe,Bane,Tinker,Lina,Mirana,Storm Spirit,Tidehunter,723,-5502,NA
+7800000132,The International 2024,2024-07-04,Evil Geniuses,Team Liquid,True,46.8,26,23,187,4,5,Storm Spirit,Sven,Sand King,Tiny,Zeus,Necrophos,Windranger,Venomancer,Shadow Fiend,Tidehunter,-1100,-1116,SEA
+7800000133,Riyadh Masters 2024,2024-06-23,Team Spirit,Fnatic,True,44.3,37,35,103,10,11,Juggernaut,Pudge,Anti-Mage,Venomancer,Drow Ranger,Storm Spirit,Lina,Necrophos,Bloodseeker,Vengeful Spirit,2530,-1161,EU
+7800000134,PGL Wallachia,2024-05-12,BetBoom Team,Natus Vincere,True,36.0,39,20,225,2,0,Sniper,Juggernaut,Warlock,Tiny,Morphling,Pudge,Windranger,Enigma,Shadow Shaman,Kunkka,1143,1626,EU
+7800000135,ESL One Birmingham,2024-07-16,PSG.LGD,Virtus.pro,False,25.0,51,53,62,1,8,Axe,Queen of Pain,Storm Spirit,Razor,Bloodseeker,Tiny,Tinker,Juggernaut,Earthshaker,Beastmaster,1486,368,SA
+7800000136,The International 2024,2024-01-12,Fnatic,Alliance,False,36.9,34,43,124,0,6,Sven,Beastmaster,Pudge,Shadow Fiend,Tiny,Phantom Lancer,Razor,Faceless Void,Windranger,Lich,1668,1897,SEA
+7800000137,DreamLeague Season 22,2024-04-26,Team Liquid,Evil Geniuses,False,26.1,26,38,179,3,10,Slardar,Sniper,Enigma,Zeus,Storm Spirit,Venomancer,Mirana,Tidehunter,Kunkka,Bane,-410,-3391,SA
+7800000138,The International 2024,2024-10-05,Natus Vincere,Virtus.pro,True,52.2,48,45,169,6,9,Axe,Zeus,Lich,Storm Spirit,Tinker,Mirana,Lion,Tiny,Queen of Pain,Lina,1645,-8183,CN
+7800000139,PGL Wallachia,2024-03-12,Team Liquid,OG,False,43.7,13,30,105,5,10,Lion,Zeus,Sven,Storm Spirit,Faceless Void,Kunkka,Juggernaut,Sand King,Mirana,Sniper,-2518,1489,NA
+7800000140,The International 2024,2024-05-28,Evil Geniuses,Team Secret,True,28.5,29,24,96,5,6,Phantom Lancer,Vengeful Spirit,Sniper,Bane,Drow Ranger,Kunkka,Venomancer,Anti-Mage,Zeus,Tiny,1796,4378,CN
+7800000141,The International 2024,2024-07-15,OG,Gaimin Gladiators,False,42.4,47,51,80,11,7,Drow Ranger,Earthshaker,Tidehunter,Lion,Phantom Lancer,Sniper,Witch Doctor,Bane,Warlock,Shadow Fiend,1771,4846,EU
+7800000142,ESL One Birmingham,2024-01-02,Tundra Esports,Team Liquid,False,36.5,38,47,111,2,5,Bloodseeker,Crystal Maiden,Venomancer,Lion,Earthshaker,Juggernaut,Lina,Faceless Void,Vengeful Spirit,Tiny,-1273,2438,SEA
+7800000143,Riyadh Masters 2024,2024-03-08,BetBoom Team,Tundra Esports,True,38.2,23,18,142,10,0,Earthshaker,Tiny,Beastmaster,Tidehunter,Faceless Void,Shadow Shaman,Sand King,Riki,Drow Ranger,Vengeful Spirit,203,977,CN
+7800000144,BetBoom Dacha,2024-06-30,Gaimin Gladiators,Virtus.pro,False,45.9,30,37,36,11,4,Tinker,Storm Spirit,Sven,Bane,Anti-Mage,Shadow Fiend,Axe,Pudge,Crystal Maiden,Kunkka,-307,2150,EU
+7800000145,Riyadh Masters 2024,2024-03-18,Team Spirit,Team Liquid,True,39.5,50,46,77,3,9,Razor,Riki,Vengeful Spirit,Mirana,Sand King,Kunkka,Lich,Beastmaster,Pudge,Lina,4340,2016,EU
+7800000146,DreamLeague Season 22,2024-11-24,Evil Geniuses,Alliance,False,38.3,17,39,172,11,9,Kunkka,Beastmaster,Bloodseeker,Phantom Lancer,Mirana,Lion,Tidehunter,Windranger,Earthshaker,Storm Spirit,1210,2030,NA
+7800000147,DreamLeague Season 22,2024-10-04,PSG.LGD,Evil Geniuses,False,43.6,29,37,100,8,3,Necrophos,Riki,Sand King,Lina,Venomancer,Lich,Sven,Lion,Faceless Void,Bloodseeker,-913,1933,SA
+7800000148,BetBoom Dacha,2024-05-11,Tundra Esports,9Pandas,True,61.4,36,36,10,7,9,Mirana,Tinker,Drow Ranger,Earthshaker,Bloodseeker,Riki,Razor,Juggernaut,Zeus,Sand King,2116,1766,NA
+7800000149,PGL Wallachia,2024-09-04,OG,PSG.LGD,False,51.1,41,48,281,0,11,Sniper,Witch Doctor,Lina,Bane,Vengeful Spirit,Beastmaster,Kunkka,Enigma,Shadow Fiend,Tiny,3801,2523,SA
+7800000150,DreamLeague Season 22,2024-04-09,Alliance,Gaimin Gladiators,False,43.7,59,61,104,5,1,Anti-Mage,Storm Spirit,Sand King,Puck,Enigma,Riki,Zeus,Lion,Crystal Maiden,Beastmaster,2043,1682,NA
+7800000151,PGL Wallachia,2024-05-24,Team Spirit,Alliance,True,34.8,34,25,249,7,8,Shadow Fiend,Axe,Crystal Maiden,Juggernaut,Vengeful Spirit,Morphling,Beastmaster,Tinker,Enigma,Faceless Void,1986,-726,CIS
+7800000152,Riyadh Masters 2024,2024-09-07,9Pandas,BetBoom Team,False,39.9,10,31,161,9,1,Storm Spirit,Vengeful Spirit,Beastmaster,Enigma,Drow Ranger,Juggernaut,Riki,Warlock,Queen of Pain,Witch Doctor,3800,1123,CN
+7800000153,ESL One Birmingham,2024-05-18,Fnatic,9Pandas,False,23.6,17,27,197,11,7,Vengeful Spirit,Venomancer,Lich,Crystal Maiden,Sand King,Axe,Tidehunter,Bane,Razor,Faceless Void,4269,4532,SA
+7800000154,The International 2024,2024-03-20,Alliance,Natus Vincere,False,51.7,37,44,116,8,6,Zeus,Morphling,Bane,Bloodseeker,Mirana,Witch Doctor,Lich,Sand King,Beastmaster,Faceless Void,1650,-465,SA
+7800000155,ESL One Birmingham,2024-01-31,nouns,Fnatic,True,41.9,46,41,63,3,3,Earthshaker,Razor,Queen of Pain,Lion,Warlock,Phantom Lancer,Venomancer,Storm Spirit,Sand King,Shadow Shaman,-1887,-4066,NA
+7800000156,Riyadh Masters 2024,2024-10-09,BetBoom Team,nouns,True,28.0,45,38,73,9,0,Tiny,Bane,Witch Doctor,Necrophos,Phantom Lancer,Enigma,Lich,Pudge,Sand King,Warlock,4945,-4375,CN
+7800000157,The International 2024,2024-10-30,BetBoom Team,Team Liquid,False,31.7,41,48,131,5,1,Anti-Mage,Storm Spirit,Razor,Axe,Drow Ranger,Riki,Shadow Fiend,Tinker,Bloodseeker,Vengeful Spirit,4586,2832,EU
+7800000158,PGL Wallachia,2024-02-06,Alliance,nouns,True,44.9,40,31,107,10,4,Crystal Maiden,Venomancer,Earthshaker,Shadow Fiend,Sand King,Vengeful Spirit,Lich,Tinker,Sniper,Bloodseeker,-3271,2621,CN
+7800000159,Riyadh Masters 2024,2024-11-23,Team Secret,OG,False,40.4,26,27,10,2,9,Shadow Fiend,Drow Ranger,Storm Spirit,Tinker,Necrophos,Vengeful Spirit,Pudge,Mirana,Venomancer,Slardar,744,-8477,CIS
+7800000160,BetBoom Dacha,2024-06-18,Team Secret,Gaimin Gladiators,True,29.9,51,51,66,11,9,Storm Spirit,Tiny,Lina,Zeus,Tidehunter,Sniper,Anti-Mage,Sven,Shadow Fiend,Sand King,-1548,-2733,SA
+7800000161,DreamLeague Season 22,2024-06-16,9Pandas,Team Spirit,True,42.6,22,16,42,7,8,Enigma,Kunkka,Phantom Lancer,Tinker,Bloodseeker,Shadow Fiend,Mirana,Tidehunter,Faceless Void,Zeus,82,-2684,CN
+7800000162,Riyadh Masters 2024,2024-05-18,Team Liquid,PSG.LGD,False,33.6,33,33,79,1,5,Sniper,Phantom Lancer,Sand King,Morphling,Mirana,Drow Ranger,Bloodseeker,Necrophos,Vengeful Spirit,Shadow Fiend,-4714,-4645,CIS
+7800000163,Riyadh Masters 2024,2024-07-01,Team Secret,Fnatic,True,43.2,50,46,230,9,8,Venomancer,Sven,Puck,Enigma,Beastmaster,Bloodseeker,Earthshaker,Faceless Void,Tidehunter,Warlock,-5446,-1440,CIS
+7800000164,Riyadh Masters 2024,2024-06-07,Fnatic,nouns,True,19.8,52,14,10,6,7,Tidehunter,Axe,Storm Spirit,Sven,Shadow Shaman,Phantom Lancer,Warlock,Tinker,Anti-Mage,Bane,1440,1367,SEA
+7800000165,BetBoom Dacha,2024-08-06,PSG.LGD,Team Secret,False,52.9,48,48,80,8,3,Tiny,Juggernaut,Lion,Sand King,Morphling,Razor,Faceless Void,Bane,Windranger,Riki,1292,7112,SEA
+7800000166,DreamLeague Season 22,2024-08-04,OG,Team Secret,False,43.2,38,42,100,2,4,Sand King,Phantom Lancer,Storm Spirit,Anti-Mage,Tinker,Morphling,Crystal Maiden,Razor,Shadow Shaman,Queen of Pain,4931,2338,NA
+7800000167,The International 2024,2024-08-09,Team Secret,Evil Geniuses,True,51.0,46,40,32,6,3,Lich,Vengeful Spirit,Anti-Mage,Puck,Zeus,Sven,Necrophos,Shadow Shaman,Drow Ranger,Sniper,-2325,-3521,SEA
+7800000168,PGL Wallachia,2024-01-20,BetBoom Team,OG,True,22.7,41,41,278,6,8,Shadow Fiend,Witch Doctor,Puck,Tinker,Beastmaster,Sniper,Storm Spirit,Enigma,Lich,Lina,8985,7621,NA
+7800000169,The International 2024,2024-08-31,Team Spirit,Virtus.pro,False,41.3,32,38,208,8,11,Pudge,Juggernaut,Shadow Fiend,Tiny,Venomancer,Phantom Lancer,Bloodseeker,Axe,Necrophos,Drow Ranger,3481,824,CN
+7800000170,Riyadh Masters 2024,2024-10-28,Natus Vincere,Team Secret,False,39.6,40,45,201,2,5,Shadow Fiend,Kunkka,Juggernaut,Necrophos,Sniper,Bloodseeker,Axe,Queen of Pain,Drow Ranger,Mirana,2259,2603,NA
+7800000171,DreamLeague Season 22,2024-10-12,Virtus.pro,Alliance,False,37.2,9,31,60,10,3,Lich,Vengeful Spirit,Venomancer,Beastmaster,Necrophos,Windranger,Pudge,Storm Spirit,Bane,Mirana,5124,-5592,CN
+7800000172,PGL Wallachia,2024-10-17,Fnatic,Virtus.pro,False,25.3,32,39,271,0,10,Mirana,Sand King,Beastmaster,Axe,Witch Doctor,Crystal Maiden,Razor,Phantom Lancer,Vengeful Spirit,Lion,-3251,3049,EU
+7800000173,BetBoom Dacha,2024-08-30,Team Liquid,Alliance,True,41.1,40,32,138,11,9,Shadow Shaman,Bane,Lina,Axe,Bloodseeker,Puck,Tinker,Windranger,Razor,Mirana,1544,-701,SA
+7800000174,ESL One Birmingham,2024-07-18,nouns,Fnatic,False,45.7,10,28,103,3,1,Lich,Tidehunter,Witch Doctor,Razor,Axe,Lion,Crystal Maiden,Sand King,Shadow Shaman,Shadow Fiend,2384,-181,NA
+7800000175,The International 2024,2024-10-25,Team Secret,Team Liquid,True,47.6,57,38,100,9,1,Phantom Lancer,Tidehunter,Bane,Earthshaker,Tinker,Morphling,Necrophos,Witch Doctor,Slardar,Shadow Fiend,2093,2534,NA
+7800000176,The International 2024,2024-08-08,Tundra Esports,Team Liquid,True,44.3,42,39,252,11,7,Sand King,Kunkka,Lion,Shadow Shaman,Enigma,Witch Doctor,Pudge,Tidehunter,Sven,Lich,389,2934,SEA
+7800000177,ESL One Birmingham,2024-06-02,Natus Vincere,PSG.LGD,True,39.1,42,36,191,1,0,Tiny,Queen of Pain,Shadow Shaman,Phantom Lancer,Lina,Razor,Juggernaut,Beastmaster,Enigma,Shadow Fiend,1165,-4387,EU
+7800000178,ESL One Birmingham,2024-06-28,Team Secret,Virtus.pro,True,31.5,19,16,59,10,9,Juggernaut,Earthshaker,Morphling,Anti-Mage,Bane,Windranger,Razor,Warlock,Storm Spirit,Sven,2344,-3849,SEA
+7800000179,BetBoom Dacha,2024-05-24,nouns,PSG.LGD,True,32.0,46,40,238,5,5,Faceless Void,Witch Doctor,Puck,Anti-Mage,Queen of Pain,Vengeful Spirit,Enigma,Warlock,Tidehunter,Juggernaut,-4097,-2719,SEA
+7800000180,The International 2024,2024-08-10,BetBoom Team,Fnatic,False,25.0,33,40,140,2,4,Enigma,Slardar,Lich,Lion,Vengeful Spirit,Phantom Lancer,Warlock,Bane,Drow Ranger,Tidehunter,-1023,-432,EU
+7800000181,BetBoom Dacha,2024-05-11,Team Liquid,Team Spirit,False,43.0,20,29,120,10,3,Slardar,Tinker,Kunkka,Morphling,Zeus,Witch Doctor,Bloodseeker,Sven,Windranger,Crystal Maiden,-2657,3954,EU
+7800000182,BetBoom Dacha,2024-11-25,Alliance,Team Liquid,True,46.5,53,47,10,10,0,Warlock,Anti-Mage,Lion,Bloodseeker,Tidehunter,Necrophos,Beastmaster,Tinker,Zeus,Slardar,-4097,131,EU
+7800000183,DreamLeague Season 22,2024-02-07,Team Secret,Team Spirit,False,33.0,16,39,74,1,6,Zeus,Morphling,Lich,Tidehunter,Shadow Fiend,Windranger,Razor,Puck,Earthshaker,Witch Doctor,3113,664,SA
+7800000184,ESL One Birmingham,2024-02-04,Gaimin Gladiators,Fnatic,True,56.5,49,45,21,7,8,Tinker,Sven,Vengeful Spirit,Zeus,Razor,Crystal Maiden,Enigma,Warlock,Puck,Juggernaut,-4010,-392,EU
+7800000185,ESL One Birmingham,2024-05-29,OG,9Pandas,False,39.4,29,46,227,3,1,Sand King,Shadow Shaman,Puck,Earthshaker,Mirana,Anti-Mage,Tiny,Phantom Lancer,Riki,Venomancer,-3582,-5462,EU
+7800000186,DreamLeague Season 22,2024-03-18,BetBoom Team,OG,True,31.9,40,40,111,9,8,Venomancer,Tiny,Mirana,Razor,Shadow Fiend,Witch Doctor,Queen of Pain,Anti-Mage,Sven,Puck,6102,-4374,CIS
+7800000187,DreamLeague Season 22,2024-09-10,Fnatic,9Pandas,False,51.0,22,28,116,0,11,Necrophos,Phantom Lancer,Anti-Mage,Slardar,Shadow Fiend,Tidehunter,Sniper,Earthshaker,Windranger,Bane,2624,6892,SEA
+7800000188,PGL Wallachia,2024-10-23,9Pandas,PSG.LGD,True,38.4,44,35,131,9,10,Mirana,Queen of Pain,Beastmaster,Lich,Pudge,Crystal Maiden,Warlock,Axe,Razor,Juggernaut,-2548,-419,SA
+7800000189,BetBoom Dacha,2024-08-02,Gaimin Gladiators,Team Secret,False,42.3,20,20,91,1,8,Bloodseeker,Queen of Pain,Witch Doctor,Drow Ranger,Lina,Bane,Axe,Enigma,Zeus,Windranger,-1346,-47,SEA
+7800000190,DreamLeague Season 22,2024-11-11,Gaimin Gladiators,PSG.LGD,True,28.0,21,16,148,2,11,Bane,Vengeful Spirit,Enigma,Anti-Mage,Puck,Storm Spirit,Earthshaker,Crystal Maiden,Warlock,Sand King,5187,-1932,CIS
+7800000191,ESL One Birmingham,2024-02-20,Fnatic,Alliance,False,35.4,6,18,163,0,1,Morphling,Warlock,Riki,Beastmaster,Zeus,Tinker,Sniper,Crystal Maiden,Venomancer,Juggernaut,1385,1709,CN
+7800000192,Riyadh Masters 2024,2024-07-30,Team Secret,Gaimin Gladiators,True,22.1,44,39,161,3,8,Lich,Tiny,Bane,Juggernaut,Anti-Mage,Lina,Lion,Sand King,Shadow Fiend,Warlock,963,-3250,SEA
+7800000193,BetBoom Dacha,2024-01-19,Team Spirit,PSG.LGD,False,39.8,26,47,197,4,2,Zeus,Venomancer,Pudge,Sniper,Queen of Pain,Enigma,Morphling,Beastmaster,Lich,Juggernaut,-662,4240,SA
+7800000194,BetBoom Dacha,2024-12-05,Virtus.pro,Team Secret,False,15.6,27,34,10,2,9,Anti-Mage,Shadow Shaman,Faceless Void,Slardar,Tidehunter,Sniper,Juggernaut,Razor,Bloodseeker,Lion,-2869,5128,EU
+7800000195,PGL Wallachia,2024-09-06,Alliance,Gaimin Gladiators,False,28.5,40,47,193,1,6,Pudge,Drow Ranger,Shadow Fiend,Tinker,Zeus,Bloodseeker,Storm Spirit,Queen of Pain,Lion,Puck,-1816,565,NA
+7800000196,PGL Wallachia,2024-10-03,Virtus.pro,Gaimin Gladiators,False,45.8,22,22,161,9,6,Vengeful Spirit,Slardar,Drow Ranger,Zeus,Anti-Mage,Mirana,Lion,Earthshaker,Bane,Riki,2723,-3924,SA
+7800000197,The International 2024,2024-01-27,Team Liquid,PSG.LGD,False,54.4,17,27,39,10,6,Lich,Windranger,Drow Ranger,Tinker,Crystal Maiden,Faceless Void,Vengeful Spirit,Anti-Mage,Bloodseeker,Storm Spirit,542,-2077,CN
+7800000198,Riyadh Masters 2024,2024-12-01,Natus Vincere,Gaimin Gladiators,True,15.3,55,47,24,6,0,Bloodseeker,Storm Spirit,Faceless Void,Shadow Shaman,Venomancer,Shadow Fiend,Enigma,Kunkka,Necrophos,Sniper,-1791,2683,EU
+7800000199,PGL Wallachia,2024-02-04,Tundra Esports,Fnatic,True,54.3,62,56,10,3,0,Venomancer,Juggernaut,Anti-Mage,Slardar,Phantom Lancer,Sven,Zeus,Razor,Lina,Lion,3505,1600,CN
+7800000200,DreamLeague Season 22,2024-07-29,Gaimin Gladiators,PSG.LGD,False,31.3,32,40,162,2,3,Puck,Sand King,Bloodseeker,Razor,Lina,Vengeful Spirit,Drow Ranger,Shadow Fiend,Zeus,Witch Doctor,-3042,3585,SA
+7800000201,ESL One Birmingham,2024-07-19,Team Liquid,Team Secret,True,47.6,52,46,131,9,10,Slardar,Bloodseeker,Pudge,Warlock,Puck,Lich,Tiny,Necrophos,Faceless Void,Drow Ranger,294,-3152,SA
+7800000202,DreamLeague Season 22,2024-08-06,nouns,Gaimin Gladiators,True,31.0,48,39,149,3,3,Enigma,Sven,Beastmaster,Bane,Tidehunter,Slardar,Morphling,Warlock,Phantom Lancer,Juggernaut,3756,5718,SA
+7800000203,DreamLeague Season 22,2024-08-29,Alliance,Fnatic,True,32.1,54,47,156,5,10,Enigma,Sniper,Venomancer,Axe,Tiny,Storm Spirit,Lion,Kunkka,Pudge,Bloodseeker,1440,-8950,EU
+7800000204,DreamLeague Season 22,2024-02-20,Virtus.pro,Alliance,True,36.6,26,22,138,7,3,Queen of Pain,Beastmaster,Warlock,Slardar,Shadow Fiend,Necrophos,Mirana,Anti-Mage,Earthshaker,Razor,1188,1234,SEA
+7800000205,ESL One Birmingham,2024-09-10,BetBoom Team,Virtus.pro,True,49.9,58,53,41,11,4,Tinker,Riki,Lion,Sand King,Bane,Necrophos,Axe,Shadow Fiend,Morphling,Enigma,1502,4790,EU
+7800000206,The International 2024,2024-11-03,BetBoom Team,Team Spirit,False,37.2,26,38,57,2,10,Drow Ranger,Vengeful Spirit,Crystal Maiden,Lich,Beastmaster,Tinker,Tidehunter,Bloodseeker,Phantom Lancer,Riki,508,-2302,NA
+7800000207,DreamLeague Season 22,2024-12-28,Tundra Esports,Team Spirit,False,38.8,46,49,83,9,7,Sniper,Lich,Tiny,Enigma,Drow Ranger,Juggernaut,Faceless Void,Vengeful Spirit,Pudge,Axe,1858,-3094,CIS
+7800000208,ESL One Birmingham,2024-01-02,Natus Vincere,OG,False,39.9,42,50,164,9,3,Faceless Void,Warlock,Witch Doctor,Earthshaker,Kunkka,Shadow Fiend,Lion,Sven,Tiny,Phantom Lancer,5959,401,EU
+7800000209,The International 2024,2024-01-18,Evil Geniuses,Virtus.pro,False,54.4,23,33,10,6,8,Venomancer,Puck,Tidehunter,Slardar,Shadow Shaman,Anti-Mage,Phantom Lancer,Queen of Pain,Kunkka,Tinker,-1785,6166,EU
+7800000210,Riyadh Masters 2024,2024-01-08,Gaimin Gladiators,BetBoom Team,False,27.9,36,44,81,10,8,Windranger,Mirana,Beastmaster,Lich,Sand King,Enigma,Kunkka,Riki,Slardar,Axe,-4011,-2271,EU
+7800000211,The International 2024,2024-12-13,Evil Geniuses,Tundra Esports,True,48.1,30,21,180,3,6,Storm Spirit,Beastmaster,Kunkka,Lion,Vengeful Spirit,Zeus,Shadow Shaman,Phantom Lancer,Tiny,Enigma,-1349,5016,SEA
+7800000212,DreamLeague Season 22,2024-09-08,OG,Gaimin Gladiators,True,58.6,35,33,284,9,3,Venomancer,Zeus,Razor,Drow Ranger,Mirana,Anti-Mage,Necrophos,Witch Doctor,Puck,Sven,428,679,SA
+7800000213,The International 2024,2024-03-17,BetBoom Team,Evil Geniuses,True,16.1,31,31,186,2,7,Crystal Maiden,Windranger,Sand King,Earthshaker,Phantom Lancer,Tiny,Sniper,Queen of Pain,Faceless Void,Warlock,3424,6283,SEA
+7800000214,The International 2024,2024-11-29,BetBoom Team,Natus Vincere,True,32.3,40,29,119,2,2,Lina,Slardar,Enigma,Tidehunter,Drow Ranger,Windranger,Razor,Pudge,Bane,Storm Spirit,6654,5498,CIS
+7800000215,DreamLeague Season 22,2024-10-13,Team Spirit,PSG.LGD,False,29.4,31,35,192,6,9,Drow Ranger,Sniper,Kunkka,Necrophos,Venomancer,Mirana,Tinker,Sven,Razor,Queen of Pain,2964,7214,SEA
+7800000216,The International 2024,2024-03-30,Team Secret,Alliance,False,49.0,28,29,137,9,10,Lion,Axe,Riki,Morphling,Lich,Enigma,Shadow Fiend,Kunkka,Necrophos,Crystal Maiden,-170,-7734,CN
+7800000217,BetBoom Dacha,2024-08-28,nouns,Team Liquid,True,36.9,60,26,160,8,3,Shadow Fiend,Warlock,Necrophos,Lina,Lion,Witch Doctor,Bane,Razor,Faceless Void,Lich,1549,1355,CN
+7800000218,BetBoom Dacha,2024-10-27,OG,Evil Geniuses,True,16.5,37,33,185,0,7,Sniper,Anti-Mage,Bloodseeker,Puck,Queen of Pain,Venomancer,Shadow Fiend,Zeus,Witch Doctor,Enigma,2896,-3122,CN
+7800000219,PGL Wallachia,2024-10-19,OG,Team Secret,True,51.4,35,17,125,7,4,Sniper,Pudge,Lich,Phantom Lancer,Shadow Fiend,Warlock,Venomancer,Zeus,Riki,Witch Doctor,3919,8327,EU
+7800000220,PGL Wallachia,2024-04-06,9Pandas,Evil Geniuses,False,46.3,32,32,117,2,11,Queen of Pain,Razor,Earthshaker,Mirana,Kunkka,Warlock,Zeus,Enigma,Crystal Maiden,Pudge,-4021,-3221,CN
+7800000221,DreamLeague Season 22,2024-03-29,Team Secret,BetBoom Team,False,31.6,28,29,251,1,8,Tinker,Bloodseeker,Tidehunter,Tiny,Necrophos,Shadow Fiend,Bane,Storm Spirit,Witch Doctor,Crystal Maiden,4739,-711,NA
+7800000222,The International 2024,2024-09-05,Gaimin Gladiators,Virtus.pro,True,30.8,50,47,70,6,1,Morphling,Tiny,Venomancer,Tinker,Anti-Mage,Bloodseeker,Juggernaut,Necrophos,Zeus,Beastmaster,-773,3200,NA
+7800000223,BetBoom Dacha,2024-09-05,BetBoom Team,Gaimin Gladiators,False,41.5,49,52,335,10,2,Riki,Axe,Mirana,Shadow Shaman,Kunkka,Zeus,Lion,Faceless Void,Tidehunter,Bloodseeker,846,-4911,CIS
+7800000224,The International 2024,2024-03-10,Virtus.pro,PSG.LGD,True,45.5,39,31,10,9,7,Slardar,Drow Ranger,Lina,Venomancer,Shadow Shaman,Sniper,Anti-Mage,Puck,Storm Spirit,Sven,-527,-430,CN
+7800000225,DreamLeague Season 22,2024-08-05,BetBoom Team,OG,False,29.3,14,24,96,8,6,Shadow Fiend,Razor,Crystal Maiden,Bane,Drow Ranger,Lion,Morphling,Lich,Faceless Void,Tidehunter,3489,6209,NA
+7800000226,The International 2024,2024-12-30,Team Secret,Team Spirit,True,31.5,29,28,144,0,11,Puck,Enigma,Zeus,Tinker,Sniper,Anti-Mage,Windranger,Mirana,Sven,Slardar,6404,7887,CIS
+7800000227,Riyadh Masters 2024,2024-02-19,Gaimin Gladiators,Evil Geniuses,False,61.4,5,38,31,10,3,Riki,Drow Ranger,Bane,Razor,Lina,Sand King,Phantom Lancer,Lion,Sniper,Mirana,-2202,-1182,CN
+7800000228,Riyadh Masters 2024,2024-12-13,nouns,Natus Vincere,False,34.9,8,45,99,6,2,Windranger,Mirana,Morphling,Kunkka,Enigma,Lina,Puck,Queen of Pain,Warlock,Storm Spirit,796,2027,CN
+7800000229,The International 2024,2024-09-14,BetBoom Team,Natus Vincere,True,52.1,32,29,149,3,3,Earthshaker,Mirana,Sand King,Venomancer,Morphling,Lion,Bloodseeker,Razor,Slardar,Enigma,-937,3063,SEA
+7800000230,ESL One Birmingham,2024-11-15,nouns,Evil Geniuses,False,46.6,35,47,77,2,5,Faceless Void,Juggernaut,Mirana,Enigma,Razor,Drow Ranger,Venomancer,Shadow Fiend,Storm Spirit,Axe,124,1372,CIS
+7800000231,DreamLeague Season 22,2024-12-07,PSG.LGD,Team Liquid,True,51.7,25,16,88,8,8,Pudge,Phantom Lancer,Drow Ranger,Razor,Lina,Faceless Void,Venomancer,Warlock,Tinker,Vengeful Spirit,1608,254,CIS
+7800000232,The International 2024,2024-06-22,PSG.LGD,nouns,False,40.5,25,45,33,10,1,Mirana,Lion,Storm Spirit,Earthshaker,Zeus,Phantom Lancer,Tinker,Kunkka,Tiny,Morphling,-1207,-620,SA
+7800000233,PGL Wallachia,2024-09-17,9Pandas,PSG.LGD,False,52.1,32,37,174,10,3,Zeus,Anti-Mage,Riki,Lion,Bane,Queen of Pain,Windranger,Shadow Shaman,Beastmaster,Crystal Maiden,-1715,-8784,CN
+7800000234,BetBoom Dacha,2024-08-28,Team Secret,PSG.LGD,True,16.4,31,11,189,11,0,Sven,Juggernaut,Puck,Queen of Pain,Sniper,Vengeful Spirit,Storm Spirit,Sand King,Tidehunter,Phantom Lancer,-4629,5703,EU
+7800000235,DreamLeague Season 22,2024-08-22,Evil Geniuses,Natus Vincere,False,41.5,20,29,207,0,3,Witch Doctor,Necrophos,Phantom Lancer,Pudge,Warlock,Juggernaut,Lina,Venomancer,Slardar,Bloodseeker,88,2001,CIS
+7800000236,DreamLeague Season 22,2024-05-15,Gaimin Gladiators,Team Liquid,True,59.0,32,5,198,4,9,Morphling,Beastmaster,Tidehunter,Razor,Bane,Windranger,Zeus,Necrophos,Riki,Anti-Mage,457,-2752,CN
+7800000237,PGL Wallachia,2024-05-25,OG,PSG.LGD,True,35.4,35,16,151,10,8,Bloodseeker,Queen of Pain,Storm Spirit,Shadow Fiend,Sand King,Faceless Void,Lich,Bane,Shadow Shaman,Phantom Lancer,4497,804,CN
+7800000238,Riyadh Masters 2024,2024-02-26,Team Spirit,nouns,False,41.7,32,46,156,7,1,Sand King,Crystal Maiden,Lina,Faceless Void,Earthshaker,Tidehunter,Morphling,Lion,Zeus,Warlock,3000,952,SA
+7800000239,The International 2024,2024-12-23,nouns,Tundra Esports,False,39.2,9,26,189,2,4,Riki,Razor,Sven,Bloodseeker,Necrophos,Axe,Tiny,Earthshaker,Lina,Tinker,6177,607,NA
+7800000240,BetBoom Dacha,2024-11-06,nouns,Tundra Esports,False,38.8,28,39,112,3,8,Razor,Lich,Vengeful Spirit,Shadow Fiend,Sven,Bloodseeker,Kunkka,Queen of Pain,Axe,Warlock,-3906,-548,EU
+7800000241,PGL Wallachia,2024-11-11,BetBoom Team,Natus Vincere,True,36.6,54,46,22,1,11,Warlock,Slardar,Shadow Shaman,Beastmaster,Tidehunter,Zeus,Sand King,Faceless Void,Windranger,Enigma,4477,-438,CN
+7800000242,PGL Wallachia,2024-04-22,Alliance,Virtus.pro,True,35.5,53,25,158,9,3,Queen of Pain,Lina,Shadow Fiend,Zeus,Drow Ranger,Axe,Vengeful Spirit,Juggernaut,Morphling,Phantom Lancer,546,2289,SEA
+7800000243,DreamLeague Season 22,2024-08-13,Gaimin Gladiators,PSG.LGD,False,42.8,6,36,203,10,11,Lion,Lina,Necrophos,Bane,Vengeful Spirit,Pudge,Mirana,Slardar,Beastmaster,Puck,5164,-1407,CIS
+7800000244,DreamLeague Season 22,2024-08-13,Fnatic,PSG.LGD,True,15.0,35,27,194,11,7,Necrophos,Axe,Shadow Fiend,Lion,Beastmaster,Queen of Pain,Lich,Tiny,Kunkka,Riki,1819,-9548,NA
+7800000245,Riyadh Masters 2024,2024-09-02,Natus Vincere,OG,False,45.4,44,45,49,0,4,Pudge,Sand King,Axe,Necrophos,Bloodseeker,Zeus,Drow Ranger,Beastmaster,Razor,Shadow Shaman,325,-5816,NA
+7800000246,BetBoom Dacha,2024-08-31,Alliance,OG,False,33.9,40,49,115,11,8,Juggernaut,Pudge,Axe,Bane,Witch Doctor,Riki,Queen of Pain,Bloodseeker,Mirana,Venomancer,-3772,-3077,SA
+7800000247,DreamLeague Season 22,2024-10-11,BetBoom Team,Evil Geniuses,True,40.4,39,17,141,5,6,Beastmaster,Anti-Mage,Tidehunter,Venomancer,Phantom Lancer,Lina,Tiny,Vengeful Spirit,Windranger,Lion,1164,2204,CN
+7800000248,DreamLeague Season 22,2024-08-20,Team Secret,Team Liquid,False,30.8,24,26,138,2,9,Enigma,Axe,Morphling,Slardar,Lich,Shadow Fiend,Warlock,Beastmaster,Bane,Anti-Mage,2934,-6254,SEA
+7800000249,ESL One Birmingham,2024-05-06,BetBoom Team,Tundra Esports,True,50.5,20,15,86,11,8,Razor,Storm Spirit,Morphling,Anti-Mage,Tidehunter,Axe,Enigma,Queen of Pain,Pudge,Mirana,-1094,3192,CIS
+7800000250,BetBoom Dacha,2024-11-01,Natus Vincere,Virtus.pro,False,37.9,11,25,144,8,1,Earthshaker,Drow Ranger,Beastmaster,Enigma,Pudge,Bloodseeker,Faceless Void,Warlock,Kunkka,Venomancer,76,-2280,CIS
+7800000251,DreamLeague Season 22,2024-06-24,Team Spirit,Gaimin Gladiators,False,31.6,40,40,53,8,5,Beastmaster,Windranger,Slardar,Crystal Maiden,Shadow Shaman,Axe,Anti-Mage,Faceless Void,Lion,Sniper,2512,-8383,CN
+7800000252,BetBoom Dacha,2024-12-19,nouns,Fnatic,True,58.6,11,8,141,4,4,Witch Doctor,Axe,Lion,Lina,Vengeful Spirit,Morphling,Slardar,Earthshaker,Bane,Zeus,3829,301,CN
+7800000253,PGL Wallachia,2024-06-22,Gaimin Gladiators,Team Secret,True,30.7,39,17,67,7,8,Warlock,Crystal Maiden,Riki,Axe,Shadow Fiend,Tidehunter,Queen of Pain,Necrophos,Pudge,Phantom Lancer,210,-1342,CIS
+7800000254,The International 2024,2024-07-26,Virtus.pro,BetBoom Team,False,25.6,30,63,145,6,1,Pudge,Enigma,Drow Ranger,Sand King,Faceless Void,Mirana,Shadow Shaman,Sniper,Necrophos,Lich,4565,896,SEA
+7800000255,BetBoom Dacha,2024-06-23,BetBoom Team,Tundra Esports,True,36.9,31,17,83,11,11,Vengeful Spirit,Venomancer,Riki,Witch Doctor,Zeus,Sven,Queen of Pain,Drow Ranger,Lich,Bane,-5927,1018,NA
+7800000256,DreamLeague Season 22,2024-03-05,BetBoom Team,Gaimin Gladiators,False,58.3,45,52,158,5,4,Sniper,Sand King,Razor,Faceless Void,Puck,Tidehunter,Pudge,Windranger,Sven,Anti-Mage,-2519,-1889,EU
+7800000257,PGL Wallachia,2024-06-23,Team Spirit,Gaimin Gladiators,False,30.9,43,48,87,0,5,Razor,Phantom Lancer,Puck,Lich,Mirana,Crystal Maiden,Tinker,Necrophos,Morphling,Riki,-4000,1269,SA
+7800000258,ESL One Birmingham,2024-07-26,Team Spirit,Fnatic,False,18.2,26,43,262,7,7,Faceless Void,Queen of Pain,Witch Doctor,Puck,Vengeful Spirit,Warlock,Anti-Mage,Enigma,Zeus,Lina,2623,3489,SA
+7800000259,DreamLeague Season 22,2024-10-16,Team Secret,Team Liquid,True,33.2,22,15,66,2,4,Lion,Riki,Beastmaster,Shadow Shaman,Morphling,Puck,Tinker,Drow Ranger,Necrophos,Enigma,4989,2845,SA
+7800000260,The International 2024,2024-07-15,Team Spirit,Evil Geniuses,False,47.8,45,56,177,7,5,Windranger,Enigma,Kunkka,Axe,Tinker,Witch Doctor,Lina,Faceless Void,Crystal Maiden,Juggernaut,2011,5473,EU
+7800000261,DreamLeague Season 22,2024-10-10,PSG.LGD,Tundra Esports,True,41.5,41,41,29,7,4,Juggernaut,Razor,Axe,Storm Spirit,Beastmaster,Puck,Witch Doctor,Tinker,Necrophos,Shadow Fiend,-18,-6024,EU
+7800000262,BetBoom Dacha,2024-10-18,Team Secret,Virtus.pro,True,28.0,31,24,155,7,4,Tinker,Drow Ranger,Crystal Maiden,Anti-Mage,Windranger,Shadow Shaman,Faceless Void,Bane,Slardar,Razor,1399,200,SEA
+7800000263,PGL Wallachia,2024-03-30,Virtus.pro,Tundra Esports,True,27.8,47,40,93,7,2,Razor,Beastmaster,Drow Ranger,Bloodseeker,Pudge,Sniper,Witch Doctor,Vengeful Spirit,Warlock,Venomancer,-981,-876,SEA
+7800000264,Riyadh Masters 2024,2024-08-09,Natus Vincere,Alliance,True,38.5,62,53,153,4,9,Axe,Necrophos,Earthshaker,Mirana,Vengeful Spirit,Faceless Void,Sven,Witch Doctor,Venomancer,Beastmaster,-822,-6737,SEA
+7800000265,The International 2024,2024-12-24,Fnatic,PSG.LGD,False,37.9,29,35,319,1,0,Warlock,Lion,Witch Doctor,Bane,Zeus,Enigma,Slardar,Morphling,Necrophos,Shadow Fiend,6011,7997,NA
+7800000266,The International 2024,2024-01-20,Virtus.pro,Team Secret,True,52.7,36,17,182,3,4,Tidehunter,Shadow Fiend,Beastmaster,Enigma,Crystal Maiden,Warlock,Juggernaut,Tinker,Phantom Lancer,Tiny,1605,-109,EU
+7800000267,BetBoom Dacha,2024-01-12,Evil Geniuses,Tundra Esports,True,52.9,42,36,114,3,6,Bloodseeker,Windranger,Kunkka,Enigma,Sven,Sniper,Razor,Drow Ranger,Vengeful Spirit,Pudge,-1530,1708,CN
+7800000268,ESL One Birmingham,2024-09-15,Team Liquid,OG,False,64.8,32,41,62,3,4,Bane,Venomancer,Lina,Windranger,Crystal Maiden,Puck,Warlock,Morphling,Kunkka,Axe,358,6376,SEA
+7800000269,ESL One Birmingham,2024-11-08,Fnatic,Alliance,False,40.9,36,38,304,6,0,Bane,Razor,Shadow Fiend,Kunkka,Beastmaster,Witch Doctor,Faceless Void,Tinker,Mirana,Vengeful Spirit,1559,20,EU
+7800000270,The International 2024,2024-11-04,9Pandas,OG,False,39.2,33,38,288,3,9,Shadow Shaman,Storm Spirit,Anti-Mage,Drow Ranger,Necrophos,Witch Doctor,Mirana,Venomancer,Vengeful Spirit,Sven,6553,-3477,SA
+7800000271,PGL Wallachia,2024-12-14,Virtus.pro,OG,False,41.7,32,38,149,6,8,Windranger,Enigma,Riki,Tiny,Bane,Razor,Tidehunter,Pudge,Faceless Void,Bloodseeker,-3968,-1652,SEA
+7800000272,DreamLeague Season 22,2024-03-05,9Pandas,nouns,False,46.9,36,43,213,4,4,Warlock,Shadow Shaman,Bloodseeker,Witch Doctor,Puck,Sniper,Zeus,Windranger,Mirana,Queen of Pain,2673,-232,EU
+7800000273,Riyadh Masters 2024,2024-03-11,BetBoom Team,Natus Vincere,True,35.5,28,16,97,10,7,Bane,Beastmaster,Crystal Maiden,Shadow Fiend,Anti-Mage,Zeus,Mirana,Tidehunter,Venomancer,Shadow Shaman,429,14225,CN
+7800000274,The International 2024,2024-08-03,PSG.LGD,Team Spirit,False,41.9,36,45,52,2,4,Riki,Kunkka,Warlock,Sven,Drow Ranger,Anti-Mage,Juggernaut,Tidehunter,Puck,Enigma,3913,4479,SA
+7800000275,PGL Wallachia,2024-02-05,Fnatic,Tundra Esports,True,37.6,46,42,106,9,6,Lich,Pudge,Axe,Phantom Lancer,Necrophos,Tiny,Vengeful Spirit,Storm Spirit,Kunkka,Earthshaker,-3179,887,CN
+7800000276,ESL One Birmingham,2024-06-28,Team Spirit,Tundra Esports,False,33.2,43,50,13,4,5,Juggernaut,Riki,Zeus,Windranger,Anti-Mage,Lion,Warlock,Drow Ranger,Lina,Mirana,1429,2390,CN
+7800000277,The International 2024,2024-06-06,Team Secret,Natus Vincere,True,28.9,34,28,357,0,6,Witch Doctor,Sven,Drow Ranger,Bloodseeker,Shadow Shaman,Phantom Lancer,Necrophos,Juggernaut,Earthshaker,Lina,8768,1962,SA
+7800000278,BetBoom Dacha,2024-08-15,Alliance,Team Spirit,False,30.0,23,27,10,1,3,Queen of Pain,Sand King,Necrophos,Anti-Mage,Faceless Void,Beastmaster,Riki,Storm Spirit,Windranger,Shadow Fiend,-414,-5411,CN
+7800000279,Riyadh Masters 2024,2024-05-03,Evil Geniuses,Team Liquid,False,57.3,56,65,87,4,3,Mirana,Tiny,Kunkka,Anti-Mage,Lina,Faceless Void,Beastmaster,Axe,Bloodseeker,Venomancer,-2326,-1171,SA
+7800000280,BetBoom Dacha,2024-03-14,Tundra Esports,Evil Geniuses,True,30.4,24,20,10,7,11,Beastmaster,Earthshaker,Puck,Lion,Anti-Mage,Phantom Lancer,Windranger,Bane,Faceless Void,Riki,-357,-522,EU
+7800000281,Riyadh Masters 2024,2024-09-11,Natus Vincere,PSG.LGD,True,34.6,38,21,100,7,11,Sven,Faceless Void,Anti-Mage,Lina,Puck,Beastmaster,Riki,Venomancer,Warlock,Queen of Pain,-200,1337,CN
+7800000282,PGL Wallachia,2024-12-07,Tundra Esports,9Pandas,False,39.6,24,30,108,2,3,Venomancer,Tidehunter,Bane,Juggernaut,Windranger,Pudge,Axe,Mirana,Warlock,Puck,2976,1891,NA
+7800000283,Riyadh Masters 2024,2024-11-13,Alliance,Team Liquid,False,40.6,40,44,77,0,5,Venomancer,Enigma,Warlock,Tinker,Zeus,Tidehunter,Kunkka,Crystal Maiden,Lich,Phantom Lancer,1093,-867,CN
+7800000284,Riyadh Masters 2024,2024-10-18,OG,nouns,False,27.9,27,34,138,5,9,Pudge,Anti-Mage,Mirana,Sven,Enigma,Bloodseeker,Sand King,Lion,Riki,Storm Spirit,-3011,590,CN
+7800000285,PGL Wallachia,2024-07-11,Team Spirit,Natus Vincere,False,44.6,42,46,10,6,0,Beastmaster,Puck,Faceless Void,Earthshaker,Kunkka,Juggernaut,Drow Ranger,Lina,Warlock,Sniper,5984,3982,CN
+7800000286,DreamLeague Season 22,2024-01-29,PSG.LGD,Evil Geniuses,True,41.9,35,5,122,8,9,Sniper,Drow Ranger,Sven,Morphling,Witch Doctor,Anti-Mage,Crystal Maiden,Enigma,Warlock,Vengeful Spirit,-1796,562,EU
+7800000287,DreamLeague Season 22,2024-09-04,9Pandas,Alliance,True,27.0,40,19,162,2,10,Venomancer,Earthshaker,Zeus,Slardar,Crystal Maiden,Shadow Fiend,Pudge,Shadow Shaman,Tiny,Sven,-242,-2979,CN
+7800000288,ESL One Birmingham,2024-09-04,Virtus.pro,Fnatic,True,25.2,26,20,69,1,2,Queen of Pain,Beastmaster,Slardar,Zeus,Venomancer,Warlock,Bloodseeker,Windranger,Tinker,Enigma,-1064,-5254,SEA
+7800000289,ESL One Birmingham,2024-05-14,nouns,Natus Vincere,False,26.6,29,38,265,3,1,Zeus,Mirana,Bane,Crystal Maiden,Tidehunter,Phantom Lancer,Venomancer,Sniper,Riki,Queen of Pain,4057,-1914,SEA
+7800000290,DreamLeague Season 22,2024-05-17,Tundra Esports,OG,False,31.7,14,33,92,5,8,Lion,Shadow Shaman,Bane,Bloodseeker,Morphling,Kunkka,Enigma,Tidehunter,Faceless Void,Slardar,179,-2514,EU
+7800000291,Riyadh Masters 2024,2024-05-02,Natus Vincere,PSG.LGD,True,42.6,45,43,59,4,5,Queen of Pain,Crystal Maiden,Beastmaster,Lich,Razor,Anti-Mage,Lion,Juggernaut,Tinker,Morphling,4787,-6008,NA
+7800000292,BetBoom Dacha,2024-01-16,Fnatic,Alliance,False,42.4,41,50,231,2,5,Bloodseeker,Shadow Shaman,Vengeful Spirit,Venomancer,Axe,Shadow Fiend,Tidehunter,Warlock,Razor,Puck,4394,3524,CIS
+7800000293,The International 2024,2024-06-18,Team Spirit,Fnatic,False,37.9,29,48,154,9,4,Morphling,Tidehunter,Lion,Storm Spirit,Lina,Tinker,Slardar,Juggernaut,Lich,Enigma,-2141,-3856,SEA
+7800000294,DreamLeague Season 22,2024-10-23,Team Secret,Team Spirit,False,42.7,29,42,147,6,5,Lion,Tiny,Razor,Bloodseeker,Faceless Void,Windranger,Drow Ranger,Enigma,Slardar,Sven,-975,-1896,CIS
+7800000295,BetBoom Dacha,2024-12-14,nouns,BetBoom Team,False,48.2,44,46,37,11,3,Vengeful Spirit,Lion,Witch Doctor,Necrophos,Lina,Bloodseeker,Puck,Slardar,Venomancer,Axe,1008,-1252,SA
+7800000296,PGL Wallachia,2024-06-30,Fnatic,Alliance,True,51.5,45,37,120,7,11,Phantom Lancer,Bane,Crystal Maiden,Lina,Witch Doctor,Zeus,Bloodseeker,Storm Spirit,Venomancer,Puck,1808,-5397,EU
+7800000297,The International 2024,2024-02-22,Team Spirit,Fnatic,False,49.0,15,22,131,10,4,Morphling,Tiny,Sven,Sand King,Razor,Sniper,Earthshaker,Bloodseeker,Juggernaut,Zeus,841,2881,CN
+7800000298,The International 2024,2024-11-13,Gaimin Gladiators,Fnatic,True,41.4,49,25,126,6,10,Lion,Puck,Witch Doctor,Sven,Lich,Enigma,Crystal Maiden,Necrophos,Windranger,Beastmaster,1942,-5512,NA
+7800000299,The International 2024,2024-10-11,BetBoom Team,Team Liquid,False,47.2,5,42,139,8,1,Axe,Tiny,Lion,Vengeful Spirit,Storm Spirit,Queen of Pain,Lich,Tidehunter,Venomancer,Faceless Void,-4440,-35,CN
+7800000300,ESL One Birmingham,2024-08-12,Team Liquid,Alliance,True,28.8,43,38,58,6,4,Riki,Slardar,Witch Doctor,Shadow Fiend,Morphling,Windranger,Earthshaker,Enigma,Crystal Maiden,Storm Spirit,6013,-1795,SEA
+7800000301,DreamLeague Season 22,2024-10-26,Tundra Esports,Natus Vincere,True,26.7,47,15,33,11,1,Warlock,Pudge,Riki,Witch Doctor,Tinker,Zeus,Beastmaster,Razor,Drow Ranger,Tidehunter,-5396,-1788,NA
+7800000302,BetBoom Dacha,2024-09-23,Gaimin Gladiators,nouns,False,37.6,21,44,203,1,1,Queen of Pain,Lion,Phantom Lancer,Pudge,Crystal Maiden,Sven,Sniper,Necrophos,Tidehunter,Warlock,-4025,-4720,NA
+7800000303,ESL One Birmingham,2024-08-15,9Pandas,Gaimin Gladiators,True,45.7,46,38,186,2,2,Lich,Riki,Axe,Slardar,Faceless Void,Kunkka,Bloodseeker,Storm Spirit,Shadow Fiend,Tidehunter,-4528,2516,CIS
+7800000304,DreamLeague Season 22,2024-08-09,Evil Geniuses,PSG.LGD,True,35.9,26,24,124,9,6,Necrophos,Anti-Mage,Beastmaster,Razor,Tinker,Bane,Sand King,Pudge,Riki,Bloodseeker,-1757,3646,SEA
+7800000305,The International 2024,2024-03-25,OG,Team Secret,False,53.8,24,36,91,7,2,Enigma,Shadow Fiend,Lich,Bloodseeker,Witch Doctor,Anti-Mage,Axe,Faceless Void,Lina,Windranger,-484,3083,CN
+7800000306,BetBoom Dacha,2024-11-19,nouns,OG,True,24.5,51,49,86,8,11,Storm Spirit,Slardar,Axe,Necrophos,Drow Ranger,Morphling,Tiny,Windranger,Venomancer,Tidehunter,-601,-3652,SEA
+7800000307,Riyadh Masters 2024,2024-06-18,Team Secret,Evil Geniuses,True,46.2,29,20,10,10,5,Vengeful Spirit,Earthshaker,Sven,Puck,Venomancer,Queen of Pain,Storm Spirit,Zeus,Lich,Beastmaster,5618,-6694,CN
+7800000308,The International 2024,2024-01-12,Team Spirit,nouns,True,38.7,35,34,118,5,8,Bloodseeker,Sand King,Windranger,Kunkka,Necrophos,Witch Doctor,Tinker,Bane,Shadow Shaman,Slardar,-5990,-1274,SEA
+7800000309,The International 2024,2024-05-29,Gaimin Gladiators,Fnatic,True,35.7,39,39,10,11,6,Storm Spirit,Bloodseeker,Drow Ranger,Riki,Windranger,Necrophos,Razor,Puck,Anti-Mage,Earthshaker,1942,-10221,SEA
+7800000310,The International 2024,2024-05-27,Fnatic,OG,False,44.0,39,39,234,1,1,Riki,Sniper,Windranger,Lich,Storm Spirit,Juggernaut,Faceless Void,Earthshaker,Witch Doctor,Venomancer,2144,-9376,CIS
+7800000311,DreamLeague Season 22,2024-04-25,Team Liquid,Evil Geniuses,True,32.2,47,17,112,2,10,Tiny,Warlock,Sniper,Windranger,Sven,Tinker,Beastmaster,Morphling,Faceless Void,Phantom Lancer,3158,-2312,NA
+7800000312,DreamLeague Season 22,2024-01-21,Natus Vincere,Tundra Esports,True,29.2,47,42,131,4,8,Drow Ranger,Vengeful Spirit,Witch Doctor,Queen of Pain,Crystal Maiden,Sven,Windranger,Necrophos,Sand King,Shadow Fiend,-1131,-1837,SEA
+7800000313,The International 2024,2024-01-15,Tundra Esports,Team Spirit,True,33.9,22,17,296,5,8,Beastmaster,Tidehunter,Mirana,Zeus,Tiny,Warlock,Puck,Phantom Lancer,Enigma,Sniper,4405,-7008,SA
+7800000314,BetBoom Dacha,2024-12-12,Team Spirit,nouns,True,31.6,33,19,121,1,10,Bane,Sand King,Riki,Sniper,Venomancer,Enigma,Pudge,Bloodseeker,Tidehunter,Sven,-261,-3121,SEA
+7800000315,The International 2024,2024-08-14,BetBoom Team,nouns,True,43.4,47,39,167,7,0,Venomancer,Sand King,Slardar,Enigma,Vengeful Spirit,Puck,Warlock,Bloodseeker,Juggernaut,Morphling,-330,3857,CN
+7800000316,Riyadh Masters 2024,2024-03-05,OG,Evil Geniuses,False,27.4,19,27,150,5,7,Faceless Void,Pudge,Sniper,Juggernaut,Lina,Zeus,Bane,Windranger,Beastmaster,Sand King,2721,1525,CIS
+7800000317,DreamLeague Season 22,2024-02-23,Fnatic,nouns,False,33.3,30,37,108,6,2,Sven,Morphling,Witch Doctor,Pudge,Mirana,Drow Ranger,Riki,Sand King,Puck,Queen of Pain,3335,-2216,CN
+7800000318,ESL One Birmingham,2024-07-03,9Pandas,Alliance,False,20.3,26,31,102,10,6,Sniper,Anti-Mage,Axe,Faceless Void,Sand King,Razor,Venomancer,Tiny,Queen of Pain,Tinker,-1323,2540,EU
+7800000319,Riyadh Masters 2024,2024-03-31,Fnatic,PSG.LGD,False,46.1,47,56,141,3,10,Phantom Lancer,Kunkka,Tidehunter,Tinker,Slardar,Sniper,Bloodseeker,Lich,Razor,Necrophos,-5070,-167,NA
+7800000320,BetBoom Dacha,2024-06-30,Evil Geniuses,OG,False,19.3,25,26,79,7,10,Sniper,Earthshaker,Tidehunter,Lion,Slardar,Shadow Shaman,Crystal Maiden,Tiny,Witch Doctor,Vengeful Spirit,-1566,3157,NA
+7800000321,Riyadh Masters 2024,2024-03-28,Tundra Esports,Gaimin Gladiators,False,50.4,9,21,175,3,1,Pudge,Necrophos,Queen of Pain,Crystal Maiden,Juggernaut,Storm Spirit,Tidehunter,Anti-Mage,Bloodseeker,Lich,-4565,120,CN
+7800000322,Riyadh Masters 2024,2024-11-29,nouns,BetBoom Team,False,52.0,31,37,174,10,2,Anti-Mage,Faceless Void,Kunkka,Mirana,Lion,Tinker,Storm Spirit,Earthshaker,Necrophos,Venomancer,-5435,6560,SA
+7800000323,BetBoom Dacha,2024-04-05,Tundra Esports,Team Secret,True,40.0,29,27,59,6,6,Venomancer,Vengeful Spirit,Windranger,Crystal Maiden,Pudge,Beastmaster,Kunkka,Queen of Pain,Sniper,Tidehunter,565,1571,EU
+7800000324,PGL Wallachia,2024-04-27,PSG.LGD,Team Secret,False,36.3,18,26,141,5,4,Lich,Tinker,Shadow Shaman,Warlock,Queen of Pain,Vengeful Spirit,Bloodseeker,Axe,Lina,Faceless Void,2457,-69,NA
+7800000325,ESL One Birmingham,2024-02-17,Team Secret,Evil Geniuses,True,33.7,26,8,76,0,7,Venomancer,Axe,Juggernaut,Tinker,Bloodseeker,Queen of Pain,Zeus,Sand King,Windranger,Drow Ranger,1014,-37,CIS
+7800000326,PGL Wallachia,2024-10-04,Tundra Esports,nouns,True,41.2,58,50,148,2,5,Bane,Riki,Beastmaster,Kunkka,Lina,Warlock,Sand King,Vengeful Spirit,Drow Ranger,Enigma,4607,131,NA
+7800000327,DreamLeague Season 22,2024-06-22,OG,Team Liquid,False,53.3,46,54,190,4,7,Shadow Shaman,Vengeful Spirit,Sven,Pudge,Razor,Enigma,Sand King,Phantom Lancer,Windranger,Faceless Void,-746,2845,EU
+7800000328,DreamLeague Season 22,2024-06-14,9Pandas,Tundra Esports,False,51.3,7,35,92,8,0,Morphling,Pudge,Lina,Lich,Slardar,Puck,Storm Spirit,Earthshaker,Axe,Shadow Fiend,2390,1077,SA
+7800000329,ESL One Birmingham,2024-04-19,Virtus.pro,Evil Geniuses,True,40.4,38,37,90,4,1,Shadow Shaman,Tidehunter,Sand King,Storm Spirit,Venomancer,Crystal Maiden,Kunkka,Bloodseeker,Windranger,Beastmaster,-2439,562,CN
+7800000330,The International 2024,2024-02-25,Natus Vincere,Team Secret,False,35.5,22,47,148,11,1,Lion,Kunkka,Beastmaster,Sniper,Tiny,Tinker,Vengeful Spirit,Lich,Riki,Sven,1274,-94,SEA
+7800000331,The International 2024,2024-04-26,BetBoom Team,Team Secret,False,15.0,7,35,191,11,9,Juggernaut,Vengeful Spirit,Shadow Shaman,Slardar,Kunkka,Faceless Void,Axe,Puck,Storm Spirit,Crystal Maiden,3189,-10988,NA
+7800000332,ESL One Birmingham,2024-06-27,Natus Vincere,Evil Geniuses,True,41.3,59,51,233,2,2,Warlock,Drow Ranger,Bloodseeker,Queen of Pain,Lich,Earthshaker,Kunkka,Vengeful Spirit,Tidehunter,Storm Spirit,3103,-2536,CIS
+7800000333,PGL Wallachia,2024-10-08,Fnatic,OG,False,43.1,28,38,171,9,2,Bloodseeker,Mirana,Tidehunter,Sven,Witch Doctor,Venomancer,Riki,Sniper,Enigma,Warlock,1461,3797,CN
+7800000334,Riyadh Masters 2024,2024-11-12,Natus Vincere,Evil Geniuses,True,34.5,40,9,200,9,0,Earthshaker,Anti-Mage,Shadow Fiend,Sniper,Faceless Void,Windranger,Sand King,Necrophos,Bloodseeker,Tinker,5476,962,SEA
+7800000335,The International 2024,2024-08-27,nouns,Team Secret,True,31.2,35,13,52,2,10,Vengeful Spirit,Crystal Maiden,Faceless Void,Necrophos,Windranger,Warlock,Sven,Witch Doctor,Beastmaster,Tiny,4535,2177,SA
+7800000336,The International 2024,2024-06-06,BetBoom Team,OG,True,27.7,45,36,238,9,0,Phantom Lancer,Pudge,Lion,Lich,Razor,Tiny,Windranger,Faceless Void,Sand King,Queen of Pain,3328,-3030,NA
+7800000337,ESL One Birmingham,2024-06-04,Fnatic,Team Secret,False,38.9,33,37,184,5,10,Enigma,Tinker,Slardar,Mirana,Queen of Pain,Sniper,Tiny,Lina,Faceless Void,Storm Spirit,-2322,1413,CN
+7800000338,DreamLeague Season 22,2024-07-04,PSG.LGD,Gaimin Gladiators,False,45.8,20,27,202,1,2,Lion,Pudge,Tidehunter,Crystal Maiden,Queen of Pain,Axe,Shadow Fiend,Phantom Lancer,Tinker,Riki,-1568,-3692,EU
+7800000339,BetBoom Dacha,2024-06-09,nouns,Virtus.pro,True,34.5,32,27,191,6,6,Juggernaut,Mirana,Bane,Shadow Shaman,Windranger,Puck,Queen of Pain,Sven,Axe,Venomancer,3544,6170,CIS
+7800000340,ESL One Birmingham,2024-03-29,nouns,OG,False,55.3,27,36,257,3,11,Tidehunter,Anti-Mage,Shadow Shaman,Witch Doctor,Mirana,Necrophos,Venomancer,Riki,Shadow Fiend,Tinker,551,860,EU
+7800000341,DreamLeague Season 22,2024-03-11,nouns,PSG.LGD,True,43.4,43,35,102,8,8,Drow Ranger,Shadow Fiend,Tinker,Vengeful Spirit,Venomancer,Lich,Beastmaster,Sven,Anti-Mage,Bloodseeker,-1044,4268,SEA
+7800000342,Riyadh Masters 2024,2024-12-21,Tundra Esports,nouns,False,21.6,41,44,151,0,2,Sniper,Beastmaster,Juggernaut,Kunkka,Necrophos,Crystal Maiden,Riki,Venomancer,Mirana,Lich,-1209,3401,CIS
+7800000343,The International 2024,2024-02-19,BetBoom Team,Gaimin Gladiators,False,38.2,28,37,57,5,5,Earthshaker,Juggernaut,Sven,Pudge,Queen of Pain,Anti-Mage,Slardar,Venomancer,Axe,Shadow Shaman,987,981,EU
+7800000344,The International 2024,2024-03-12,nouns,Team Secret,False,37.6,20,34,140,6,0,Storm Spirit,Witch Doctor,Juggernaut,Pudge,Anti-Mage,Sand King,Shadow Shaman,Kunkka,Sven,Faceless Void,-474,736,SEA
+7800000345,ESL One Birmingham,2024-02-10,Alliance,Fnatic,True,22.5,47,42,162,1,7,Sven,Venomancer,Riki,Slardar,Tidehunter,Witch Doctor,Shadow Shaman,Earthshaker,Phantom Lancer,Enigma,-6037,1126,CN
+7800000346,BetBoom Dacha,2024-10-24,Tundra Esports,Natus Vincere,True,32.5,27,15,40,5,2,Lion,Queen of Pain,Tiny,Bane,Juggernaut,Storm Spirit,Earthshaker,Axe,Lich,Drow Ranger,1930,-921,NA
+7800000347,BetBoom Dacha,2024-12-19,Evil Geniuses,Gaimin Gladiators,False,48.2,25,28,124,10,4,Necrophos,Axe,Drow Ranger,Tinker,Morphling,Lina,Earthshaker,Tidehunter,Bane,Bloodseeker,8753,-504,CN
+7800000348,PGL Wallachia,2024-03-20,Fnatic,Team Secret,True,28.1,43,40,134,3,0,Slardar,Tidehunter,Kunkka,Necrophos,Queen of Pain,Axe,Riki,Sven,Storm Spirit,Razor,4187,1336,CN
+7800000349,PGL Wallachia,2024-06-01,Fnatic,Virtus.pro,False,35.5,40,40,253,8,7,Razor,Riki,Crystal Maiden,Slardar,Earthshaker,Storm Spirit,Lich,Sand King,Witch Doctor,Vengeful Spirit,448,2262,SEA
+7800000350,PGL Wallachia,2024-12-03,9Pandas,Evil Geniuses,True,35.3,28,10,186,3,11,Pudge,Sand King,Razor,Lina,Bane,Bloodseeker,Enigma,Sniper,Puck,Shadow Fiend,-2335,8129,SEA
+7800000351,PGL Wallachia,2024-09-20,Gaimin Gladiators,Alliance,True,47.3,54,52,55,4,10,Queen of Pain,Necrophos,Bloodseeker,Sven,Riki,Juggernaut,Puck,Kunkka,Razor,Drow Ranger,3969,-3868,SA
+7800000352,PGL Wallachia,2024-10-13,BetBoom Team,PSG.LGD,False,26.8,27,36,199,6,3,Sven,Puck,Earthshaker,Lich,Phantom Lancer,Shadow Shaman,Witch Doctor,Bane,Queen of Pain,Anti-Mage,-1771,3583,SA
+7800000353,The International 2024,2024-09-02,OG,Tundra Esports,False,45.3,53,53,198,5,5,Morphling,Riki,Beastmaster,Windranger,Axe,Sand King,Razor,Sven,Witch Doctor,Tidehunter,1664,-6467,CN
+7800000354,PGL Wallachia,2024-03-12,Alliance,Tundra Esports,False,51.0,14,38,222,7,11,Razor,Bane,Bloodseeker,Shadow Fiend,Juggernaut,Lina,Warlock,Lich,Vengeful Spirit,Windranger,115,249,EU
+7800000355,Riyadh Masters 2024,2024-04-28,PSG.LGD,9Pandas,False,42.4,46,54,240,3,0,Juggernaut,Necrophos,Enigma,Morphling,Kunkka,Riki,Lich,Shadow Shaman,Sniper,Tidehunter,-4582,8339,EU
+7800000356,BetBoom Dacha,2024-01-13,Tundra Esports,PSG.LGD,True,39.7,41,36,29,5,9,Lion,Phantom Lancer,Morphling,Earthshaker,Bane,Beastmaster,Slardar,Pudge,Venomancer,Sand King,488,-1067,EU
+7800000357,ESL One Birmingham,2024-01-01,Alliance,Team Liquid,False,43.9,34,39,149,0,7,Earthshaker,Bane,Juggernaut,Phantom Lancer,Razor,Tidehunter,Storm Spirit,Shadow Fiend,Shadow Shaman,Sven,736,-3266,NA
+7800000358,BetBoom Dacha,2024-02-18,BetBoom Team,Team Spirit,True,36.2,31,20,161,10,9,Lich,Windranger,Bloodseeker,Mirana,Storm Spirit,Morphling,Sniper,Venomancer,Necrophos,Witch Doctor,-483,-4490,SEA
+7800000359,ESL One Birmingham,2024-07-27,Virtus.pro,Alliance,True,43.8,43,37,94,0,7,Warlock,Bane,Puck,Shadow Fiend,Earthshaker,Witch Doctor,Lich,Tiny,Phantom Lancer,Tinker,465,1142,SEA
+7800000360,BetBoom Dacha,2024-08-27,OG,Team Liquid,True,44.9,27,21,10,3,7,Venomancer,Sniper,Puck,Bloodseeker,Morphling,Tinker,Tiny,Shadow Fiend,Zeus,Lion,765,2156,EU
+7800000361,PGL Wallachia,2024-03-20,OG,nouns,False,37.2,26,35,95,11,4,Anti-Mage,Witch Doctor,Earthshaker,Beastmaster,Sniper,Morphling,Juggernaut,Razor,Lich,Sven,-4114,-1612,NA
+7800000362,ESL One Birmingham,2024-04-17,nouns,Gaimin Gladiators,False,35.9,31,43,10,9,9,Morphling,Sand King,Lich,Lion,Sniper,Phantom Lancer,Tinker,Witch Doctor,Enigma,Bloodseeker,15,-1581,CN
+7800000363,The International 2024,2024-06-18,Virtus.pro,9Pandas,True,42.4,26,26,194,9,9,Puck,Warlock,Zeus,Bane,Crystal Maiden,Lion,Vengeful Spirit,Queen of Pain,Slardar,Morphling,3103,-1841,SEA
+7800000364,DreamLeague Season 22,2024-05-08,Team Spirit,Gaimin Gladiators,False,25.7,24,26,17,8,2,Slardar,Tinker,Razor,Bane,Axe,Tidehunter,Faceless Void,Tiny,Zeus,Phantom Lancer,-4617,-6608,NA
+7800000365,BetBoom Dacha,2024-09-02,9Pandas,BetBoom Team,True,28.2,47,39,240,1,8,Razor,Necrophos,Morphling,Tinker,Sniper,Windranger,Vengeful Spirit,Puck,Beastmaster,Lion,1982,318,EU
+7800000366,ESL One Birmingham,2024-05-29,9Pandas,Gaimin Gladiators,False,23.5,36,43,60,7,5,Slardar,Lina,Puck,Bane,Sand King,Drow Ranger,Kunkka,Tiny,Bloodseeker,Shadow Fiend,-4042,1226,CN
+7800000367,Riyadh Masters 2024,2024-09-19,Evil Geniuses,Natus Vincere,False,46.3,39,46,67,2,6,Bloodseeker,Lina,Lich,Warlock,Zeus,Morphling,Earthshaker,Venomancer,Vengeful Spirit,Enigma,-469,4257,SA
+7800000368,BetBoom Dacha,2024-11-13,Natus Vincere,nouns,True,33.6,38,32,143,3,0,Puck,Mirana,Shadow Fiend,Shadow Shaman,Anti-Mage,Warlock,Storm Spirit,Enigma,Riki,Bane,-850,3570,EU
+7800000369,Riyadh Masters 2024,2024-04-28,Fnatic,Team Secret,False,34.0,6,29,127,2,0,Mirana,Lina,Beastmaster,Tinker,Puck,Tiny,Tidehunter,Lich,Shadow Fiend,Sniper,1916,-2266,CIS
+7800000370,The International 2024,2024-02-05,9Pandas,Evil Geniuses,True,41.7,35,23,119,3,0,Beastmaster,Zeus,Enigma,Riki,Crystal Maiden,Anti-Mage,Puck,Earthshaker,Phantom Lancer,Sven,-6357,-1276,SA
+7800000371,BetBoom Dacha,2024-08-21,Team Spirit,Team Liquid,True,40.3,51,43,244,6,4,Axe,Drow Ranger,Warlock,Phantom Lancer,Riki,Lion,Shadow Fiend,Puck,Storm Spirit,Juggernaut,5529,654,CN
+7800000372,The International 2024,2024-06-06,Virtus.pro,Evil Geniuses,False,39.2,40,56,194,10,7,Puck,Zeus,Kunkka,Witch Doctor,Venomancer,Lion,Shadow Shaman,Lich,Tiny,Anti-Mage,-4433,2336,SA
+7800000373,The International 2024,2024-08-17,Evil Geniuses,Tundra Esports,True,46.9,42,35,10,5,3,Sniper,Earthshaker,Lich,Tinker,Witch Doctor,Riki,Necrophos,Razor,Anti-Mage,Shadow Shaman,265,2072,CIS
+7800000374,The International 2024,2024-09-10,nouns,Alliance,False,34.9,26,52,94,5,9,Bane,Tidehunter,Witch Doctor,Lion,Zeus,Lich,Slardar,Anti-Mage,Enigma,Morphling,-6722,390,NA
+7800000375,DreamLeague Season 22,2024-08-17,Gaimin Gladiators,Virtus.pro,True,19.3,45,23,10,10,4,Necrophos,Beastmaster,Tidehunter,Axe,Tinker,Anti-Mage,Lion,Tiny,Witch Doctor,Vengeful Spirit,-3549,448,CN
+7800000376,DreamLeague Season 22,2024-06-08,Natus Vincere,Alliance,False,42.8,24,37,205,3,0,Enigma,Beastmaster,Queen of Pain,Bloodseeker,Mirana,Drow Ranger,Lina,Pudge,Zeus,Razor,-3077,-2732,CN
+7800000377,BetBoom Dacha,2024-01-07,9Pandas,Team Spirit,True,40.2,28,20,60,5,6,Windranger,Juggernaut,Razor,Warlock,Bloodseeker,Anti-Mage,Tiny,Slardar,Drow Ranger,Phantom Lancer,-585,1208,NA
+7800000378,The International 2024,2024-06-20,Team Spirit,Virtus.pro,True,36.8,49,43,198,6,0,Tidehunter,Vengeful Spirit,Shadow Shaman,Lion,Sniper,Warlock,Razor,Witch Doctor,Necrophos,Bane,4819,3386,CN
+7800000379,Riyadh Masters 2024,2024-05-03,Team Secret,Gaimin Gladiators,True,40.6,34,34,44,1,4,Razor,Mirana,Sven,Venomancer,Drow Ranger,Shadow Fiend,Puck,Beastmaster,Phantom Lancer,Lich,-3157,-5348,EU
+7800000380,ESL One Birmingham,2024-01-24,Fnatic,Gaimin Gladiators,True,32.1,40,31,49,4,6,Venomancer,Morphling,Shadow Fiend,Mirana,Drow Ranger,Pudge,Puck,Kunkka,Queen of Pain,Slardar,3450,-3430,CN
+7800000381,BetBoom Dacha,2024-05-09,Alliance,nouns,True,27.2,27,23,72,3,6,Tinker,Sand King,Juggernaut,Lich,Beastmaster,Crystal Maiden,Pudge,Tiny,Zeus,Tidehunter,3963,4200,CIS
+7800000382,BetBoom Dacha,2024-07-10,Fnatic,Team Spirit,False,63.5,29,30,110,3,2,Crystal Maiden,Necrophos,Morphling,Windranger,Earthshaker,Tiny,Anti-Mage,Juggernaut,Queen of Pain,Shadow Shaman,-712,-2360,EU
+7800000383,BetBoom Dacha,2024-08-25,Virtus.pro,OG,False,50.2,23,32,34,8,3,Vengeful Spirit,Bane,Faceless Void,Enigma,Shadow Fiend,Necrophos,Sand King,Mirana,Bloodseeker,Sven,-4555,-376,SEA
+7800000384,The International 2024,2024-04-06,Tundra Esports,OG,False,43.5,35,48,120,4,0,Necrophos,Lina,Razor,Bloodseeker,Morphling,Riki,Shadow Fiend,Faceless Void,Storm Spirit,Earthshaker,-1147,-1450,CIS
+7800000385,ESL One Birmingham,2024-05-10,Natus Vincere,PSG.LGD,False,32.5,33,44,119,8,6,Razor,Witch Doctor,Axe,Beastmaster,Windranger,Phantom Lancer,Sven,Necrophos,Lion,Lich,-1488,3611,EU
+7800000386,The International 2024,2024-03-02,Natus Vincere,Alliance,False,16.9,23,44,67,1,2,Lion,Sniper,Necrophos,Phantom Lancer,Anti-Mage,Venomancer,Enigma,Sand King,Tiny,Axe,184,-8165,SEA
+7800000387,The International 2024,2024-03-19,Team Secret,Gaimin Gladiators,True,33.5,30,6,97,0,2,Kunkka,Witch Doctor,Lion,Windranger,Queen of Pain,Razor,Axe,Shadow Shaman,Bloodseeker,Juggernaut,1779,5590,CIS
+7800000388,BetBoom Dacha,2024-09-23,9Pandas,nouns,False,53.6,28,31,256,2,3,Pudge,Slardar,Sven,Morphling,Necrophos,Tidehunter,Earthshaker,Warlock,Zeus,Lina,995,-2566,NA
+7800000389,The International 2024,2024-01-03,nouns,PSG.LGD,False,48.6,38,45,143,5,2,Juggernaut,Axe,Faceless Void,Lich,Riki,Beastmaster,Sven,Warlock,Phantom Lancer,Shadow Fiend,-92,-3185,SEA
+7800000390,ESL One Birmingham,2024-10-03,Tundra Esports,Gaimin Gladiators,False,44.8,26,32,56,2,11,Pudge,Lion,Windranger,Shadow Shaman,Zeus,Morphling,Slardar,Razor,Shadow Fiend,Faceless Void,2186,-5643,NA
+7800000391,DreamLeague Season 22,2024-12-28,Team Secret,Alliance,False,30.8,31,35,35,0,5,Beastmaster,Witch Doctor,Tinker,Phantom Lancer,Mirana,Enigma,Puck,Anti-Mage,Tidehunter,Pudge,3133,4605,EU
+7800000392,ESL One Birmingham,2024-02-12,Evil Geniuses,Tundra Esports,True,27.5,28,23,10,1,1,Zeus,Storm Spirit,Kunkka,Puck,Morphling,Sven,Lion,Windranger,Pudge,Slardar,4876,2789,CN
+7800000393,PGL Wallachia,2024-02-05,BetBoom Team,Fnatic,False,27.5,35,40,139,10,11,Windranger,Bane,Lion,Shadow Fiend,Razor,Puck,Lich,Sniper,Storm Spirit,Bloodseeker,2651,2674,CN
+7800000394,PGL Wallachia,2024-09-07,Team Spirit,Evil Geniuses,True,36.1,38,28,53,10,0,Riki,Vengeful Spirit,Witch Doctor,Queen of Pain,Bane,Beastmaster,Sven,Puck,Zeus,Slardar,-1287,3005,CN
+7800000395,Riyadh Masters 2024,2024-05-11,Alliance,Natus Vincere,True,45.6,51,21,160,1,6,Axe,Venomancer,Lich,Enigma,Faceless Void,Crystal Maiden,Shadow Shaman,Witch Doctor,Vengeful Spirit,Zeus,-1426,2037,CN
+7800000396,Riyadh Masters 2024,2024-02-05,Team Liquid,Team Spirit,True,49.5,36,31,165,3,10,Puck,Slardar,Storm Spirit,Axe,Phantom Lancer,Morphling,Drow Ranger,Tidehunter,Crystal Maiden,Warlock,613,880,CIS
+7800000397,Riyadh Masters 2024,2024-06-12,Team Spirit,Team Secret,True,41.8,39,26,282,11,10,Bane,Lich,Windranger,Queen of Pain,Puck,Sand King,Kunkka,Riki,Anti-Mage,Drow Ranger,1740,511,EU
+7800000398,The International 2024,2024-08-24,OG,Team Secret,False,27.4,13,22,151,7,9,Necrophos,Bloodseeker,Slardar,Mirana,Pudge,Venomancer,Tinker,Windranger,Shadow Shaman,Earthshaker,4221,3699,SA
+7800000399,Riyadh Masters 2024,2024-01-25,Team Spirit,Alliance,True,18.5,34,32,48,8,2,Queen of Pain,Shadow Fiend,Puck,Earthshaker,Crystal Maiden,Zeus,Warlock,Juggernaut,Faceless Void,Bloodseeker,-2711,10195,SA
+7800000400,Riyadh Masters 2024,2024-02-16,BetBoom Team,Team Liquid,True,48.6,29,16,216,3,4,Vengeful Spirit,Razor,Riki,Pudge,Venomancer,Lina,Sand King,Lich,Storm Spirit,Morphling,4389,4524,CIS
+7800000401,DreamLeague Season 22,2024-06-29,Gaimin Gladiators,Fnatic,True,22.3,42,36,26,10,6,Morphling,Queen of Pain,Riki,Lina,Puck,Razor,Drow Ranger,Faceless Void,Pudge,Slardar,3404,-5907,NA
+7800000402,The International 2024,2024-08-11,OG,BetBoom Team,False,35.3,45,48,39,11,1,Witch Doctor,Mirana,Crystal Maiden,Lina,Windranger,Drow Ranger,Razor,Sven,Warlock,Necrophos,-352,-337,CN
+7800000403,The International 2024,2024-05-12,Gaimin Gladiators,Natus Vincere,True,43.2,27,22,151,0,11,Pudge,Crystal Maiden,Lina,Sniper,Bane,Sven,Puck,Venomancer,Vengeful Spirit,Earthshaker,2359,-8495,NA
+7800000404,ESL One Birmingham,2024-02-21,Tundra Esports,Natus Vincere,True,24.7,35,30,121,5,8,Shadow Fiend,Riki,Queen of Pain,Vengeful Spirit,Enigma,Windranger,Phantom Lancer,Pudge,Tiny,Lina,5106,2879,SA
+7800000405,Riyadh Masters 2024,2024-04-04,Natus Vincere,Evil Geniuses,True,46.0,29,28,79,6,3,Vengeful Spirit,Shadow Shaman,Storm Spirit,Mirana,Lich,Riki,Phantom Lancer,Zeus,Tinker,Warlock,-850,2272,EU
+7800000406,DreamLeague Season 22,2024-12-04,Team Spirit,Tundra Esports,True,30.1,32,30,147,1,7,Tidehunter,Pudge,Riki,Beastmaster,Earthshaker,Lina,Juggernaut,Anti-Mage,Queen of Pain,Sven,2470,4737,CN
+7800000407,Riyadh Masters 2024,2024-06-16,BetBoom Team,Fnatic,True,32.9,35,26,148,0,1,Puck,Sniper,Tidehunter,Phantom Lancer,Crystal Maiden,Witch Doctor,Bane,Pudge,Mirana,Bloodseeker,-1549,4315,EU
+7800000408,Riyadh Masters 2024,2024-02-14,Alliance,Team Secret,False,33.4,9,24,191,3,2,Tinker,Windranger,Faceless Void,Anti-Mage,Kunkka,Shadow Fiend,Witch Doctor,Warlock,Morphling,Mirana,-822,1343,EU
+7800000409,ESL One Birmingham,2024-12-09,Evil Geniuses,9Pandas,False,38.7,22,41,139,4,8,Puck,Kunkka,Queen of Pain,Venomancer,Shadow Shaman,Anti-Mage,Riki,Bloodseeker,Phantom Lancer,Witch Doctor,3268,478,SA
+7800000410,DreamLeague Season 22,2024-10-22,9Pandas,Team Secret,True,33.9,44,36,92,1,5,Venomancer,Beastmaster,Warlock,Vengeful Spirit,Anti-Mage,Juggernaut,Lion,Tinker,Puck,Pudge,2725,-2603,CIS
+7800000411,The International 2024,2024-07-21,Team Secret,PSG.LGD,True,35.2,36,31,167,6,7,Warlock,Slardar,Enigma,Bloodseeker,Venomancer,Morphling,Riki,Witch Doctor,Drow Ranger,Earthshaker,-181,-826,NA
+7800000412,Riyadh Masters 2024,2024-05-16,Team Liquid,Team Secret,True,43.2,17,14,196,2,3,Riki,Queen of Pain,Sand King,Storm Spirit,Lion,Puck,Bane,Faceless Void,Mirana,Slardar,3549,-1289,CIS
+7800000413,The International 2024,2024-07-03,Gaimin Gladiators,Team Liquid,False,32.6,29,38,121,0,0,Mirana,Slardar,Venomancer,Morphling,Crystal Maiden,Lina,Pudge,Sand King,Sven,Warlock,-4835,-409,SA
+7800000414,BetBoom Dacha,2024-09-14,Virtus.pro,Team Liquid,True,24.3,31,30,59,2,8,Slardar,Lion,Riki,Sniper,Sand King,Phantom Lancer,Bane,Tidehunter,Bloodseeker,Enigma,-3762,510,SA
+7800000415,DreamLeague Season 22,2024-04-19,9Pandas,Virtus.pro,True,38.5,49,18,69,5,9,Juggernaut,Faceless Void,Bane,Drow Ranger,Puck,Tinker,Beastmaster,Axe,Venomancer,Lion,1387,5588,SEA
+7800000416,DreamLeague Season 22,2024-08-24,BetBoom Team,Team Spirit,False,56.5,38,47,177,7,3,Faceless Void,Sven,Tiny,Mirana,Shadow Fiend,Windranger,Witch Doctor,Tinker,Razor,Axe,250,-4279,SA
+7800000417,Riyadh Masters 2024,2024-05-07,Team Secret,Alliance,True,43.1,39,36,89,5,0,Witch Doctor,Lich,Enigma,Drow Ranger,Lion,Sand King,Sven,Kunkka,Windranger,Bloodseeker,1397,5602,SEA
+7800000418,The International 2024,2024-02-06,Virtus.pro,Team Spirit,False,51.4,34,37,133,11,8,Axe,Witch Doctor,Queen of Pain,Tidehunter,Vengeful Spirit,Beastmaster,Bane,Sniper,Earthshaker,Windranger,-40,-5015,EU
+7800000419,BetBoom Dacha,2024-04-09,Evil Geniuses,Team Secret,True,43.2,34,19,10,0,3,Necrophos,Morphling,Tiny,Kunkka,Zeus,Mirana,Bane,Windranger,Puck,Sniper,303,-1784,CN
+7800000420,BetBoom Dacha,2024-12-24,PSG.LGD,BetBoom Team,False,43.7,10,25,157,10,8,Juggernaut,Razor,Riki,Witch Doctor,Axe,Warlock,Slardar,Sven,Phantom Lancer,Earthshaker,77,-6261,CIS
+7800000421,BetBoom Dacha,2024-04-12,Fnatic,PSG.LGD,False,54.1,22,29,184,6,6,Enigma,Drow Ranger,Juggernaut,Shadow Shaman,Earthshaker,Bloodseeker,Tinker,Shadow Fiend,Mirana,Phantom Lancer,1515,-7465,CIS
+7800000422,BetBoom Dacha,2024-05-20,Alliance,Natus Vincere,True,22.3,34,14,212,2,9,Storm Spirit,Juggernaut,Kunkka,Bane,Bloodseeker,Witch Doctor,Venomancer,Sven,Sand King,Tidehunter,-1797,1438,CN
+7800000423,ESL One Birmingham,2024-07-08,Natus Vincere,Team Secret,False,45.4,22,38,177,5,5,Anti-Mage,Shadow Shaman,Tinker,Lich,Crystal Maiden,Shadow Fiend,Sand King,Kunkka,Zeus,Lion,-4066,10367,SA
+7800000424,DreamLeague Season 22,2024-11-08,Natus Vincere,Evil Geniuses,True,41.0,37,29,188,2,1,Slardar,Lich,Bloodseeker,Anti-Mage,Shadow Shaman,Beastmaster,Sand King,Lion,Puck,Bane,1863,-5408,CIS
+7800000425,Riyadh Masters 2024,2024-11-13,Virtus.pro,Alliance,True,47.0,38,13,104,4,0,Shadow Shaman,Queen of Pain,Slardar,Shadow Fiend,Warlock,Juggernaut,Beastmaster,Morphling,Sniper,Enigma,7131,3476,CN
+7800000426,The International 2024,2024-01-01,Team Liquid,Gaimin Gladiators,False,65.2,21,29,48,9,2,Riki,Mirana,Tiny,Storm Spirit,Slardar,Anti-Mage,Sven,Lion,Morphling,Axe,-2923,-6219,EU
+7800000427,DreamLeague Season 22,2024-08-05,Fnatic,OG,True,50.2,44,38,114,2,4,Juggernaut,Windranger,Shadow Fiend,Witch Doctor,Beastmaster,Puck,Sand King,Shadow Shaman,Warlock,Bane,-2424,-3638,CIS
+7800000428,Riyadh Masters 2024,2024-06-01,Gaimin Gladiators,9Pandas,False,50.8,21,42,93,3,0,Kunkka,Tidehunter,Beastmaster,Shadow Fiend,Lich,Lion,Drow Ranger,Bane,Mirana,Earthshaker,2871,6060,CIS
+7800000429,The International 2024,2024-07-01,Team Liquid,Fnatic,False,39.2,35,42,141,3,3,Queen of Pain,Warlock,Witch Doctor,Tiny,Shadow Fiend,Tinker,Lich,Axe,Razor,Faceless Void,4675,-3101,EU
+7800000430,The International 2024,2024-08-29,Evil Geniuses,Tundra Esports,False,39.7,19,36,75,6,7,Kunkka,Tiny,Shadow Fiend,Sand King,Witch Doctor,Enigma,Queen of Pain,Slardar,Tidehunter,Sven,-996,5165,SA
+7800000431,Riyadh Masters 2024,2024-12-16,OG,Team Secret,False,25.8,35,44,180,6,11,Shadow Shaman,Mirana,Juggernaut,Phantom Lancer,Drow Ranger,Tidehunter,Anti-Mage,Enigma,Sven,Zeus,-6903,2042,CN
+7800000432,BetBoom Dacha,2024-03-17,Gaimin Gladiators,BetBoom Team,False,26.7,49,50,78,6,10,Morphling,Zeus,Puck,Shadow Shaman,Tidehunter,Venomancer,Windranger,Earthshaker,Phantom Lancer,Juggernaut,-2394,1208,CN
+7800000433,The International 2024,2024-08-06,Virtus.pro,Team Liquid,True,25.9,38,23,93,11,3,Tidehunter,Sniper,Shadow Fiend,Beastmaster,Enigma,Morphling,Tinker,Drow Ranger,Vengeful Spirit,Juggernaut,-1941,-4131,NA
+7800000434,Riyadh Masters 2024,2024-05-01,Evil Geniuses,Team Secret,True,44.7,28,24,201,5,3,Crystal Maiden,Phantom Lancer,Puck,Bane,Bloodseeker,Warlock,Storm Spirit,Mirana,Windranger,Enigma,3102,-2950,EU
+7800000435,The International 2024,2024-05-26,Team Liquid,Team Spirit,False,42.3,5,24,109,0,4,Pudge,Tidehunter,Shadow Fiend,Bane,Anti-Mage,Puck,Lina,Enigma,Razor,Venomancer,1089,-3887,NA
+7800000436,Riyadh Masters 2024,2024-07-07,Team Liquid,9Pandas,True,16.3,28,28,274,3,1,Shadow Fiend,Shadow Shaman,Zeus,Juggernaut,Lina,Faceless Void,Sand King,Pudge,Earthshaker,Anti-Mage,542,-3439,EU
+7800000437,BetBoom Dacha,2024-10-18,Team Secret,Alliance,True,45.2,44,44,124,3,0,Earthshaker,Razor,Queen of Pain,Lina,Windranger,Kunkka,Anti-Mage,Tinker,Zeus,Puck,-4394,132,NA
+7800000438,The International 2024,2024-08-18,Gaimin Gladiators,PSG.LGD,True,41.0,23,10,174,9,4,Lina,Warlock,Enigma,Morphling,Zeus,Axe,Kunkka,Sand King,Bloodseeker,Puck,1193,-2306,NA
+7800000439,BetBoom Dacha,2024-04-12,Fnatic,PSG.LGD,False,57.5,10,34,150,6,5,Lich,Enigma,Bane,Lina,Shadow Fiend,Witch Doctor,Vengeful Spirit,Beastmaster,Storm Spirit,Lion,1664,-24,SA
+7800000440,BetBoom Dacha,2024-09-21,Natus Vincere,Virtus.pro,True,43.1,49,45,68,4,3,Storm Spirit,Tidehunter,Vengeful Spirit,Sven,Faceless Void,Puck,Bloodseeker,Tinker,Venomancer,Lion,2081,-1305,SA
+7800000441,The International 2024,2024-08-11,Gaimin Gladiators,Tundra Esports,True,60.5,43,41,228,1,8,Lion,Kunkka,Riki,Witch Doctor,Juggernaut,Phantom Lancer,Bloodseeker,Crystal Maiden,Storm Spirit,Warlock,-973,-313,EU
+7800000442,BetBoom Dacha,2024-10-03,Team Liquid,BetBoom Team,False,18.3,28,37,181,11,4,Phantom Lancer,Sniper,Vengeful Spirit,Lion,Shadow Fiend,Crystal Maiden,Earthshaker,Juggernaut,Bloodseeker,Beastmaster,-3198,1927,NA
+7800000443,DreamLeague Season 22,2024-10-11,nouns,Natus Vincere,True,60.1,40,33,133,8,10,Windranger,Storm Spirit,Lion,Shadow Fiend,Warlock,Tiny,Phantom Lancer,Lich,Puck,Sand King,1163,4347,EU
+7800000444,ESL One Birmingham,2024-03-16,Natus Vincere,nouns,True,38.6,25,19,217,8,0,Vengeful Spirit,Tinker,Lich,Shadow Shaman,Phantom Lancer,Venomancer,Mirana,Tidehunter,Anti-Mage,Witch Doctor,3753,-2088,CN
+7800000445,DreamLeague Season 22,2024-06-25,OG,Evil Geniuses,False,40.4,35,44,46,2,7,Sniper,Lion,Pudge,Queen of Pain,Zeus,Storm Spirit,Sven,Crystal Maiden,Enigma,Lina,5620,-2560,SEA
+7800000446,BetBoom Dacha,2024-10-23,Virtus.pro,Team Liquid,False,24.0,44,49,90,1,7,Drow Ranger,Venomancer,Necrophos,Shadow Fiend,Razor,Kunkka,Zeus,Beastmaster,Sven,Tiny,-43,-3286,EU
+7800000447,Riyadh Masters 2024,2024-02-19,Team Spirit,nouns,False,23.0,28,52,207,8,3,Witch Doctor,Puck,Faceless Void,Kunkka,Vengeful Spirit,Sand King,Sven,Venomancer,Sniper,Earthshaker,-1046,5766,NA
+7800000448,The International 2024,2024-05-05,PSG.LGD,BetBoom Team,False,21.0,45,46,254,7,5,Necrophos,Crystal Maiden,Sniper,Shadow Fiend,Mirana,Windranger,Sand King,Vengeful Spirit,Kunkka,Morphling,2924,217,CN
+7800000449,Riyadh Masters 2024,2024-12-21,Virtus.pro,Evil Geniuses,True,37.7,41,36,58,2,3,Bane,Axe,Sniper,Warlock,Lich,Mirana,Pudge,Lion,Storm Spirit,Puck,19,-203,CN
+7800000450,The International 2024,2024-07-23,nouns,Alliance,False,47.1,43,51,164,6,0,Tiny,Windranger,Drow Ranger,Anti-Mage,Shadow Fiend,Tidehunter,Venomancer,Kunkka,Morphling,Phantom Lancer,5723,7589,SA
+7800000451,ESL One Birmingham,2024-05-01,Fnatic,BetBoom Team,True,23.4,31,18,134,6,2,Kunkka,Tiny,Mirana,Venomancer,Enigma,Riki,Beastmaster,Bane,Windranger,Axe,-313,-1385,NA
+7800000452,ESL One Birmingham,2024-03-18,9Pandas,Alliance,True,54.4,37,32,334,11,8,Lich,Tidehunter,Witch Doctor,Razor,Drow Ranger,Windranger,Storm Spirit,Phantom Lancer,Venomancer,Beastmaster,882,4152,CIS
+7800000453,Riyadh Masters 2024,2024-03-16,Team Secret,PSG.LGD,True,28.1,48,47,137,7,2,Shadow Shaman,Enigma,Razor,Necrophos,Juggernaut,Vengeful Spirit,Mirana,Faceless Void,Queen of Pain,Bane,2259,184,SA
+7800000454,Riyadh Masters 2024,2024-04-25,Team Secret,Alliance,False,37.8,33,33,75,3,2,Mirana,Lich,Enigma,Shadow Fiend,Faceless Void,Necrophos,Morphling,Sand King,Lion,Riki,-2304,-8926,EU
+7800000455,PGL Wallachia,2024-12-13,Team Secret,Virtus.pro,True,17.9,30,5,202,5,2,Mirana,Necrophos,Riki,Morphling,Lina,Tidehunter,Pudge,Phantom Lancer,Bane,Shadow Fiend,965,930,NA
+7800000456,The International 2024,2024-12-11,Virtus.pro,Fnatic,True,42.1,25,24,99,10,11,Crystal Maiden,Lion,Pudge,Storm Spirit,Venomancer,Necrophos,Sniper,Shadow Fiend,Windranger,Riki,310,-1178,EU
+7800000457,Riyadh Masters 2024,2024-06-21,Evil Geniuses,Team Liquid,True,27.1,39,31,142,6,2,Anti-Mage,Riki,Queen of Pain,Tinker,Shadow Fiend,Faceless Void,Slardar,Bloodseeker,Vengeful Spirit,Sven,-1884,-4741,NA
+7800000458,The International 2024,2024-04-22,9Pandas,Team Liquid,False,34.3,34,37,67,10,1,Venomancer,Windranger,Puck,Enigma,Anti-Mage,Tinker,Sniper,Shadow Shaman,Lich,Vengeful Spirit,-2481,553,EU
+7800000459,ESL One Birmingham,2024-07-12,Fnatic,PSG.LGD,True,37.8,21,11,171,8,6,Crystal Maiden,Anti-Mage,Slardar,Juggernaut,Necrophos,Phantom Lancer,Drow Ranger,Bane,Warlock,Sand King,4343,2247,SEA
+7800000460,DreamLeague Season 22,2024-05-28,Gaimin Gladiators,OG,False,37.6,42,46,191,6,5,Mirana,Faceless Void,Sand King,Enigma,Earthshaker,Pudge,Lich,Vengeful Spirit,Sven,Lion,-3840,2794,EU
+7800000461,DreamLeague Season 22,2024-04-25,Evil Geniuses,Team Spirit,True,36.3,49,45,92,0,10,Venomancer,Lich,Sand King,Slardar,Shadow Shaman,Witch Doctor,Queen of Pain,Storm Spirit,Earthshaker,Morphling,600,-3437,SEA
+7800000462,DreamLeague Season 22,2024-03-29,OG,9Pandas,False,60.3,36,39,140,1,10,Riki,Crystal Maiden,Razor,Sven,Juggernaut,Slardar,Pudge,Lina,Anti-Mage,Bane,-2480,-3357,CIS
+7800000463,BetBoom Dacha,2024-02-25,nouns,Natus Vincere,False,45.2,22,35,298,6,5,Beastmaster,Tidehunter,Kunkka,Drow Ranger,Bane,Shadow Shaman,Phantom Lancer,Tiny,Mirana,Juggernaut,5825,-2270,NA
+7800000464,DreamLeague Season 22,2024-08-14,nouns,Virtus.pro,False,40.3,25,38,103,5,1,Kunkka,Zeus,Sniper,Queen of Pain,Slardar,Necrophos,Faceless Void,Storm Spirit,Axe,Venomancer,2744,1381,EU
+7800000465,PGL Wallachia,2024-02-25,Fnatic,BetBoom Team,False,58.5,33,38,42,4,11,Beastmaster,Lina,Windranger,Warlock,Tinker,Mirana,Witch Doctor,Anti-Mage,Puck,Tidehunter,332,-1433,CN
+7800000466,Riyadh Masters 2024,2024-05-10,Evil Geniuses,Team Spirit,False,37.6,35,36,134,4,0,Bloodseeker,Crystal Maiden,Slardar,Storm Spirit,Witch Doctor,Vengeful Spirit,Shadow Shaman,Bane,Zeus,Beastmaster,2650,986,SEA
+7800000467,DreamLeague Season 22,2024-04-19,OG,9Pandas,True,35.0,39,30,202,3,10,Lina,Anti-Mage,Bane,Lion,Lich,Witch Doctor,Earthshaker,Axe,Crystal Maiden,Zeus,71,-505,EU
+7800000468,Riyadh Masters 2024,2024-03-08,Virtus.pro,Alliance,False,38.8,28,46,38,7,11,Windranger,Shadow Fiend,Drow Ranger,Lina,Enigma,Necrophos,Tiny,Sand King,Witch Doctor,Bane,1687,3205,CIS
+7800000469,ESL One Birmingham,2024-10-26,Team Liquid,Tundra Esports,True,36.7,32,19,75,11,9,Shadow Fiend,Crystal Maiden,Tidehunter,Bloodseeker,Phantom Lancer,Kunkka,Morphling,Mirana,Juggernaut,Puck,-656,2295,EU
+7800000470,BetBoom Dacha,2024-01-18,BetBoom Team,Team Spirit,False,35.9,23,24,151,0,5,Kunkka,Necrophos,Lina,Lich,Tinker,Sand King,Crystal Maiden,Queen of Pain,Faceless Void,Axe,2897,1007,CN
+7800000471,BetBoom Dacha,2024-11-03,BetBoom Team,Natus Vincere,False,51.9,23,28,59,6,11,Warlock,Zeus,Enigma,Queen of Pain,Tidehunter,Anti-Mage,Mirana,Faceless Void,Sand King,Shadow Fiend,2823,-2932,SEA
+7800000472,PGL Wallachia,2024-10-10,OG,BetBoom Team,False,21.3,48,51,89,2,10,Sven,Storm Spirit,Axe,Witch Doctor,Juggernaut,Windranger,Faceless Void,Bloodseeker,Zeus,Tinker,-2932,5558,CN
+7800000473,DreamLeague Season 22,2024-04-01,Tundra Esports,Team Liquid,False,35.2,19,41,136,0,4,Mirana,Lion,Riki,Juggernaut,Storm Spirit,Queen of Pain,Puck,Bane,Sven,Tinker,453,3856,EU
+7800000474,BetBoom Dacha,2024-02-22,Virtus.pro,9Pandas,False,16.9,38,47,147,4,9,Sven,Crystal Maiden,Anti-Mage,Faceless Void,Puck,Kunkka,Drow Ranger,Vengeful Spirit,Windranger,Tiny,-1201,1192,SA
+7800000475,PGL Wallachia,2024-08-05,OG,nouns,False,28.6,6,36,85,4,2,Venomancer,Kunkka,Beastmaster,Morphling,Bloodseeker,Riki,Tinker,Sand King,Zeus,Mirana,-376,177,EU
+7800000476,ESL One Birmingham,2024-04-13,Team Secret,Fnatic,True,33.5,53,49,111,6,3,Lion,Drow Ranger,Phantom Lancer,Sven,Venomancer,Crystal Maiden,Queen of Pain,Lich,Tidehunter,Vengeful Spirit,2340,4190,SEA
+7800000477,PGL Wallachia,2024-04-03,Alliance,Tundra Esports,False,34.5,33,40,157,6,1,Mirana,Anti-Mage,Necrophos,Sand King,Tiny,Zeus,Drow Ranger,Sniper,Puck,Vengeful Spirit,-610,-366,CN
+7800000478,The International 2024,2024-06-13,OG,nouns,True,42.3,37,28,35,6,0,Juggernaut,Razor,Bloodseeker,Vengeful Spirit,Lina,Tinker,Shadow Shaman,Slardar,Crystal Maiden,Morphling,-4357,-3154,SEA
+7800000479,Riyadh Masters 2024,2024-09-21,Natus Vincere,9Pandas,True,49.2,42,39,63,1,11,Pudge,Zeus,Tiny,Lich,Tinker,Riki,Lion,Juggernaut,Phantom Lancer,Venomancer,2495,3681,CN
+7800000480,ESL One Birmingham,2024-06-17,OG,Alliance,False,30.5,29,39,118,1,1,Morphling,Juggernaut,Queen of Pain,Kunkka,Phantom Lancer,Lion,Lich,Axe,Sven,Mirana,4089,-5210,SA
+7800000481,DreamLeague Season 22,2024-03-27,Tundra Esports,BetBoom Team,True,31.6,24,20,128,7,8,Pudge,Beastmaster,Morphling,Drow Ranger,Queen of Pain,Earthshaker,Tinker,Storm Spirit,Tidehunter,Tiny,-5454,6035,CIS
+7800000482,DreamLeague Season 22,2024-06-12,OG,Natus Vincere,True,40.0,40,34,140,2,1,Tinker,Bane,Witch Doctor,Storm Spirit,Axe,Crystal Maiden,Sniper,Enigma,Morphling,Beastmaster,-1847,3268,EU
+7800000483,Riyadh Masters 2024,2024-11-10,Fnatic,PSG.LGD,False,22.7,35,41,55,2,4,Windranger,Witch Doctor,Enigma,Pudge,Shadow Fiend,Anti-Mage,Storm Spirit,Sven,Juggernaut,Sand King,1610,2776,CIS
+7800000484,BetBoom Dacha,2024-08-04,OG,Team Spirit,False,29.3,13,29,117,11,0,Phantom Lancer,Vengeful Spirit,Juggernaut,Warlock,Witch Doctor,Earthshaker,Mirana,Windranger,Anti-Mage,Lich,-5926,-4281,CN
+7800000485,The International 2024,2024-07-12,Tundra Esports,Alliance,False,45.9,38,39,49,5,11,Crystal Maiden,Shadow Shaman,Pudge,Bane,Sniper,Razor,Vengeful Spirit,Juggernaut,Enigma,Riki,-409,-2143,CIS
+7800000486,The International 2024,2024-05-09,Team Secret,nouns,True,45.4,25,24,115,6,9,Drow Ranger,Kunkka,Beastmaster,Pudge,Shadow Fiend,Tiny,Lion,Riki,Storm Spirit,Puck,2308,-5660,CN
+7800000487,BetBoom Dacha,2024-04-02,BetBoom Team,PSG.LGD,True,54.4,65,24,27,10,10,Sniper,Phantom Lancer,Tidehunter,Puck,Bloodseeker,Earthshaker,Witch Doctor,Queen of Pain,Anti-Mage,Razor,-5644,-2957,SEA
+7800000488,DreamLeague Season 22,2024-02-26,Evil Geniuses,BetBoom Team,True,41.7,48,21,45,10,3,Kunkka,Witch Doctor,Crystal Maiden,Sniper,Beastmaster,Warlock,Faceless Void,Sand King,Drow Ranger,Necrophos,-491,3652,NA
+7800000489,Riyadh Masters 2024,2024-12-02,Evil Geniuses,Virtus.pro,True,47.0,46,40,54,2,10,Tiny,Tinker,Tidehunter,Slardar,Morphling,Lich,Queen of Pain,Sven,Phantom Lancer,Vengeful Spirit,-8309,-2014,SEA
+7800000490,Riyadh Masters 2024,2024-03-26,Virtus.pro,nouns,False,34.9,30,44,141,5,2,Shadow Shaman,Faceless Void,Windranger,Riki,Mirana,Morphling,Pudge,Lina,Tiny,Slardar,-2547,-3403,SEA
+7800000491,BetBoom Dacha,2024-03-23,Fnatic,Gaimin Gladiators,True,26.7,42,34,146,4,2,Mirana,Sven,Kunkka,Razor,Drow Ranger,Warlock,Earthshaker,Riki,Necrophos,Phantom Lancer,4736,-2346,EU
+7800000492,Riyadh Masters 2024,2024-04-05,9Pandas,Fnatic,True,33.8,41,35,160,10,6,Vengeful Spirit,Tidehunter,Puck,Phantom Lancer,Earthshaker,Sniper,Drow Ranger,Venomancer,Axe,Riki,2506,-1866,NA
+7800000493,The International 2024,2024-01-04,Team Spirit,9Pandas,False,28.8,42,47,215,11,11,Sven,Juggernaut,Bloodseeker,Venomancer,Anti-Mage,Storm Spirit,Tinker,Warlock,Riki,Crystal Maiden,-1327,1586,SEA
+7800000494,DreamLeague Season 22,2024-12-10,BetBoom Team,Alliance,False,45.7,35,40,49,3,3,Tiny,Drow Ranger,Slardar,Tinker,Zeus,Shadow Fiend,Bane,Puck,Anti-Mage,Queen of Pain,-3082,-2172,SA
+7800000495,ESL One Birmingham,2024-10-27,Gaimin Gladiators,Team Spirit,True,40.8,34,14,150,4,5,Kunkka,Riki,Lich,Juggernaut,Anti-Mage,Witch Doctor,Slardar,Shadow Shaman,Sven,Zeus,-2376,-845,CIS
+7800000496,DreamLeague Season 22,2024-02-19,Virtus.pro,BetBoom Team,False,41.6,28,37,163,8,11,Earthshaker,Tinker,Lich,Pudge,Shadow Fiend,Tiny,Windranger,Witch Doctor,Queen of Pain,Anti-Mage,-3813,488,CIS
+7800000497,The International 2024,2024-09-03,Team Secret,Gaimin Gladiators,True,29.9,23,23,109,3,2,Queen of Pain,Phantom Lancer,Bloodseeker,Lina,Windranger,Mirana,Pudge,Zeus,Sand King,Vengeful Spirit,1697,-5331,SA
+7800000498,PGL Wallachia,2024-04-13,Team Liquid,Team Secret,False,30.4,54,60,136,7,9,Bane,Lich,Beastmaster,Lina,Slardar,Shadow Fiend,Windranger,Tinker,Sniper,Shadow Shaman,1778,1984,NA
+7800000499,The International 2024,2024-11-15,Natus Vincere,Alliance,True,46.7,53,39,104,8,3,Shadow Fiend,Lich,Drow Ranger,Shadow Shaman,Anti-Mage,Crystal Maiden,Faceless Void,Tiny,Razor,Beastmaster,-5228,-44,SEA
