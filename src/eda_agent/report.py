@@ -242,9 +242,8 @@ def generate_notebook(
         sorted_findings = sorted(findings, key=lambda f: priority.get(f.importance, 1))
 
         for i, finding in enumerate(sorted_findings, 1):
-            badge = finding.importance.upper()
             cells.append(_make_nb_cell("markdown", (
-                f"### {i}. {finding.title}  `[{badge}]`\n"
+                f"### {i}. {finding.title}\n"
                 "\n"
                 f"{finding.narrative}\n"
             )))

@@ -101,23 +101,9 @@
         /* ── Findings ─────────────────────────────────────────── */
         .finding { }
         .finding-header {
-            display: flex;
-            align-items: center;
-            gap: .75rem;
             margin-bottom: .75rem;
         }
         .finding-header h3 { font-size: 1.1rem; font-weight: 600; }
-        .badge {
-            font-size: .7rem;
-            font-weight: 700;
-            padding: .2rem .6rem;
-            border-radius: 999px;
-            text-transform: uppercase;
-            letter-spacing: .05em;
-        }
-        .badge-high   { background: #ffe0e0; color: #c0392b; }
-        .badge-medium { background: #fff3cd; color: #856404; }
-        .badge-low    { background: #d4edda; color: #155724; }
 
         .finding-narrative { color: #444; margin-bottom: 1rem; white-space: pre-line; }
 
@@ -216,7 +202,6 @@
     {% for finding in findings %}
     <div class="card finding">
         <div class="finding-header">
-            <span class="badge badge-{{ finding.importance }}">{{ finding.importance }}</span>
             <h3>{{ finding.title }}</h3>
         </div>
         <div class="finding-narrative">{{ finding.narrative }}</div>

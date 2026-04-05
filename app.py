@@ -318,10 +318,7 @@ if st.session_state.history:
     st.divider()
     st.subheader("🔍 Key Findings")
     for i, finding in enumerate(result.findings, 1):
-        badge_color = {"high": "red", "medium": "orange", "low": "green"}.get(
-            finding.importance, "blue"
-        )
-        st.markdown(f"#### {i}. {finding.title}  :{badge_color}[{finding.importance.upper()}]")
+        st.markdown(f"#### {i}. {finding.title}")
         st.markdown(finding.narrative)
         for chart_path in finding.chart_paths:
             img_bytes = figure_data.get(chart_path)

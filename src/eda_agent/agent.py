@@ -81,7 +81,40 @@ class EDAAgent:
         provider: str = "anthropic",
     ):
         self.llm = create_provider(provider, api_key, model)
+        self._provider_name = provider
+        self._api_key = api_key
         self.max_iterations = max_iterations
+
+    # -- helpers ------------------------------------------------------------
+
+    def _generate_summary(self, findings: list[Finding], profile_text: str) -> str:
+        """Make a dedicated LLM call to produce an executive summary."""
+
+        finding_bullets = "\n".join(f"- {f.title}: {f.narrative[:200]}" for f in findings)
+        prompt = (
+            "Based on the following data profile and analysis findings, write a concise "
+            "executive summary (2-4 sentences) that highlights the most important insights.\n\n"
+            f"## Data Profile\n{profile_text}\n\n"
+            f"## Findings\n{finding_bullets}\n\n"
+            "Write ONLY the summary text, nothing else."
+        )
+
+        # Fresh provider instance so we don't pollute the main conversation
+        summary_llm = create_provider(self._provider_name, self._api_key, self.llm.model)
+        summary_llm.add_user_message(prompt)
+
+        try:
+            response = summary_llm.send("You are a data analyst. Write concise summaries.", [])
+            if response.text.strip():
+                return response.text.strip()
+        except Exception:
+            pass
+
+        # Fallback if the LLM call fails
+        return (
+            f"Analysis of a dataset with {len(findings)} key findings. "
+            "See the findings below for details."
+        )
 
     # -- public API ---------------------------------------------------------
 
@@ -135,9 +168,16 @@ class EDAAgent:
         system_prompt = SYSTEM_PROMPT.format(profile=profile_text, user_focus=focus_block)
 
         # Seed the conversation
-        self.llm.add_user_message(
-            "Please begin your exploratory data analysis of this dataset."
-        )
+        if user_focus.strip():
+            opening = (
+                "Please begin your exploratory data analysis of this dataset.\n\n"
+                f"IMPORTANT — the user wants you to prioritize the following:\n"
+                f"{user_focus.strip()}\n\n"
+                "Start with what the user asked for, then cover other important aspects."
+            )
+        else:
+            opening = "Please begin your exploratory data analysis of this dataset."
+        self.llm.add_user_message(opening)
 
         for iteration in range(1, self.max_iterations + 1):
             yield ProgressEvent(
@@ -238,9 +278,7 @@ class EDAAgent:
             if any(t.name == "mark_complete" for t in response.tool_calls):
                 break
         else:
-            if not summary:
-                summary = "Analysis reached the maximum number of steps."
-            yield ProgressEvent("done", "Reached iteration limit.", detail=summary)
+            yield ProgressEvent("done", "Reached iteration limit.", detail="Generating summary…")
 
         # Fallback if no findings
         if not findings:
@@ -252,7 +290,11 @@ class EDAAgent:
                           f"{profile['quality']['total_missing_pct']}% of values are missing.",
                 importance="medium",
             ))
-            summary = summary or "Basic profile completed; the agent could not generate deeper findings."
+
+        # -- Guarantee an executive summary ---------------------------------
+        if not summary:
+            yield ProgressEvent("report", "Generating executive summary…")
+            summary = self._generate_summary(findings, profile_text)
 
         # ---- 4. Build result ----------------------------------------------
         from .report import generate_html_report, generate_notebook
