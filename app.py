@@ -89,6 +89,13 @@ st.markdown("""
     .main-header h1 { margin: 0; font-size: 2.2rem; }
     .main-header p { opacity: 0.85; margin: 0.5rem 0 0 0; font-size: 1.1rem; }
     footer { visibility: hidden; }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .main-header { padding: 1.25rem; }
+        .main-header h1 { font-size: 1.5rem; }
+        .main-header p { font-size: 0.9rem; }
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -265,16 +272,19 @@ with tab_demo:
         "🎮 Dota 2 Pro Matches": "dota2_matches.csv",
         "🍽️ Restaurant Data (Messy)": "restaurant_data.csv",
     }
-    cols = st.columns(len(demo_datasets))
-    for i, (label, filename) in enumerate(demo_datasets.items()):
-        with cols[i]:
-            path = DATA_DIR / filename
-            if st.button(label, disabled=not path.exists(), key=f"demo_{filename}"):
-                st.session_state.df = load_dataset(file_path=path)
-                st.session_state.source_name = filename
-                _reset_analysis()
-            if not path.exists():
-                st.caption("Not found")
+    demo_items = list(demo_datasets.items())
+    for row_start in range(0, len(demo_items), 2):
+        row = demo_items[row_start:row_start + 2]
+        cols = st.columns(len(row))
+        for col, (label, filename) in zip(cols, row):
+            with col:
+                path = DATA_DIR / filename
+                if st.button(label, disabled=not path.exists(), key=f"demo_{filename}"):
+                    st.session_state.df = load_dataset(file_path=path)
+                    st.session_state.source_name = filename
+                    _reset_analysis()
+                if not path.exists():
+                    st.caption("Not found")
 
 # ---------------------------------------------------------------------------
 # Data preview
