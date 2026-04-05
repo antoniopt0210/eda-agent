@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import datetime
 import sys
 import os
 import tempfile
@@ -34,6 +35,16 @@ st.set_page_config(
 if "df" not in st.session_state:
     st.session_state.df = None
     st.session_state.source_name = ""
+
+if "history" not in st.session_state:
+    # List of dicts: {label, source, timestamp, result, figure_data, pdf_bytes}
+    st.session_state.history = []
+
+if "selected_run" not in st.session_state:
+    st.session_state.selected_run = 0  # index into history (0 = latest)
+
+if "running" not in st.session_state:
+    st.session_state.running = False
 
 # ---------------------------------------------------------------------------
 # Custom CSS
@@ -92,6 +103,25 @@ with st.sidebar:
     )
 
     max_steps = st.slider("Max analysis steps", 5, 30, 20)
+
+    # -- History panel in sidebar ------------------------------------------
+    if st.session_state.history:
+        st.divider()
+        st.subheader("📂 Past Analyses")
+        labels = [h["label"] for h in st.session_state.history]
+        chosen = st.radio(
+            "Select a run to view",
+            range(len(labels)),
+            format_func=lambda i: labels[i],
+            index=st.session_state.selected_run,
+            key="history_radio",
+        )
+        st.session_state.selected_run = chosen
+
+        if st.button("🗑️ Clear history"):
+            st.session_state.history.clear()
+            st.session_state.selected_run = 0
+            st.rerun()
 
     st.divider()
     st.markdown(
@@ -177,7 +207,7 @@ if df is not None:
     st.dataframe(df.head(50), height=300)
 
     # -------------------------------------------------------------------
-    # Run analysis
+    # Run analysis (just the button + progress — results rendered below)
     # -------------------------------------------------------------------
     st.divider()
 
@@ -185,7 +215,6 @@ if df is not None:
         st.warning("Enter your API key in the sidebar to run the analysis.")
     else:
         if st.button("🚀 Run Analysis", type="primary"):
-            # Create a temp dir for output
             with tempfile.TemporaryDirectory() as tmp_dir:
                 output_dir = Path(tmp_dir)
                 agent = EDAAgent(
@@ -199,7 +228,6 @@ if df is not None:
                     for event in agent.analyze(df, output_dir):
                         if event.stage == "profiling":
                             st.write(f"📊 {event.message}")
-
                         elif event.stage == "analysis":
                             if event.detail and not event.figure:
                                 with st.expander(f"🔧 {event.message}", expanded=False):
@@ -208,13 +236,10 @@ if df is not None:
                                 st.image(event.figure, width=600)
                             else:
                                 st.write(f"🤔 {event.message}")
-
                         elif event.stage == "finding":
                             st.write(f"✅ {event.message}")
-
                         elif event.stage == "report":
                             st.write(f"📝 {event.message}")
-
                         elif event.stage == "done":
                             st.write(f"🎉 {event.message}")
 
@@ -222,65 +247,108 @@ if df is not None:
 
                 result = agent.result
 
-                # Display report
-                st.divider()
-                st.subheader("📄 Analysis Report")
-
-                # Download buttons
-                col_dl1, col_dl2, col_dl3, col_dl4 = st.columns(4)
-                with col_dl1:
-                    st.download_button(
-                        "⬇️ HTML",
-                        data=result.report_html,
-                        file_name="eda_report.html",
-                        mime="text/html",
-                    )
-                with col_dl2:
-                    st.download_button(
-                        "⬇️ Markdown",
-                        data=result.report_md,
-                        file_name="eda_report.md",
-                        mime="text/markdown",
-                    )
-                with col_dl3:
-                    st.download_button(
-                        "⬇️ Notebook",
-                        data=result.report_notebook,
-                        file_name="eda_report.ipynb",
-                        mime="application/x-ipynb+json",
-                    )
-                with col_dl4:
-                    pdf_bytes = None
-                    pdf_path = output_dir / "report.pdf"
-                    if generate_pdf_report(result.report_html, pdf_path):
-                        pdf_bytes = pdf_path.read_bytes()
-                    if pdf_bytes:
-                        st.download_button(
-                            "⬇️ PDF",
-                            data=pdf_bytes,
-                            file_name="eda_report.pdf",
-                            mime="application/pdf",
-                        )
-                    else:
-                        st.button("PDF unavailable", disabled=True)
-
-                # Show findings individually
-                st.divider()
-                st.subheader("🔍 Key Findings")
-                for i, finding in enumerate(result.findings, 1):
-                    badge_color = {"high": "red", "medium": "orange", "low": "green"}.get(
-                        finding.importance, "blue"
-                    )
-                    st.markdown(f"#### {i}. {finding.title}  :{badge_color}[{finding.importance.upper()}]")
-                    st.markdown(finding.narrative)
+                # -- Snapshot figure bytes before temp dir is cleaned up ----
+                figure_data: dict[str, bytes] = {}
+                for finding in result.findings:
                     for chart_path in finding.chart_paths:
-                        if Path(chart_path).exists():
-                            st.image(chart_path)
-                    st.divider()
+                        p = Path(chart_path)
+                        if p.exists():
+                            figure_data[chart_path] = p.read_bytes()
 
-                # Full HTML report in an expander
-                with st.expander("View full HTML report"):
-                    st.components.v1.html(result.report_html, height=800, scrolling=True)
+                # -- Try PDF generation while temp dir is alive ------------
+                pdf_bytes: bytes | None = None
+                pdf_path = output_dir / "report.pdf"
+                if generate_pdf_report(result.report_html, pdf_path):
+                    pdf_bytes = pdf_path.read_bytes()
 
-else:
+                # -- Save to session history --------------------------------
+                now = datetime.datetime.now().strftime("%H:%M:%S")
+                entry = {
+                    "label": f"{source_name} — {now}",
+                    "source": source_name,
+                    "timestamp": now,
+                    "result": result,
+                    "figure_data": figure_data,
+                    "pdf_bytes": pdf_bytes,
+                }
+                # Prepend so newest is first
+                st.session_state.history.insert(0, entry)
+                st.session_state.selected_run = 0
+                st.rerun()  # rerun so the results section below renders
+
+elif not uploaded_file:
     st.info("👆 Upload a dataset or select a demo dataset to get started.")
+
+
+# ---------------------------------------------------------------------------
+# Results display — always rendered from session state (survives reruns)
+# ---------------------------------------------------------------------------
+
+if st.session_state.history:
+    idx = st.session_state.selected_run
+    if idx >= len(st.session_state.history):
+        idx = 0
+    entry = st.session_state.history[idx]
+    result = entry["result"]
+    figure_data: dict[str, bytes] = entry["figure_data"]
+    pdf_bytes: bytes | None = entry["pdf_bytes"]
+
+    st.divider()
+    st.subheader(f"📄 Analysis Report — {entry['label']}")
+
+    # -- Download buttons (stable across reruns) ----------------------------
+    col_dl1, col_dl2, col_dl3, col_dl4 = st.columns(4)
+    with col_dl1:
+        st.download_button(
+            "⬇️ HTML",
+            data=result.report_html,
+            file_name="eda_report.html",
+            mime="text/html",
+            key=f"dl_html_{idx}",
+        )
+    with col_dl2:
+        st.download_button(
+            "⬇️ Markdown",
+            data=result.report_md,
+            file_name="eda_report.md",
+            mime="text/markdown",
+            key=f"dl_md_{idx}",
+        )
+    with col_dl3:
+        st.download_button(
+            "⬇️ Notebook",
+            data=result.report_notebook,
+            file_name="eda_report.ipynb",
+            mime="application/x-ipynb+json",
+            key=f"dl_nb_{idx}",
+        )
+    with col_dl4:
+        if pdf_bytes:
+            st.download_button(
+                "⬇️ PDF",
+                data=pdf_bytes,
+                file_name="eda_report.pdf",
+                mime="application/pdf",
+                key=f"dl_pdf_{idx}",
+            )
+        else:
+            st.button("PDF unavailable", disabled=True, key=f"dl_pdf_na_{idx}")
+
+    # -- Findings ----------------------------------------------------------
+    st.divider()
+    st.subheader("🔍 Key Findings")
+    for i, finding in enumerate(result.findings, 1):
+        badge_color = {"high": "red", "medium": "orange", "low": "green"}.get(
+            finding.importance, "blue"
+        )
+        st.markdown(f"#### {i}. {finding.title}  :{badge_color}[{finding.importance.upper()}]")
+        st.markdown(finding.narrative)
+        for chart_path in finding.chart_paths:
+            img_bytes = figure_data.get(chart_path)
+            if img_bytes:
+                st.image(img_bytes)
+        st.divider()
+
+    # -- Full HTML report --------------------------------------------------
+    with st.expander("View full HTML report"):
+        st.components.v1.html(result.report_html, height=800, scrolling=True)
