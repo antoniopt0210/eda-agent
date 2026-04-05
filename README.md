@@ -161,9 +161,19 @@ To deploy as a free public demo:
 1. Push this repo to GitHub
 2. Go to [share.streamlit.io](https://share.streamlit.io)
 3. Connect your repo and set `app.py` as the main file
-4. Deploy — no secrets needed (BYOK model)
+4. In **App Settings > Secrets**, add your demo API key:
+   ```toml
+   DEMO_ANTHROPIC_API_KEY = "sk-ant-your-key-here"
+   ```
+5. Deploy
 
-Users will enter their own API key in the browser (never stored server-side).
+### Demo mode
+
+When `DEMO_ANTHROPIC_API_KEY` is set (via Streamlit secrets or env var), visitors see a **"Try Demo (free)"** option in the sidebar. This lets them run analyses using your key without entering their own.
+
+- Demo mode is limited to **5 analyses per session** to control costs
+- Uses Claude Sonnet (provider/model locked in demo mode)
+- Users can switch to "Use My Own Key" at any time for unlimited use with any provider
 
 ---
 

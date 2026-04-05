@@ -19,8 +19,9 @@ env/
 *.swp
 *.swo
 
-# Environment
+# Environment / Secrets
 .env
+.streamlit/secrets.toml
 
 # OS
 .DS_Store

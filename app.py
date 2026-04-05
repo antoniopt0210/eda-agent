@@ -44,6 +44,26 @@ if "history" not in st.session_state:
     st.session_state.history = []
     st.session_state.selected_run = 0
 
+if "demo_uses" not in st.session_state:
+    st.session_state.demo_uses = 0
+
+# ---------------------------------------------------------------------------
+# Demo mode config
+# ---------------------------------------------------------------------------
+DEMO_MAX_USES = 5  # max analyses per session using the host's key
+
+def _get_demo_key() -> str | None:
+    """Return the host's API key from Streamlit secrets or env, or None."""
+    # Streamlit Cloud: set in app settings > Secrets
+    try:
+        return st.secrets["DEMO_ANTHROPIC_API_KEY"]
+    except (KeyError, FileNotFoundError):
+        pass
+    # Local / fallback: env variable
+    return os.environ.get("DEMO_ANTHROPIC_API_KEY")
+
+DEMO_KEY_AVAILABLE = _get_demo_key() is not None
+
 # ---------------------------------------------------------------------------
 # CSS
 # ---------------------------------------------------------------------------
@@ -131,6 +151,7 @@ with st.sidebar:
     st.caption("Autonomous AI-powered data analysis")
     st.divider()
 
+    # -- Key mode: demo vs own key -----------------------------------------
     PROVIDER_LABELS = {
         "Anthropic (Claude)": "anthropic",
         "OpenAI (GPT)": "openai",
@@ -138,14 +159,34 @@ with st.sidebar:
     }
     KEY_PLACEHOLDERS = {"anthropic": "sk-ant-...", "openai": "sk-...", "gemini": "AIza..."}
 
-    provider_label = st.selectbox("AI Provider", list(PROVIDER_LABELS.keys()))
-    provider_name = PROVIDER_LABELS[provider_label]
-    api_key = st.text_input(
-        "🔑 API Key", type="password",
-        placeholder=KEY_PLACEHOLDERS[provider_name],
-        help="Your key stays in your browser session and is never stored.",
-    )
-    model = st.selectbox("Model", options=MODEL_OPTIONS[provider_name], index=0)
+    if DEMO_KEY_AVAILABLE:
+        key_mode = st.radio(
+            "API Key",
+            ["🎉 Try Demo (free)", "🔑 Use My Own Key"],
+            index=0,
+            help=f"Demo mode is limited to {DEMO_MAX_USES} analyses per session.",
+        )
+        use_demo = key_mode.startswith("🎉")
+    else:
+        use_demo = False
+
+    if use_demo:
+        api_key = _get_demo_key() or ""
+        provider_name = "anthropic"
+        model = "claude-sonnet-4-20250514"
+        remaining = max(0, DEMO_MAX_USES - st.session_state.demo_uses)
+        st.info(f"Demo mode — {remaining}/{DEMO_MAX_USES} analyses remaining")
+        if remaining == 0:
+            st.warning("Demo limit reached. Use your own API key to continue.")
+    else:
+        provider_label = st.selectbox("AI Provider", list(PROVIDER_LABELS.keys()))
+        provider_name = PROVIDER_LABELS[provider_label]
+        api_key = st.text_input(
+            "🔑 API Key", type="password",
+            placeholder=KEY_PLACEHOLDERS[provider_name],
+            help="Your key stays in your browser session and is never stored.",
+        )
+        model = st.selectbox("Model", options=MODEL_OPTIONS[provider_name], index=0)
 
     if st.session_state.history:
         st.divider()
@@ -244,8 +285,11 @@ if df is not None:
     # PHASE: input — run basic EDA
     # ===================================================================
     if st.session_state.phase == "input":
+        demo_blocked = use_demo and st.session_state.demo_uses >= DEMO_MAX_USES
         if not api_key:
             st.warning("Enter your API key in the sidebar to start.")
+        elif demo_blocked:
+            st.warning("Demo limit reached. Switch to 'Use My Own Key' in the sidebar.")
         else:
             user_focus = st.text_area(
                 "🎯 Anything specific the agent should look at? *(optional)*",
@@ -253,6 +297,8 @@ if df is not None:
                 height=80, key="user_focus_initial",
             )
             if st.button("🚀 Run Basic EDA", type="primary"):
+                if use_demo:
+                    st.session_state.demo_uses += 1
                 output_dir = _ensure_output_dir()
                 agent = EDAAgent(api_key=api_key, model=model, provider=provider_name)
                 with st.status("🔬 Performing basic EDA…", expanded=True) as status:
