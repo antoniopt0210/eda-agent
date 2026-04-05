@@ -162,11 +162,11 @@ with st.sidebar:
     if DEMO_KEY_AVAILABLE:
         key_mode = st.radio(
             "API Key",
-            ["🎉 Try Demo (free)", "🔑 Use My Own Key"],
+            ["🔬 Use Demo API", "🔑 Use My Own Key"],
             index=0,
-            help=f"Demo mode is limited to {DEMO_MAX_USES} analyses per session.",
+            help=f"Demo API is limited to {DEMO_MAX_USES} analyses per session.",
         )
-        use_demo = key_mode.startswith("🎉")
+        use_demo = key_mode.startswith("🔬")
     else:
         use_demo = False
 
