@@ -5,7 +5,6 @@ from __future__ import annotations
 import sys
 import os
 import tempfile
-import time
 from pathlib import Path
 
 # Ensure src/ is on the path for Streamlit Cloud deployments
@@ -14,8 +13,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import streamlit as st
 import pandas as pd
 
-from eda_agent.profiler import load_dataset, auto_sample, generate_profile, profile_to_text
-from eda_agent.agent import EDAAgent, ProgressEvent
+from eda_agent.profiler import load_dataset
+from eda_agent.agent import EDAAgent
 from eda_agent.report import generate_pdf_report
 from eda_agent.providers import MODEL_OPTIONS
 
@@ -30,11 +29,17 @@ st.set_page_config(
 )
 
 # ---------------------------------------------------------------------------
+# Session state initialisation
+# ---------------------------------------------------------------------------
+if "df" not in st.session_state:
+    st.session_state.df = None
+    st.session_state.source_name = ""
+
+# ---------------------------------------------------------------------------
 # Custom CSS
 # ---------------------------------------------------------------------------
 st.markdown("""
 <style>
-    /* Header gradient */
     .main-header {
         background: linear-gradient(135deg, #6C63FF 0%, #4834d4 100%);
         color: white;
@@ -45,28 +50,6 @@ st.markdown("""
     }
     .main-header h1 { margin: 0; font-size: 2.2rem; }
     .main-header p { opacity: 0.85; margin: 0.5rem 0 0 0; font-size: 1.1rem; }
-
-    /* Stat cards */
-    .stat-card {
-        background: #f5f5fa;
-        border-radius: 10px;
-        padding: 1rem;
-        text-align: center;
-    }
-    .stat-card .number { font-size: 1.5rem; font-weight: 700; color: #6C63FF; }
-    .stat-card .label { font-size: 0.8rem; color: #888; }
-
-    /* Finding cards */
-    .finding-card {
-        background: white;
-        border: 1px solid #eee;
-        border-radius: 10px;
-        padding: 1.25rem;
-        margin-bottom: 1rem;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    }
-
-    /* Hide Streamlit footer */
     footer { visibility: hidden; }
 </style>
 """, unsafe_allow_html=True)
@@ -142,9 +125,6 @@ DATA_DIR = Path(__file__).parent / "data"
 
 tab_upload, tab_demo = st.tabs(["📁 Upload Dataset", "📦 Demo Datasets"])
 
-df: pd.DataFrame | None = None
-source_name: str = ""
-
 with tab_upload:
     uploaded_file = st.file_uploader(
         "Upload a CSV, Excel, JSON, or Parquet file (up to 200 MB)",
@@ -152,8 +132,10 @@ with tab_upload:
     )
     if uploaded_file:
         try:
-            df = load_dataset(file_bytes=uploaded_file.getvalue(), file_name=uploaded_file.name)
-            source_name = uploaded_file.name
+            st.session_state.df = load_dataset(
+                file_bytes=uploaded_file.getvalue(), file_name=uploaded_file.name,
+            )
+            st.session_state.source_name = uploaded_file.name
         except Exception as e:
             st.error(f"Could not load file: {e}")
 
@@ -170,15 +152,18 @@ with tab_demo:
         with cols[i]:
             path = DATA_DIR / filename
             exists = path.exists()
-            if st.button(label, disabled=not exists, use_container_width=True):
-                df = load_dataset(file_path=path)
-                source_name = filename
+            if st.button(label, disabled=not exists, key=f"demo_{filename}"):
+                st.session_state.df = load_dataset(file_path=path)
+                st.session_state.source_name = filename
             if not exists:
                 st.caption("Not found")
 
 # ---------------------------------------------------------------------------
 # Data preview
 # ---------------------------------------------------------------------------
+df = st.session_state.df
+source_name = st.session_state.source_name
+
 if df is not None:
     st.subheader(f"📋 Preview: {source_name}")
 
@@ -189,7 +174,7 @@ if df is not None:
     c3.metric("Missing %", f"{df.isnull().mean().mean() * 100:.1f}%")
     c4.metric("Memory", f"{df.memory_usage(deep=True).sum() / 1024 / 1024:.1f} MB")
 
-    st.dataframe(df.head(50), use_container_width=True, height=300)
+    st.dataframe(df.head(50), height=300)
 
     # -------------------------------------------------------------------
     # Run analysis
@@ -197,24 +182,26 @@ if df is not None:
     st.divider()
 
     if not api_key:
-        st.warning("Enter your Anthropic API key in the sidebar to run the analysis.")
+        st.warning("Enter your API key in the sidebar to run the analysis.")
     else:
-        if st.button("🚀 Run Analysis", type="primary", use_container_width=True):
+        if st.button("🚀 Run Analysis", type="primary"):
             # Create a temp dir for output
             with tempfile.TemporaryDirectory() as tmp_dir:
                 output_dir = Path(tmp_dir)
-                agent = EDAAgent(api_key=api_key, model=model, max_iterations=max_steps, provider=provider_name)
+                agent = EDAAgent(
+                    api_key=api_key,
+                    model=model,
+                    max_iterations=max_steps,
+                    provider=provider_name,
+                )
 
                 with st.status("🔬 Analyzing your data…", expanded=True) as status:
-                    code_expanders: list = []
-
                     for event in agent.analyze(df, output_dir):
                         if event.stage == "profiling":
                             st.write(f"📊 {event.message}")
 
                         elif event.stage == "analysis":
                             if event.detail and not event.figure:
-                                # Show code being executed
                                 with st.expander(f"🔧 {event.message}", expanded=False):
                                     st.code(event.detail, language="python")
                             elif event.figure:
@@ -247,7 +234,6 @@ if df is not None:
                         data=result.report_html,
                         file_name="eda_report.html",
                         mime="text/html",
-                        use_container_width=True,
                     )
                 with col_dl2:
                     st.download_button(
@@ -255,7 +241,6 @@ if df is not None:
                         data=result.report_md,
                         file_name="eda_report.md",
                         mime="text/markdown",
-                        use_container_width=True,
                     )
                 with col_dl3:
                     st.download_button(
@@ -263,7 +248,6 @@ if df is not None:
                         data=result.report_notebook,
                         file_name="eda_report.ipynb",
                         mime="application/x-ipynb+json",
-                        use_container_width=True,
                     )
                 with col_dl4:
                     pdf_bytes = None
@@ -276,15 +260,12 @@ if df is not None:
                             data=pdf_bytes,
                             file_name="eda_report.pdf",
                             mime="application/pdf",
-                            use_container_width=True,
                         )
                     else:
-                        st.button("PDF unavailable", disabled=True, use_container_width=True)
+                        st.button("PDF unavailable", disabled=True)
 
-                # Render HTML report inline
+                # Show findings individually
                 st.divider()
-
-                # Show findings individually for better Streamlit rendering
                 st.subheader("🔍 Key Findings")
                 for i, finding in enumerate(result.findings, 1):
                     badge_color = {"high": "red", "medium": "orange", "low": "green"}.get(
@@ -294,12 +275,12 @@ if df is not None:
                     st.markdown(finding.narrative)
                     for chart_path in finding.chart_paths:
                         if Path(chart_path).exists():
-                            st.image(chart_path, use_container_width=True)
+                            st.image(chart_path)
                     st.divider()
 
                 # Full HTML report in an expander
                 with st.expander("View full HTML report"):
                     st.components.v1.html(result.report_html, height=800, scrolling=True)
 
-elif not uploaded_file:
+else:
     st.info("👆 Upload a dataset or select a demo dataset to get started.")
