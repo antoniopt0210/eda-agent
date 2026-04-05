@@ -63,6 +63,14 @@ def analyze(
 
     agent = EDAAgent(api_key=api_key, model=resolved_model, max_iterations=max_steps, provider=provider)
 
+    def _show_progress(events):
+        for event in events:
+            progress.update(task, description=event.message)
+            if event.detail and event.stage == "finding":
+                console.print(f"  [green]✓[/green] {event.message}")
+            elif event.stage == "analysis" and event.figure:
+                console.print(f"  [blue]📊[/blue] Chart: {event.figure}")
+
     with Progress(
         SpinnerColumn(),
         TextColumn("[progress.description]{task.description}"),
@@ -71,14 +79,13 @@ def analyze(
     ) as progress:
         task = progress.add_task("Starting analysis…", total=None)
 
-        for event in agent.analyze(df, output, user_focus=focus):
-            progress.update(task, description=event.message)
+        # 1. Initial analysis
+        _show_progress(agent.analyze(df, output, user_focus=focus))
+        console.print(f"\n  Found {len(agent.findings)} finding(s) so far.\n")
 
-            if event.detail and event.stage == "finding":
-                console.print(f"  [green]✓[/green] {event.message}")
-            elif event.stage == "analysis" and event.figure:
-                console.print(f"  [blue]📊[/blue] Chart: {event.figure}")
-
+        # 2. Generate reports (CLI runs non-interactively)
+        progress.update(task, description="Generating reports…")
+        _show_progress(agent.generate_reports(output))
         progress.update(task, description="Done!")
 
     result = agent.result
