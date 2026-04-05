@@ -41,7 +41,8 @@ The agent operates in an **autonomous loop**: it inspects results from each anal
 - **Web UI** — Streamlit app with drag-and-drop upload and live progress streaming
 - **CLI** — Command-line interface for automation and scripting
 - **Demo datasets** — Titanic, Iris, Dota 2 Pro Matches, Restaurant Data (messy)
-- **BYOK** — Bring Your Own Key: users provide their own Anthropic API key
+- **Multi-provider** — Supports **Anthropic (Claude)**, **OpenAI (GPT)**, and **Google (Gemini)**
+- **BYOK** — Bring Your Own Key: users provide their own API key for any provider
 
 ---
 
@@ -61,18 +62,24 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Then open http://localhost:8501, enter your Anthropic API key, and upload a dataset (or pick a demo).
+Then open http://localhost:8501, select your AI provider, enter your API key, and upload a dataset (or pick a demo).
 
 ### 3. Or use the CLI
 
 ```bash
-# Set your API key
+# Anthropic (default)
 export ANTHROPIC_API_KEY=sk-ant-...
-
-# Analyze a dataset
 python -m eda_agent.main analyze data/titanic.csv -o output/
 
-# The report is saved to output/report.html and output/report.md
+# OpenAI
+python -m eda_agent.main analyze data/titanic.csv -o output/ \
+    --provider openai --api-key sk-... --model gpt-4o
+
+# Gemini
+python -m eda_agent.main analyze data/titanic.csv -o output/ \
+    --provider gemini --api-key AIza... --model gemini-2.0-flash
+
+# Reports saved to output/report.html, report.md, and report.ipynb
 ```
 
 ---
@@ -99,12 +106,17 @@ eda-agent/
 ├── pyproject.toml
 ├── src/
 │   └── eda_agent/
-│       ├── agent.py            # Autonomous agent loop (Claude tool-use)
+│       ├── agent.py            # Autonomous agent loop (LLM tool-use)
 │       ├── profiler.py         # Data loading, sampling, profiling
 │       ├── executor.py         # Sandboxed Python code execution
-│       ├── tools.py            # Claude tool definitions + system prompt
-│       ├── report.py           # HTML / Markdown / PDF report generation
+│       ├── tools.py            # Tool definitions + system prompt
+│       ├── report.py           # HTML / Markdown / Notebook / PDF generation
 │       ├── main.py             # CLI (Typer)
+│       ├── providers/          # Multi-provider LLM abstraction
+│       │   ├── __init__.py     # Base class, types, factory
+│       │   ├── anthropic_provider.py
+│       │   ├── openai_provider.py
+│       │   └── gemini_provider.py
 │       └── templates/
 │           └── report.html     # Jinja2 HTML report template
 ├── data/                       # Demo datasets
@@ -120,7 +132,7 @@ eda-agent/
 
 ### Agent Loop
 
-The core of EDA Agent is a **tool-use loop** with Claude:
+The core of EDA Agent is a **tool-use loop** with any supported LLM:
 
 1. The agent receives a **data profile** (schema, statistics, quality issues)
 2. It decides what to analyze and calls `run_python_code` with generated code
@@ -151,7 +163,7 @@ To deploy as a free public demo:
 3. Connect your repo and set `app.py` as the main file
 4. Deploy — no secrets needed (BYOK model)
 
-Users will enter their own Anthropic API key in the browser (never stored server-side).
+Users will enter their own API key in the browser (never stored server-side).
 
 ---
 
@@ -159,10 +171,19 @@ Users will enter their own Anthropic API key in the browser (never stored server
 
 | Setting | CLI flag | Default |
 |---------|----------|---------|
+| Provider | `--provider` | `anthropic` |
 | API key | `--api-key` / `ANTHROPIC_API_KEY` env | — |
-| Model | `--model` | `claude-sonnet-4-20250514` |
+| Model | `--model` | Provider default |
 | Max steps | `--max-steps` | 25 |
 | Output dir | `--output` | `output/` |
+
+**Default models per provider:**
+
+| Provider | Default model | Other options |
+|----------|---------------|---------------|
+| Anthropic | `claude-sonnet-4-20250514` | claude-haiku, claude-opus |
+| OpenAI | `gpt-4o` | gpt-4o-mini, gpt-4-turbo, o3-mini |
+| Gemini | `gemini-2.0-flash` | gemini-2.5-flash, gemini-2.5-pro |
 
 In the web UI, all settings are in the sidebar.
 
@@ -172,7 +193,7 @@ In the web UI, all settings are in the sidebar.
 
 | Component | Technology |
 |-----------|------------|
-| AI backbone | Claude API (Anthropic SDK, tool-use) |
+| AI backbone | Anthropic, OpenAI, Google Gemini (tool-use) |
 | Data handling | pandas, numpy, pyarrow |
 | Visualization | matplotlib, seaborn |
 | Report templating | Jinja2, HTML/CSS |

@@ -17,6 +17,7 @@ import pandas as pd
 from eda_agent.profiler import load_dataset, auto_sample, generate_profile, profile_to_text
 from eda_agent.agent import EDAAgent, ProgressEvent
 from eda_agent.report import generate_pdf_report
+from eda_agent.providers import MODEL_OPTIONS
 
 # ---------------------------------------------------------------------------
 # Page config
@@ -80,22 +81,31 @@ with st.sidebar:
 
     st.divider()
 
+    PROVIDER_LABELS = {
+        "Anthropic (Claude)": "anthropic",
+        "OpenAI (GPT)": "openai",
+        "Google (Gemini)": "gemini",
+    }
+    KEY_PLACEHOLDERS = {
+        "anthropic": "sk-ant-...",
+        "openai": "sk-...",
+        "gemini": "AIza...",
+    }
+
+    provider_label = st.selectbox("AI Provider", list(PROVIDER_LABELS.keys()))
+    provider_name = PROVIDER_LABELS[provider_label]
+
     api_key = st.text_input(
-        "🔑 Anthropic API Key",
+        "🔑 API Key",
         type="password",
-        placeholder="sk-ant-...",
+        placeholder=KEY_PLACEHOLDERS[provider_name],
         help="Your key stays in your browser session and is never stored.",
     )
 
     model = st.selectbox(
         "Model",
-        options=[
-            "claude-sonnet-4-20250514",
-            "claude-haiku-4-5-20251001",
-            "claude-opus-4-20250115",
-        ],
+        options=MODEL_OPTIONS[provider_name],
         index=0,
-        help="Sonnet is recommended — good balance of quality and cost.",
     )
 
     max_steps = st.slider("Max analysis steps", 5, 30, 20)
@@ -107,10 +117,11 @@ with st.sidebar:
         "2. The AI agent profiles your data\n"
         "3. It writes & executes analysis code\n"
         "4. Generates charts and a narrative report\n\n"
-        "All processing uses *your* API key (BYOK)."
+        "All processing uses *your* API key (BYOK).\n\n"
+        "**Supported providers:** Anthropic, OpenAI, Google Gemini"
     )
     st.divider()
-    st.caption("Built with Claude API · [GitHub](https://github.com)")
+    st.caption("Built with Claude, GPT & Gemini · [GitHub](https://github.com)")
 
 
 # ---------------------------------------------------------------------------
@@ -192,7 +203,7 @@ if df is not None:
             # Create a temp dir for output
             with tempfile.TemporaryDirectory() as tmp_dir:
                 output_dir = Path(tmp_dir)
-                agent = EDAAgent(api_key=api_key, model=model, max_iterations=max_steps)
+                agent = EDAAgent(api_key=api_key, model=model, max_iterations=max_steps, provider=provider_name)
 
                 with st.status("🔬 Analyzing your data…", expanded=True) as status:
                     code_expanders: list = []
