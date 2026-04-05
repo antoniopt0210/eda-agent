@@ -12,11 +12,13 @@ import pandas as pd
 from .executor import ExecutionResult, execute_code
 from .profiler import auto_sample, generate_profile, profile_to_text
 from .providers import ToolResult, create_provider
-from .tools import SYSTEM_PROMPT, TOOLS
+from .tools import BASIC_EDA_PROMPT, DEEP_ANALYSIS_PROMPT, TOOLS
 
 log = logging.getLogger(__name__)
 
-MAX_ITERATIONS = 25
+# Internal step caps (not exposed to user)
+BASIC_EDA_STEPS = 15
+CONTINUE_STEPS = 15
 
 
 # ---------------------------------------------------------------------------
@@ -70,23 +72,24 @@ class ProgressEvent:
 class EDAAgent:
     """Autonomous EDA agent powered by LLM tool-use.
 
-    Supports multiple providers: Anthropic (Claude), OpenAI (GPT), Google (Gemini).
-
     Usage flow::
 
         agent = EDAAgent(api_key=..., provider="anthropic")
 
-        # 1. Initial analysis
+        # 1. Basic EDA (always first)
         for event in agent.analyze(df, output_dir):
-            print(event.message)
+            ...
 
-        # 2. (Optional) Continue investigating
-        for event in agent.continue_analysis("Look deeper at outliers"):
-            print(event.message)
+        # 2. Continue — with or without user direction
+        for event in agent.continue_analysis("Look at correlations"):
+            ...
+        # or let the agent decide:
+        for event in agent.continue_analysis():
+            ...
 
         # 3. Generate final reports
         for event in agent.generate_reports(output_dir):
-            print(event.message)
+            ...
         result = agent.result
     """
 
@@ -94,21 +97,18 @@ class EDAAgent:
         self,
         api_key: str,
         model: str | None = None,
-        max_iterations: int = MAX_ITERATIONS,
         provider: str = "anthropic",
     ):
         self.llm = create_provider(provider, api_key, model)
         self._provider_name = provider
         self._api_key = api_key
-        self.max_iterations = max_iterations
 
-        # Accumulated state across analyze / continue_analysis calls
+        # Accumulated state
         self.findings: list[Finding] = []
         self.code_steps: list[CodeStep] = []
         self.summary: str = ""
         self.profile: dict[str, Any] = {}
         self._profile_text: str = ""
-        self._system_prompt: str = ""
         self._df_work: pd.DataFrame | None = None
         self._figures_dir: Path | None = None
         self._figure_counter: int = 0
@@ -120,13 +120,13 @@ class EDAAgent:
 
     def _run_loop(
         self,
-        max_iters: int | None = None,
+        system_prompt: str,
+        max_iters: int,
     ) -> Generator[ProgressEvent, None, None]:
         """Execute the agent tool-use loop, appending to self.findings / code_steps."""
         if self._df_work is None or self._figures_dir is None:
             raise RuntimeError("Call analyze() first.")
 
-        max_iters = max_iters or self.max_iterations
         latest_figures: list[str] = []
 
         for iteration in range(1, max_iters + 1):
@@ -136,12 +136,11 @@ class EDAAgent:
             )
 
             try:
-                response = self.llm.send(self._system_prompt, TOOLS)
+                response = self.llm.send(system_prompt, TOOLS)
             except Exception as exc:
                 yield ProgressEvent("analysis", f"API error: {exc}")
                 break
 
-            # No tool calls → model is done
             if not response.tool_calls:
                 if response.text:
                     yield ProgressEvent("analysis", response.text)
@@ -169,12 +168,9 @@ class EDAAgent:
                     latest_figures = list(exec_result.figures)
 
                     self.code_steps.append(CodeStep(
-                        purpose=purpose,
-                        code=code,
-                        stdout=exec_result.stdout,
-                        error=exec_result.error,
-                        figures=list(exec_result.figures),
-                        success=exec_result.success,
+                        purpose=purpose, code=code,
+                        stdout=exec_result.stdout, error=exec_result.error,
+                        figures=list(exec_result.figures), success=exec_result.success,
                     ))
 
                     for fig_path in exec_result.figures:
@@ -191,31 +187,26 @@ class EDAAgent:
                         parts.append(f"Figures saved: {exec_result.figures}")
                     if not parts:
                         parts.append("Code executed successfully (no printed output).")
-
                     provider_results.append(ToolResult(tc.id, "\n\n".join(parts)))
 
                 elif name == "save_finding":
                     chart_paths = inp.get("chart_paths", []) or latest_figures
                     finding = Finding(
-                        title=inp["title"],
-                        narrative=inp["narrative"],
-                        importance=inp.get("importance", "medium"),
-                        chart_paths=chart_paths,
+                        title=inp["title"], narrative=inp["narrative"],
+                        importance=inp.get("importance", "medium"), chart_paths=chart_paths,
                     )
                     self.findings.append(finding)
                     yield ProgressEvent(
-                        "finding",
-                        f"Finding #{len(self.findings)}: {finding.title}",
+                        "finding", f"Finding #{len(self.findings)}: {finding.title}",
                         detail=finding.narrative,
                     )
                     provider_results.append(ToolResult(
-                        tc.id,
-                        f"Finding saved. Total findings so far: {len(self.findings)}.",
+                        tc.id, f"Finding saved. Total findings: {len(self.findings)}.",
                     ))
 
                 elif name == "mark_complete":
                     self.summary = inp.get("summary", "Analysis complete.")
-                    yield ProgressEvent("done", "Analysis complete!", detail=self.summary)
+                    yield ProgressEvent("done", "Phase complete!", detail=self.summary)
                     provider_results.append(ToolResult(
                         tc.id, "Findings recorded. The user will decide what to do next.",
                     ))
@@ -224,13 +215,20 @@ class EDAAgent:
 
             if any(t.name == "mark_complete" for t in response.tool_calls):
                 break
-        else:
-            yield ProgressEvent("done", "Reached step limit.")
 
     # -- helpers ------------------------------------------------------------
 
+    def _findings_summary_text(self) -> str:
+        """One-line-per-finding for injection into prompts."""
+        if not self.findings:
+            return "(none yet)"
+        return "\n".join(
+            f"  {i}. {f.title} — {f.narrative[:120]}…"
+            for i, f in enumerate(self.findings, 1)
+        )
+
     def _generate_summary(self) -> str:
-        """Make a dedicated LLM call to produce an executive summary."""
+        """Dedicated LLM call to produce an executive summary."""
         finding_bullets = "\n".join(
             f"- {f.title}: {f.narrative[:200]}" for f in self.findings
         )
@@ -244,7 +242,6 @@ class EDAAgent:
 
         summary_llm = create_provider(self._provider_name, self._api_key, self.llm.model)
         summary_llm.add_user_message(prompt)
-
         try:
             response = summary_llm.send("You are a data analyst. Write concise summaries.", [])
             if response.text.strip():
@@ -265,18 +262,17 @@ class EDAAgent:
         output_dir: str | Path,
         user_focus: str = "",
     ) -> Generator[ProgressEvent, None, None]:
-        """Run the initial analysis. Yields progress events.
+        """Run the basic EDA phase. Yields progress events.
 
-        After exhaustion, findings are available in ``self.findings``.
-        Call ``continue_analysis()`` to investigate more, or
-        ``generate_reports()`` to produce the final output.
+        Covers: dataset overview, missing values, data types, unique values,
+        distributions, basic statistics, and initial observations.
         """
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
         self._figures_dir = output_dir / "figures"
         self._figures_dir.mkdir(exist_ok=True)
 
-        # ---- 1. Sample if needed ------------------------------------------
+        # 1. Sample
         self._original_rows = len(df)
         self._df_work, self._was_sampled = auto_sample(df)
         if self._was_sampled:
@@ -286,78 +282,94 @@ class EDAAgent:
                 f"to {len(self._df_work):,} rows for analysis.",
             )
 
-        # ---- 2. Profile ---------------------------------------------------
+        # 2. Profile
         yield ProgressEvent("profiling", "Generating data profile…")
         self.profile = generate_profile(self._df_work)
         self._profile_text = profile_to_text(self.profile)
         yield ProgressEvent("profiling", "Profile complete.", detail=self._profile_text)
 
-        # ---- 3. Build system prompt ----------------------------------------
-        if user_focus.strip():
-            focus_block = (
-                "\n## User Focus\n"
-                "The user has specifically asked you to focus on the following. "
-                "Prioritize this in your analysis, but still cover other important aspects:\n"
-                f"> {user_focus.strip()}\n"
-            )
-        else:
-            focus_block = ""
-        self._system_prompt = SYSTEM_PROMPT.format(
-            profile=self._profile_text, user_focus=focus_block,
-        )
+        # 3. Build basic EDA prompt
+        system_prompt = BASIC_EDA_PROMPT.format(profile=self._profile_text)
 
-        # ---- 4. Seed conversation ------------------------------------------
         if user_focus.strip():
             opening = (
-                "Please begin your exploratory data analysis of this dataset.\n\n"
-                f"IMPORTANT — the user wants you to prioritize the following:\n"
-                f"{user_focus.strip()}\n\n"
-                "Start with what the user asked for, then cover other important aspects."
+                "Perform the basic EDA of this dataset.\n\n"
+                f"The user also has a specific interest:\n> {user_focus.strip()}\n\n"
+                "Cover the basic EDA first, then address the user's interest "
+                "if it fits within a basic exploration."
             )
         else:
-            opening = "Please begin your exploratory data analysis of this dataset."
+            opening = "Perform the basic EDA of this dataset."
+
         self.llm.add_user_message(opening)
 
-        # ---- 5. Run agent loop --------------------------------------------
-        yield from self._run_loop()
+        # 4. Run
+        yield from self._run_loop(system_prompt, BASIC_EDA_STEPS)
 
-        # Fallback if no findings at all
+        # Fallback
         if not self.findings:
             self.findings.append(Finding(
                 title="Data Overview",
-                narrative=f"The dataset contains {self.profile['shape']['rows']:,} rows and "
-                          f"{self.profile['shape']['columns']} columns. "
-                          f"{self.profile['quality']['total_missing_pct']}% of values are missing.",
+                narrative=(
+                    f"The dataset contains {self.profile['shape']['rows']:,} rows and "
+                    f"{self.profile['shape']['columns']} columns. "
+                    f"{self.profile['quality']['total_missing_pct']}% of values are missing."
+                ),
                 importance="medium",
             ))
 
-        yield ProgressEvent("done", f"Analysis paused with {len(self.findings)} finding(s).")
+        yield ProgressEvent("done", f"Basic EDA complete — {len(self.findings)} finding(s).")
 
     def continue_analysis(
         self,
-        instruction: str,
-        max_iterations: int | None = None,
+        instruction: str = "",
     ) -> Generator[ProgressEvent, None, None]:
-        """Continue investigating with an additional user instruction.
+        """Continue investigating — with or without user direction.
 
-        Reuses the same LLM conversation history so the agent has full
-        context of what it already explored.
+        If *instruction* is provided, the agent follows it.
+        If empty, the agent decides what to explore next on its own.
         """
         if self._df_work is None:
             raise RuntimeError("Call analyze() before continue_analysis().")
 
-        existing = "\n".join(f"  - {f.title}" for f in self.findings)
-        follow_up = (
-            f"The user wants you to investigate further. Here is their request:\n\n"
-            f"> {instruction.strip()}\n\n"
-            f"You have already saved {len(self.findings)} finding(s):\n{existing}\n\n"
-            "Do NOT repeat previous findings. Focus on the new request. "
-            "Run code, save new findings, and call mark_complete when done."
-        )
-        self.llm.add_user_message(follow_up)
-        self.summary = ""  # reset — will be regenerated in generate_reports
+        existing = self._findings_summary_text()
 
-        yield from self._run_loop(max_iters=max_iterations or self.max_iterations)
+        if instruction.strip():
+            focus_block = (
+                "\n## User Direction\n"
+                "The user has asked you to investigate the following:\n"
+                f"> {instruction.strip()}\n\n"
+                "Focus on answering this. Run code, create visualizations, "
+                "and save findings.\n"
+            )
+            user_msg = (
+                f"The user wants you to investigate:\n> {instruction.strip()}\n\n"
+                "Use the dataset to answer this. Create charts and save findings."
+            )
+        else:
+            focus_block = (
+                "\n## Agent Direction\n"
+                "The user has not given specific instructions. Choose the most "
+                "valuable next analysis to perform — look for patterns, relationships, "
+                "anomalies, or deeper dives that haven't been covered yet.\n"
+            )
+            user_msg = (
+                "Continue the analysis. Look at what hasn't been explored yet "
+                "and perform the most valuable next investigation. "
+                "Think about correlations, group comparisons, trends, outliers, "
+                "or feature interactions."
+            )
+
+        system_prompt = DEEP_ANALYSIS_PROMPT.format(
+            profile=self._profile_text,
+            user_focus=focus_block,
+            previous_findings=existing,
+        )
+
+        self.summary = ""  # will be regenerated in generate_reports
+        self.llm.add_user_message(user_msg)
+
+        yield from self._run_loop(system_prompt, CONTINUE_STEPS)
 
         yield ProgressEvent(
             "done",
@@ -368,16 +380,15 @@ class EDAAgent:
         self,
         output_dir: str | Path,
     ) -> Generator[ProgressEvent, None, None]:
-        """Generate the final HTML + notebook reports from accumulated findings.
+        """Generate the final HTML + notebook reports.
 
-        After exhaustion, the ``AnalysisResult`` is available in ``self.result``.
+        The ``AnalysisResult`` is available in ``self.result`` afterwards.
         """
         from .report import generate_html_report, generate_notebook
 
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Guarantee an executive summary
         if not self.summary:
             yield ProgressEvent("report", "Generating executive summary…")
             self.summary = self._generate_summary()

@@ -29,7 +29,6 @@ def analyze(
     api_key: str = typer.Option("", "--api-key", "-k", envvar="ANTHROPIC_API_KEY", help="API key (Anthropic, OpenAI, or Google)."),
     provider: str = typer.Option("anthropic", "--provider", "-p", help="AI provider: anthropic, openai, or gemini."),
     model: str = typer.Option("", "--model", "-m", help="Model name (uses provider default if empty)."),
-    max_steps: int = typer.Option(25, "--max-steps", help="Maximum agent iterations."),
     focus: str = typer.Option("", "--focus", "-f", help="Tell the agent what to focus on (optional)."),
 ) -> None:
     """Analyze a dataset and generate an EDA report."""
@@ -61,7 +60,7 @@ def analyze(
     df = load_dataset(file_path=file)
     console.print(f"  Loaded {len(df):,} rows × {len(df.columns)} columns\n")
 
-    agent = EDAAgent(api_key=api_key, model=resolved_model, max_iterations=max_steps, provider=provider)
+    agent = EDAAgent(api_key=api_key, model=resolved_model, provider=provider)
 
     def _show_progress(events):
         for event in events:
