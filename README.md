@@ -6,6 +6,18 @@
 
 Built with [Claude API](https://docs.anthropic.com/en/docs/overview) (tool-use) to showcase agentic AI development.
 
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| AI backbone | Anthropic, OpenAI, Google Gemini (tool-use) |
+| Data handling | pandas, numpy, pyarrow |
+| Visualization | matplotlib, seaborn |
+| Report output | HTML, Jupyter Notebook (.ipynb) |
+| Web UI | Streamlit |
+| CLI | Typer + Rich |
+| Code sandbox | Restricted exec with whitelisted imports |
+
 ---
 
 ## How It Works
@@ -39,7 +51,7 @@ The agent operates in an **autonomous loop**: it inspects results from each anal
 - **Sandboxed execution** — AI-generated code runs in a restricted environment with whitelisted imports only
 - **Rich visualizations** — histograms, scatter plots, heatmaps, box plots, and more
 - **Narrative report** — AI-written findings with executive summary, sorted by importance
-- **Multiple output formats** — HTML (interactive), Markdown, PDF
+- **Multiple output formats** — HTML report and Jupyter Notebook (.ipynb)
 - **Web UI** — Streamlit app with drag-and-drop upload and live progress streaming
 - **CLI** — Command-line interface for automation and scripting
 - **Demo datasets** — Titanic, Iris, Dota 2 Pro Matches, Restaurant Data (messy)
@@ -81,7 +93,7 @@ python -m eda_agent.main analyze data/titanic.csv -o output/ \
 python -m eda_agent.main analyze data/titanic.csv -o output/ \
     --provider gemini --api-key AIza... --model gemini-2.0-flash
 
-# Reports saved to output/report.html, report.md, and report.ipynb
+# Reports saved to output/report.html and report.ipynb
 ```
 
 ---
@@ -112,7 +124,7 @@ eda-agent/
 │       ├── profiler.py         # Data loading, sampling, profiling
 │       ├── executor.py         # Sandboxed Python code execution
 │       ├── tools.py            # Tool definitions + system prompt
-│       ├── report.py           # HTML / Markdown / Notebook / PDF generation
+│       ├── report.py           # HTML + Notebook report generation
 │       ├── main.py             # CLI (Typer)
 │       ├── providers/          # Multi-provider LLM abstraction
 │       │   ├── __init__.py     # Base class, types, factory
@@ -142,7 +154,7 @@ The core of EDA Agent is a **tool-use loop** with any supported LLM:
 4. Results (stdout, charts) are fed back to the agent
 5. The agent calls `save_finding` to record insights with narratives
 6. Steps 2-5 repeat until the agent calls `mark_complete`
-7. A polished HTML/Markdown report is assembled from all findings
+7. HTML + Jupyter Notebook reports are assembled from all findings
 
 ### Security
 
@@ -186,7 +198,6 @@ When `DEMO_ANTHROPIC_API_KEY` is set (via Streamlit secrets or env var), visitor
 | Provider | `--provider` | `anthropic` |
 | API key | `--api-key` / `ANTHROPIC_API_KEY` env | — |
 | Model | `--model` | Provider default |
-| Max steps | `--max-steps` | 25 |
 | Output dir | `--output` | `output/` |
 
 **Default models per provider:**
@@ -198,21 +209,6 @@ When `DEMO_ANTHROPIC_API_KEY` is set (via Streamlit secrets or env var), visitor
 | Gemini | `gemini-2.0-flash` | gemini-2.5-flash, gemini-2.5-pro |
 
 In the web UI, all settings are in the sidebar.
-
----
-
-## Tech Stack
-
-| Component | Technology |
-|-----------|------------|
-| AI backbone | Anthropic, OpenAI, Google Gemini (tool-use) |
-| Data handling | pandas, numpy, pyarrow |
-| Visualization | matplotlib, seaborn |
-| Report templating | Jinja2, HTML/CSS |
-| Web UI | Streamlit |
-| CLI | Typer + Rich |
-| PDF export | xhtml2pdf |
-| Code sandbox | Restricted exec with whitelisted imports |
 
 ---
 
