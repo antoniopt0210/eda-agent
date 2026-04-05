@@ -79,8 +79,9 @@ def analyze(
     result = agent.result
     console.print(f"\n[green bold]Analysis complete![/green bold]")
     console.print(f"  Findings: {len(result.findings)}")
-    console.print(f"  HTML report: {output / 'report.html'}")
+    console.print(f"  HTML report:     {output / 'report.html'}")
     console.print(f"  Markdown report: {output / 'report.md'}")
+    console.print(f"  Notebook:        {output / 'report.ipynb'}")
     console.print(f"\n[dim]{result.summary}[/dim]\n")
 
 

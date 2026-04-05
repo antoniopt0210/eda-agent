@@ -229,10 +229,10 @@ if df is not None:
                 st.subheader("📄 Analysis Report")
 
                 # Download buttons
-                col_dl1, col_dl2, col_dl3 = st.columns(3)
+                col_dl1, col_dl2, col_dl3, col_dl4 = st.columns(4)
                 with col_dl1:
                     st.download_button(
-                        "⬇️ Download HTML",
+                        "⬇️ HTML",
                         data=result.report_html,
                         file_name="eda_report.html",
                         mime="text/html",
@@ -240,20 +240,28 @@ if df is not None:
                     )
                 with col_dl2:
                     st.download_button(
-                        "⬇️ Download Markdown",
+                        "⬇️ Markdown",
                         data=result.report_md,
                         file_name="eda_report.md",
                         mime="text/markdown",
                         use_container_width=True,
                     )
                 with col_dl3:
+                    st.download_button(
+                        "⬇️ Notebook",
+                        data=result.report_notebook,
+                        file_name="eda_report.ipynb",
+                        mime="application/x-ipynb+json",
+                        use_container_width=True,
+                    )
+                with col_dl4:
                     pdf_bytes = None
                     pdf_path = output_dir / "report.pdf"
                     if generate_pdf_report(result.report_html, pdf_path):
                         pdf_bytes = pdf_path.read_bytes()
                     if pdf_bytes:
                         st.download_button(
-                            "⬇️ Download PDF",
+                            "⬇️ PDF",
                             data=pdf_bytes,
                             file_name="eda_report.pdf",
                             mime="application/pdf",

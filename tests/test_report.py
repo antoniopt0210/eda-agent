@@ -1,5 +1,6 @@
 """Tests for the report generation module."""
 
+import json
 import sys
 from pathlib import Path
 
@@ -7,8 +8,8 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from eda_agent.agent import Finding
-from eda_agent.report import generate_html_report, generate_markdown_report
+from eda_agent.agent import CodeStep, Finding
+from eda_agent.report import generate_html_report, generate_markdown_report, generate_notebook
 
 
 @pytest.fixture
@@ -61,6 +62,25 @@ def sample_findings() -> list[Finding]:
     ]
 
 
+@pytest.fixture
+def sample_code_steps() -> list[CodeStep]:
+    return [
+        CodeStep(
+            purpose="Check basic statistics",
+            code="print(df.describe())",
+            stdout="       id     value\ncount  100  100\n",
+            success=True,
+        ),
+        CodeStep(
+            purpose="Plot distribution",
+            code="plt.figure()\nplt.hist(df['value'])\nplt.title('Distribution')\nplt.tight_layout()",
+            stdout="",
+            success=True,
+            figures=[],
+        ),
+    ]
+
+
 class TestHTMLReport:
     def test_generates_html(self, sample_profile: dict, sample_findings: list[Finding]) -> None:
         html = generate_html_report(sample_profile, sample_findings, "Test summary")
@@ -85,3 +105,63 @@ class TestMarkdownReport:
         md = generate_markdown_report(sample_profile, sample_findings, "Summary")
         assert "| Column |" in md
         assert "| id |" in md
+
+
+class TestNotebook:
+    def test_valid_json(
+        self, sample_profile: dict, sample_findings: list[Finding], sample_code_steps: list[CodeStep],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, sample_code_steps, "Test summary")
+        nb = json.loads(nb_str)
+        assert nb["nbformat"] == 4
+        assert "cells" in nb
+        assert len(nb["cells"]) > 0
+
+    def test_contains_code_steps(
+        self, sample_profile: dict, sample_findings: list[Finding], sample_code_steps: list[CodeStep],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, sample_code_steps, "Test summary")
+        nb = json.loads(nb_str)
+        code_cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+        # setup cell + load cell + 2 analysis steps = 4 code cells
+        assert len(code_cells) == 4
+
+    def test_contains_findings(
+        self, sample_profile: dict, sample_findings: list[Finding], sample_code_steps: list[CodeStep],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, sample_code_steps, "Test summary")
+        assert "Distribution of Values" in nb_str
+        assert "Category Balance" in nb_str
+
+    def test_contains_summary(
+        self, sample_profile: dict, sample_findings: list[Finding], sample_code_steps: list[CodeStep],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, sample_code_steps, "Test summary")
+        assert "Test summary" in nb_str
+
+    def test_code_preserved(
+        self, sample_profile: dict, sample_findings: list[Finding], sample_code_steps: list[CodeStep],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, sample_code_steps, "Summary")
+        assert "df.describe()" in nb_str
+        assert "plt.hist" in nb_str
+
+    def test_stdout_in_outputs(
+        self, sample_profile: dict, sample_findings: list[Finding], sample_code_steps: list[CodeStep],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, sample_code_steps, "Summary")
+        nb = json.loads(nb_str)
+        code_cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+        # The first analysis code cell (index 2) should have stdout output
+        analysis_cell = code_cells[2]
+        assert len(analysis_cell["outputs"]) > 0
+        assert analysis_cell["outputs"][0]["output_type"] == "stream"
+
+    def test_empty_code_steps(
+        self, sample_profile: dict, sample_findings: list[Finding],
+    ) -> None:
+        nb_str = generate_notebook(sample_profile, sample_findings, [], "Summary")
+        nb = json.loads(nb_str)
+        # Should still have setup + load cells even with no analysis steps
+        code_cells = [c for c in nb["cells"] if c["cell_type"] == "code"]
+        assert len(code_cells) == 2

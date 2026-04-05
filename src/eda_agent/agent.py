@@ -35,12 +35,25 @@ class Finding:
 
 
 @dataclass
+class CodeStep:
+    """A single code-execution step recorded during the agent loop."""
+    purpose: str
+    code: str
+    stdout: str = ""
+    error: str | None = None
+    figures: list[str] = field(default_factory=list)
+    success: bool = True
+
+
+@dataclass
 class AnalysisResult:
     summary: str
     findings: list[Finding]
     profile: dict[str, Any]
+    code_steps: list[CodeStep] = field(default_factory=list)
     report_html: str = ""
     report_md: str = ""
+    report_notebook: str = ""
     was_sampled: bool = False
     original_rows: int = 0
 
@@ -114,6 +127,7 @@ class EDAAgent:
 
         # ---- 3. Agent loop ------------------------------------------------
         findings: list[Finding] = []
+        code_steps: list[CodeStep] = []
         figure_counter = 0
         summary = ""
         latest_figures: list[str] = []
@@ -180,6 +194,16 @@ class EDAAgent:
                     )
                     figure_counter += len(exec_result.figures)
                     latest_figures = list(exec_result.figures)
+
+                    # Record for notebook reproduction
+                    code_steps.append(CodeStep(
+                        purpose=purpose,
+                        code=code,
+                        stdout=exec_result.stdout,
+                        error=exec_result.error,
+                        figures=list(exec_result.figures),
+                        success=exec_result.success,
+                    ))
 
                     for fig_path in exec_result.figures:
                         yield ProgressEvent("analysis", f"Chart generated", figure=fig_path)
@@ -258,7 +282,7 @@ class EDAAgent:
             summary = summary or "Basic profile completed; the agent could not generate deeper findings."
 
         # ---- 4. Build result ----------------------------------------------
-        from .report import generate_html_report, generate_markdown_report
+        from .report import generate_html_report, generate_markdown_report, generate_notebook
 
         yield ProgressEvent("report", "Generating HTML report…")
         report_html = generate_html_report(profile, findings, summary)
@@ -266,16 +290,22 @@ class EDAAgent:
         yield ProgressEvent("report", "Generating Markdown report…")
         report_md = generate_markdown_report(profile, findings, summary)
 
+        yield ProgressEvent("report", "Generating Jupyter notebook…")
+        report_notebook = generate_notebook(profile, findings, code_steps, summary)
+
         # Write to disk
         (output_dir / "report.html").write_text(report_html, encoding="utf-8")
         (output_dir / "report.md").write_text(report_md, encoding="utf-8")
+        (output_dir / "report.ipynb").write_text(report_notebook, encoding="utf-8")
 
         self.result = AnalysisResult(
             summary=summary,
             findings=findings,
             profile=profile,
+            code_steps=code_steps,
             report_html=report_html,
             report_md=report_md,
+            report_notebook=report_notebook,
             was_sampled=was_sampled,
             original_rows=original_rows,
         )
