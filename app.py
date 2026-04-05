@@ -50,7 +50,19 @@ if "demo_uses" not in st.session_state:
 # ---------------------------------------------------------------------------
 # Demo mode config
 # ---------------------------------------------------------------------------
-DEMO_MAX_USES = 5  # max analyses per session using the host's key
+def _get_demo_max_uses() -> int:
+    """Read demo limit from Streamlit secrets, env, or default to 5."""
+    try:
+        return int(st.secrets["DEMO_MAX_USES"])
+    except (KeyError, FileNotFoundError, ValueError):
+        pass
+    try:
+        return int(os.environ.get("DEMO_MAX_USES", ""))
+    except ValueError:
+        pass
+    return 5
+
+DEMO_MAX_USES = _get_demo_max_uses()
 
 def _get_demo_key() -> str | None:
     """Return the host's API key from Streamlit secrets or env, or None."""
